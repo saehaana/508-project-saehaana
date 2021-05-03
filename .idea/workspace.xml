@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="added multiple php files involving players, match, and login; &#10;implemented functionality to login.php;&#10;changed graphic using style.css;&#10;implemented functionality to process.php">
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="added login href link to index.php">
+      <change beforePath="$PROJECT_DIR$/process.php" beforeDir="false" afterPath="$PROJECT_DIR$/process.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620073611501</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added login href link to index.php">
+      <created>1620073825790</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1620073825790</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -145,6 +152,7 @@
     <MESSAGE value="php website test change" />
     <MESSAGE value="html test change" />
     <MESSAGE value="added multiple php files involving players, match, and login; &#10;implemented functionality to login.php;&#10;changed graphic using style.css;&#10;implemented functionality to process.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="added multiple php files involving players, match, and login; &#10;implemented functionality to login.php;&#10;changed graphic using style.css;&#10;implemented functionality to process.php" />
+    <MESSAGE value="added login href link to index.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="added login href link to index.php" />
   </component>
 </project>
