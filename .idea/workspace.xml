@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="html test change">
-      <change afterPath="$PROJECT_DIR$/addMatch.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addPlayer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/editMatch.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/match.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/matchHistory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/process.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="added multiple php files involving players, match, and login; &#10;implemented functionality to login.php;&#10;changed graphic using style.css;&#10;implemented functionality to process.php">
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620020515134</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added multiple php files involving players, match, and login; &#10;implemented functionality to login.php;&#10;changed graphic using style.css;&#10;implemented functionality to process.php">
+      <created>1620073611501</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1620073611501</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,6 +144,7 @@
     <MESSAGE value="test change" />
     <MESSAGE value="php website test change" />
     <MESSAGE value="html test change" />
-    <option name="LAST_COMMIT_MESSAGE" value="html test change" />
+    <MESSAGE value="added multiple php files involving players, match, and login; &#10;implemented functionality to login.php;&#10;changed graphic using style.css;&#10;implemented functionality to process.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="added multiple php files involving players, match, and login; &#10;implemented functionality to login.php;&#10;changed graphic using style.css;&#10;implemented functionality to process.php" />
   </component>
 </project>
