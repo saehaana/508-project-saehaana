@@ -14,7 +14,7 @@
     mysql_select_db("login");
 
     //query database for user
-    $result = mysql_query("SELECT * from Players where Username = '$username' and Password = '$password'")
+    $result = mysql_query("SELECT * from Player where Username = '$username' and Password = '$password'")
         or die("failed to query database".mysql_error());
     $row = mysql_fetch_array($result);
     if($row['Username'] == $username && $row['Password'] == $password){
