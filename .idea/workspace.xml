@@ -22,6 +22,7 @@
       </branch-storage>
     </excluded-from-favorite>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1s0e4m2M275N3aNvG1JwdoBT1I6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
