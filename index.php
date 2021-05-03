@@ -1,6 +1,7 @@
 <html>
 <head>
-<title>Valorant Stat Tracker</title>
+<title>Valorant Stat Tracker
+</title>
 </head>
 <body><br>Problem Statement
       <br>Ausawin plays a competitive shooter called Valorant and wishes to hit the highest rank of radiant. To do
