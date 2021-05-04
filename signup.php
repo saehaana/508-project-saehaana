@@ -11,17 +11,16 @@ $email = $_POST['email'];
 $first_name = $_POST['firstName'];
 $last_name = $_POST['lastName'];
 
-$sql = "select * from Player where email = '$email'";
+$sql = "select * from Player where username = '$username'";
 $result = mysqli_query($conn,$sql);
 $num = mysqli_num_rows($result);
 
-if($num == 3){
+if($num == 1){
     echo "Email already taken";
 }else{
     $reg ="insert into Player (Battletag,Username,Password,Email,firstName,lastName) values ('$battletag','$username','$password','$email','$firstName','$lastName')";
     mysqli_query($conn,$reg);
     echo "Signup successful, try logging in now";
-    header('location:index.php');
 }
 
 ?>

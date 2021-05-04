@@ -8,6 +8,8 @@
         body{
         background-image: url('cover.jpg');
         background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
         }
     </style>
     <h1>Valorant Stat Tracker</h1>
@@ -32,7 +34,7 @@
             <form action="signup.php" method="POST">
                 <p>
                 <label>Battletag:</label>
-                <input type="text" id="battletag" name="battletag"/>
+                <input type="text" id="battletag" placeholder="4 characters e.g. #NA1" name="battletag"/>
                 </p>
                 <p>
                 <label>Username:</label>

@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="process fix successful, cleanup process.php; added css file to fix home.php image placement;&#10;return user to index after successful signup">
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="edited background cover to no repeat">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +246,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620158564781</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="added cover image to index page">
+      <created>1620163468385</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1620163468385</updated>
+    </task>
+    <task id="LOCAL-00028" summary="edited background cover to no repeat">
+      <created>1620163589874</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1620163589874</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -293,6 +309,8 @@
     <MESSAGE value="fixed sql query" />
     <MESSAGE value="process fix attempt" />
     <MESSAGE value="process fix successful, cleanup process.php; added css file to fix home.php image placement;&#10;return user to index after successful signup" />
-    <option name="LAST_COMMIT_MESSAGE" value="process fix successful, cleanup process.php; added css file to fix home.php image placement;&#10;return user to index after successful signup" />
+    <MESSAGE value="added cover image to index page" />
+    <MESSAGE value="edited background cover to no repeat" />
+    <option name="LAST_COMMIT_MESSAGE" value="edited background cover to no repeat" />
   </component>
 </project>
