@@ -31,6 +31,7 @@
             </form>
         <div id="signup">
             <h3>Register Here</h3>
+            <p>Please fill in all fields below</p>
             <form action="signup.php" method="POST">
                 <p>
                 <label>Battletag:</label>
@@ -50,10 +51,10 @@
                 </p>
                 <p>
                 <label>First Name:</label>
-                <input type="first_name" id="first_name" name="firstName">
+                <input type="text" id="first_name" name="firstName">
                 </p>
                 <label>Last Name:</label>
-                <input type="last_name" id="last_name" name="lastName">
+                <input type="text" id="last_name" name="lastName">
                 <p>
                 <input type="submit" id="btn2" value="Register" name="Register"/>
                 </p>
