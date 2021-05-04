@@ -6,7 +6,6 @@ $conn = mysqli_connect('localhost','saehaana','V00797462');
 mysqli_select_db($conn,'project_saehaana');
 
 //get values from form in login.php
-if(isset($_POST['submit'])){
     $username = $_POST['username'];
     $password = $_POST['password'];
 
@@ -26,5 +25,5 @@ if(isset($_POST['submit'])){
     }else{
         header('location:index.php');
     }
-}
+
 ?>
