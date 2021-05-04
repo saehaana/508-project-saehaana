@@ -22,26 +22,26 @@ if(isset($_POST['Register'])){
     if(empty($first_name)){ array_push($errors, "First name is required");}
     if(empty($last_name){ array_push($errors, "Last name is required");}
 
-//check Player table if email already exists
-$sql = "select * from Player where email = '$email' LIMIT 1";
-$result = mysqli_query($conn,$sql);
-$checkEmail = mysqli_fetch_assoc($result);
+    //check Player table if email already exists
+    $sql = "select * from Player where email = '$email' LIMIT 1";
+    $result = mysqli_query($conn,$sql);
+    $checkEmail = mysqli_fetch_assoc($result);
 
-if($checkEmail){ //if email exists
-    if($email['email'] === $email){ //if email identical (equal to and of same type) to email in database
-        array_push($errors, "Email already taken, please enter a unique email address");
+    if($checkEmail){ //if email exists
+        if($email['email'] === $email){ //if email identical (equal to and of same type) to email in database
+            array_push($errors, "Email already taken, please enter a unique email address");
+        }
     }
-}
 
-//registers user if no errors exist
-if(count($errors) == 0){
-    $password = md5($password); //encrypt password
-    $query = "insert into Player (Battletag,Username,Password,Email,firstName,lastName)
-    values ('$battletag','$username','$password','$email','$firstName','$lastName')";
-    mysqli_query($conn,$query);
-    $_SESSION['username'] = $username;
-    $_SESSION['success'] = "You are now logged in";
-    header('location: index.php');
-}
+    //registers user if no errors exist
+    if(count($errors) == 0){
+        $password = md5($password); //encrypt password
+        $query = "insert into Player (Battletag,Username,Password,Email,firstName,lastName)
+        values ('$battletag','$username','$password','$email','$firstName','$lastName')";
+        mysqli_query($conn,$query);
+        $_SESSION['username'] = $username;
+        $_SESSION['success'] = "You are now logged in";
+        header('location: index.php');
+    }
 }
 ?>
