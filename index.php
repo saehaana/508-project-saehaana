@@ -4,6 +4,11 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <style>
+        body{
+        background-image: url('cover.jpg');
+        }
+    </style>
     <h1>Valorant Stat Tracker</h1>
     <br>Welcome to Valorant Stat Tracker! Login or register below to view or add your matches.
     <br><div id="login">
