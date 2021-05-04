@@ -17,6 +17,7 @@ if($num == 1){
     $_SESSION['username'] = $username;
     header('location:home.php');
 }else{
+    echo "Invalid username or password, please try again";
     header('location:index.php');
 }
 ?>

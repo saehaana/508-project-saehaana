@@ -7,7 +7,8 @@ if(!isset($_SESSION['username'])){
 
 <html>
 <head>
-<title>Home Page</title>
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <a href="logout.php"> Logout </a>
