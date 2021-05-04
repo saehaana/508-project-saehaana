@@ -1,19 +1,3 @@
-<?php
-    session_start();
-
-    //if user not logged in, redirect to index.php
-    if(!isset($_SESSION['username'])) {
-  	    $_SESSION['msg'] = "You must log in first";
-  	    header('location: index.php');
-    }
-    //if user clicks logout, redirect to index.php
-    if (isset($_GET['logout'])) {
-  	    session_destroy();
-  	    unset($_SESSION['username']);
-  	    header("location: index.php");
-    }
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,10 +15,10 @@
     </style>
     <h1>Valorant Stat Tracker</h1>
     <br>Welcome to Valorant Stat Tracker! Login or register below to view or add your matches.
+    <?php include('errors.php'); ?>
     <br><div id="login">
             <h2>Login Here</h2>
             <form action="process.php" method="POST">
-                <?php include('errors.php'); ?>
                 <p>
                 <label>Username:</label>
                 <input type="text" id="username" name="username"/>
