@@ -6,6 +6,7 @@
 </head>
 <body>
     <div id="login">
+        <h1>Login Here</h1>
         <form action="process.php" method="POST">
             <p>
                 <label>Username:</label>
@@ -16,24 +17,24 @@
                 <input type="password" id="password" name="password"/>
             </p>
             <p>
-                <input type="submit" id="btn" name="Login"/>
+                <input type="submit" id="btn1" name="Login"/>
+            </p>
+        </form>
+    <div id="signup">
+        <h2>Register Here</h2>
+        <form action="signup.php" method="POST">
+            <p>
+                <label>Username:</label>
+                <input type="text" id="username" name="username"/>
+            </p>
+            <p>
+                <label>Password:</label>
+                <input type="password" id="password" name="password"/>
+            </p>
+            <p>
+                <input type="submit" id="btn2" name="Register"/>
             </p>
         </form>
     </div>
-    <div id="signup">
-            <form action="signup.php" method="POST">
-                <p>
-                    <label>Username:</label>
-                    <input type="text" id="username" name="username"/>
-                </p>
-                <p>
-                    <label>Password:</label>
-                    <input type="password" id="password" name="password"/>
-                </p>
-                <p>
-                    <input type="submit" id="btn" name="Register"/>
-                </p>
-            </form>
-        </div>
 </body>
 </html>

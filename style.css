@@ -11,7 +11,7 @@ body{
     background: white;
     padding: 50px;
 }
-#btn{
+#btn1{
     color: #fff;
     background: #337ab7;
     padding: 5px;
@@ -24,4 +24,10 @@ body{
     margin: 100px auto;
     background: white;
     padding: 50px;
+}
+#btn2{
+    color: #fff;
+    background: #337ab7;
+    padding: 5px;
+    margin-left: 69%;
 }
