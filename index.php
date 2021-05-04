@@ -15,7 +15,6 @@
     </style>
     <h1>Valorant Stat Tracker</h1>
     <br>Welcome to Valorant Stat Tracker! Login or register below to view or add your matches.
-    <?php include('errors.php'); ?>
     <br><div id="login">
             <h2>Login Here</h2>
             <form action="process.php" method="POST">
@@ -35,7 +34,6 @@
             <h3>Register Here</h3>
             <p>Please fill in all fields below</p>
             <form action="signup.php" method="POST">
-                <?php include('errors.php'); ?>
                 <p>
                 <label>Battletag:</label>
                 <input type="text" id="battletag" placeholder="4 characters e.g. #NA1" name="battletag"/>
