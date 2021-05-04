@@ -1,23 +1,19 @@
 <?php
-<html>
-<body>
+session_start();
 
-    <section class="main-container">
-            <div class = main-wrapper>
-                <h2>Sign-up</h2>
-                    <form class = "signup-form" action="includes/signup-inc.php" method="POST">
-                        <input type="text" name ="battletag" placeholder="#NA1*">
-                        <input type="text" name ="username" placeholder="Username*">
-                        <input type="password" name="password" placeholder="Password*">
-                        <input type="text" name ="email" placeholder="emailname@gmail.com*">
-                        <input type="text" name ="first" placeholder="First Name*">
-                        <input type="text" name ="last" placeholder="Last Name*">
+$conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
+$username = $_POST['username'];
+$password = $_POST['password'];
+$sql = "select * from Player where Username = '$username' and Password = '$password'";
+$result = mysqli_query($conn,$sql);
+$num = mysqli_num_rows($result);
 
-                        <button type="submit" name="submit">Sign up</button>
-                    </form>
-            </div>
-        </section>
+if($num == 1){
+    echo "username taken";
+}else{
+    $reg ="insert into Player (Username,Password) values ('$username', '$password')";
+    mysqli_query($conn,$reg);
+    echo "signup successful";
+}
 
-</body>
-</html>
 ?>

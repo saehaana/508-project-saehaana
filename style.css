@@ -1,7 +1,9 @@
 body{
-    background: #eee;
+    background: linear-gradient(rgba(0,0,50,.5),(rbga(0,0,50,.5)),url(cover.jpg);
+    background-size: cover;
+    background-position: center;
 }
-#frm{
+#login{
     border: solid gray 1px;
     width: 20%;
     border-radius: 5px;
@@ -14,4 +16,12 @@ body{
     background: #337ab7;
     padding: 5px;
     margin-left: 69%;
+}
+#signup{
+    border: solid gray 1px;
+    width: 20%;
+    border-radius: 5px;
+    margin: 100px auto;
+    background: white;
+    padding: 50px;
 }

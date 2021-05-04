@@ -2,8 +2,8 @@
 
     session_start();
     //connect to server and select database
-    $conn = mysqli_connect("localhost","root","","project_saehaana");
-    //mysqli_select_db("Player");
+    $conn = mysqli_connect("localhost","saehaana","V00797462","project_saehaana");
+    //mysqli_select_db("project_saehaana");
 
     //get values from form in login.php
     if(isset($_POST['submit'])){
@@ -22,8 +22,10 @@
         $row = mysqli_fetch_array($result);
         if($row['Username'] == $username && $row['Password'] == $password){
             echo "Login successful, welcome " .$row['Username'];
+            header('location:home.php');
         }else{
             echo "Failed to login";
+            header('location:index.php');
         }
     }
 ?>
