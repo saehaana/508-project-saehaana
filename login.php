@@ -17,7 +17,7 @@
                 <input type="password" id="password" name="password"/>
             </p>
             <p>
-                <input type="submit" id="btn1" name="Login"/>
+                <input type="submit" id="btn1" value="Register" name="Login"/>
             </p>
         </form>
     <div id="signup">
@@ -32,7 +32,7 @@
                 <input type="password" id="password" name="password"/>
             </p>
             <p>
-                <input type="submit" id="btn2" name="Register"/>
+                <input type="submit" id="btn2" value="Register" name="Register"/>
             </p>
         </form>
     </div>
