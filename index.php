@@ -7,6 +7,7 @@
     <style>
         body{
         background-image: url('cover.jpg');
+        background-repeat: no-repeat;
         }
     </style>
     <h1>Valorant Stat Tracker</h1>
