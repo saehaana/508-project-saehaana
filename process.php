@@ -6,24 +6,17 @@ $conn = mysqli_connect('localhost','saehaana','V00797462');
 mysqli_select_db($conn,'project_saehaana');
 
 //get values from form in login.php
-    $username = $_POST['username'];
-    $password = $_POST['password'];
+$username = $_POST['username'];
+$password = $_POST['password'];
 
-    //prevent mysql injection
-    $username = stripcslashes($username);
-    $password = stripcslashes($password);
-    $username = mysql_real_escape_string($username);
-    $password = mysql_real_escape_string($password);
-
-    $sql = "select * from Player where Username='$username' && Password='$password'";
-    //query database for user
-    $result = mysqli_query($conn,$sql);
-    $num = mysqli_num_rows($result);
-    if($num == 1){
-        $_SESSION['username'] = $username;
-        header('location:home.php');
-    }else{
-        header('location:index.php');
-    }
-
+$sql = "select * from Player where Username='$username' && Password='$password'";
+//query database for user
+$result = mysqli_query($conn,$sql);
+$num = mysqli_num_rows($result);
+if($num == 1){
+    $_SESSION['username'] = $username;
+    header('location:home.php');
+}else{
+    header('location:index.php');
+}
 ?>
