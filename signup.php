@@ -1,7 +1,8 @@
 <?php
 session_start();
 
-$conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
+$conn = mysqli_connect('localhost','saehaana','V00797462');
+mysqli_select_db($conn,"project_saehaana");
 $username = $_POST['username'];
 $password = $_POST['password'];
 $sql = "select * from Player where Username = '$username' and Password = '$password'";

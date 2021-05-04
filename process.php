@@ -2,8 +2,8 @@
 
     session_start();
     //connect to server and select database
-    $conn = mysqli_connect("localhost","saehaana","V00797462","project_saehaana");
-    //mysqli_select_db("project_saehaana");
+    $conn = mysqli_connect("localhost","saehaana","V00797462");
+    mysqli_select_db($conn,"project_saehaana");
 
     //get values from form in login.php
     if(isset($_POST['submit'])){
