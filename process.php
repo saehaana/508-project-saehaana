@@ -21,10 +21,10 @@ if(isset($_POST['submit'])){
     or die(mysqli_error($conn));
     $row = mysqli_fetch_array($result);
     if($row['Username'] == $username && $row['Password'] == $password){
-        echo "Login successful, welcome " .$row['Username'];
+        echo "Login successful, welcome ";
         header('location:home.php');
     }else{
-        echo "Failed to login";
+        echo "Failed to login, try again";
         header('location:index.php');
     }
 }
