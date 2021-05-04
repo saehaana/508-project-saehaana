@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login Page</title>
+    <title>Login</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
             </p>
             <p>
                 <label>Password:</label>
-                <input type="password" id="password" name="password"/>
+                <input type="text" id="password" name="password"/>
             </p>
             <p>
                 <input type="submit" id="btn" value="Login"/>

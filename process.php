@@ -10,8 +10,8 @@
     $password = mysql_real_escape_string($password);
 
     //connect to server and select database
-    mysql_connect("localhost","root","");
-    mysql_select_db("login");
+    mysql_connect("localhost","root","","project_saehaana");
+    mysql_select_db("Player");
 
     //query database for user
     $result = mysql_query("SELECT * from Player where Username = '$username' and Password = '$password'")

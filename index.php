@@ -8,7 +8,7 @@
       this, he wants to personally keep track of his stats within a database in order to help himself visualize
       certain aspects of his gameplay which may help him improve.
 <ul>
-<li><a href="login.php">Login</a></li>
+<li><a href="login.php">Login</a></li> to view or add your matches
 </ul>
 </body>
 </html>
