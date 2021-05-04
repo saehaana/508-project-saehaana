@@ -1,5 +1,6 @@
 <?php
 
+    session_start();
     //connect to server and select database
     $conn = mysqli_connect("localhost","root","","project_saehaana");
     //mysqli_select_db("Player");
@@ -8,6 +9,12 @@
     if(isset($_POST['submit'])){
         $username = $_POST['username'];
         $password = $_POST['password'];
+
+        //prevent mysql injection
+        $username = stripcslashes($username);
+        $password = stripcslashes($password);
+        $username = mysql_real_escape_string($username);
+        $password = mysql_real_escape_string($password);
 
         //query database for user
         $result = mysqli_query($conn,"SELECT count(*) as total from Player where Username = '".$username."' and Password = '".$password."'")
@@ -19,10 +26,4 @@
             echo "Failed to login";
         }
     }
-    //prevent mysql injection
-    //$username = stripcslashes($username);
-    //$password = stripcslashes($password);
-    //$username = mysql_real_escape_string($username);
-    //$password = mysql_real_escape_string($password);
-
 ?>
