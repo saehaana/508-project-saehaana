@@ -1,3 +1,20 @@
+<?php
+    session_start();
+
+    //if user not logged in, redirect to index.php
+    if(!isset($_SESSION['username'])) {
+  	    $_SESSION['msg'] = "You must log in first";
+  	    header('location: index.php');
+    }
+    //if user clicks logout, redirect to index.php
+    if (isset($_GET['logout'])) {
+  	    session_destroy();
+  	    unset($_SESSION['username']);
+  	    header("location: index.php");
+    }
+?>
+
+<!DOCTYPE html>
 <html>
 <head>
     <title>Valorant Stat Tracker</title>
@@ -17,6 +34,7 @@
     <br><div id="login">
             <h2>Login Here</h2>
             <form action="process.php" method="POST">
+                <?php include('errors.php'); ?>
                 <p>
                 <label>Username:</label>
                 <input type="text" id="username" name="username"/>
@@ -33,6 +51,7 @@
             <h3>Register Here</h3>
             <p>Please fill in all fields below</p>
             <form action="signup.php" method="POST">
+                <?php include('errors.php'); ?>
                 <p>
                 <label>Battletag:</label>
                 <input type="text" id="battletag" placeholder="4 characters e.g. #NA1" name="battletag"/>

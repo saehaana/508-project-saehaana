@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="edited background cover, added placeholder for battletag">
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="edit signup.php indentation">
+      <change afterPath="$PROJECT_DIR$/errors.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process.php" beforeDir="false" afterPath="$PROJECT_DIR$/process.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -276,7 +277,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620166227688</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="signup.php fix, implement empty field checks, change if username exists check to if email exists check; added password encryption">
+      <created>1620169321157</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1620169321157</updated>
+    </task>
+    <task id="LOCAL-00031" summary="edit signup.php indentation">
+      <created>1620169418126</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1620169418126</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -304,7 +319,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added connections.php - login setup for apache server" />
     <MESSAGE value="added index.php; root of website" />
     <MESSAGE value="test change" />
     <MESSAGE value="php website test change" />
@@ -328,6 +342,8 @@
     <MESSAGE value="added cover image to index page" />
     <MESSAGE value="edited background cover to no repeat" />
     <MESSAGE value="edited background cover, added placeholder for battletag" />
-    <option name="LAST_COMMIT_MESSAGE" value="edited background cover, added placeholder for battletag" />
+    <MESSAGE value="signup.php fix, implement empty field checks, change if username exists check to if email exists check; added password encryption" />
+    <MESSAGE value="edit signup.php indentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit signup.php indentation" />
   </component>
 </project>

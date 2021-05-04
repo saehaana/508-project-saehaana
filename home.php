@@ -13,9 +13,9 @@ if(!isset($_SESSION['username'])){
 <body>
     <a href="logout.php"> Logout </a>
     <h1> Welcome <?php echo $_SESSION['username']; ?> </h1>
-    <br> Things to do:
+    <p> Things to do: </p>
     <br> Add matches to your match history:
     <br> Edit stats for a match you already entered:
-    <br> Or view your matches:
+    <br> Or view your matches below:
 </body>
 </html>
