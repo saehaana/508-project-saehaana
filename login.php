@@ -24,6 +24,10 @@
         <h2>Register Here</h2>
         <form action="signup.php" method="POST">
             <p>
+                <label>Battletag:</label>
+                <input type="text" id="battletag" name="battletag"/>
+            </p>
+            <p>
                 <label>Username:</label>
                 <input type="text" id="username" name="username"/>
             </p>
@@ -31,6 +35,16 @@
                 <label>Password:</label>
                 <input type="password" id="password" name="password"/>
             </p>
+            <p>
+                <label>Email:</label>
+                <input type="email" id="email" name="email">
+            </p>
+            <p>
+                <label>First Name:</label>
+                <input type="first_name" id="first_name" name="firstName">
+            </p>
+                <label>Last Name:</label>
+                <input type="last_name" id="last_name" name="lastName">
             <p>
                 <input type="submit" id="btn2" value="Register" name="Register"/>
             </p>

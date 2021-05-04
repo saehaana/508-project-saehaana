@@ -17,7 +17,7 @@ if(isset($_POST['submit'])){
     $password = mysql_real_escape_string($password);
 
     //query database for user
-    $result = mysqli_query($conn,"SELECT count(*) as total from Player where Username = '".$username."' and Password = '".$password."'")
+    $result = mysqli_query($conn,"SELECT * from Player where Username = '".$username."' and Password = '".$password."'")
     or die(mysqli_error($conn));
     $row = mysqli_fetch_array($result);
     if($row['Username'] == $username && $row['Password'] == $password){
