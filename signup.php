@@ -13,8 +13,6 @@ $email = $_POST['email'];
 $firstName = $_POST['firstName'];
 $lastName = $_POST['lastName'];
 
-$password = md5($password); //encrypt password
-
 //check Player table if email already exists
 $querySelect = "SELECT * FROM Player WHERE email = '$email' LIMIT 1";
 $results = mysqli_query($conn,$querySelect);
@@ -25,6 +23,6 @@ $num = mysqli_num_rows($results);
         $queryInsert = "insert into Player (Battletag,Username,Password,Email,firstName,lastName)
         values ('$battletag','$username','$password','$email','$firstName','$lastName')";
         mysqli_query($conn,$queryInsert);
-        echo "registration successful";
+        echo "registration successful, please go back and login";
     }
 ?>

@@ -10,8 +10,6 @@ $conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-$password = md5($password); //encrypt password
-
 //login the user and redirect to home.php
 $query = "SELECT * FROM Player WHERE username='$username' AND password='$password'";
 $results = mysqli_query($conn,$query);

@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="drop isset use">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/process.php" beforeDir="false" afterPath="$PROJECT_DIR$/process.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
-    </list>
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="delete unused code; retry password encryption" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,20 +67,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00012" summary="login fix">
-      <created>1620138118298</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1620138118298</updated>
-    </task>
-    <task id="LOCAL-00013" summary="login fix2;changed to use of mysqli">
-      <created>1620139098614</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1620139098614</updated>
     </task>
     <task id="LOCAL-00014" summary="delete connections.php">
       <created>1620139188494</created>
@@ -416,7 +397,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620181428340</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="fixed process and signup header redirects">
+      <created>1620182391505</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1620182391505</updated>
+    </task>
+    <task id="LOCAL-00062" summary="delete unused code; retry password encryption">
+      <created>1620182620028</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1620182620028</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -444,8 +439,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix login and register buttons, edit home page to redirect user to index if not logged in" />
-    <MESSAGE value="removed inlcude(errors.php) temporarily" />
     <MESSAGE value="fix 1" />
     <MESSAGE value="test !empty instead of isset" />
     <MESSAGE value="remove include error.php" />
@@ -469,6 +462,8 @@
     <MESSAGE value="test session_destory() and unset session" />
     <MESSAGE value="similar error use removed from signup.php" />
     <MESSAGE value="drop isset use" />
-    <option name="LAST_COMMIT_MESSAGE" value="drop isset use" />
+    <MESSAGE value="fixed process and signup header redirects" />
+    <MESSAGE value="delete unused code; retry password encryption" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete unused code; retry password encryption" />
   </component>
 </project>
