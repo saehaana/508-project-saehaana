@@ -1,5 +1,4 @@
-<?php include('process.php') ?>
-<?php include('signup.php') ?>
+<?php include('signup.php'); ?>
 
 <!DOCTYPE html>
 <html>
