@@ -8,10 +8,10 @@ $conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
 
 //$errors = array(); //initialize array
 
-if(!empty($_POST['Login'])){
+//if(!empty($_POST['Login'])){
     //get values from form in login.php
-$username = $_POST['username'];
-$password = $_POST['password'];
+    $username = $_POST['username'];
+    $password = $_POST['password'];
 
     //checks for empty fields in registration form, if empty add into $errors array
 //if(empty($username)){ array_push($errors, "Username is required");}
@@ -26,8 +26,10 @@ $password = $_POST['password'];
         $_SESSION['username'] = $username;
         header('location: home.php');
     }else{
+        session_destroy();
+        unset($_SESSION['username']);
         header('location: index.php');
     }
 //}
-}
+//}
 ?>
