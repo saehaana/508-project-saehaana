@@ -23,7 +23,7 @@ ERROR_REPORTING(E_ALL);
     <br><div id="Login">
             <h2>Login Here</h2>
             <p>Please enter username and password</p>
-            <form action="signup.php" method="POST">
+            <form action="process.php" method="POST">
                 <?php include('errors.php'); ?>
                 <p>
                 <label>Username:</label>
