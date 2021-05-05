@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="removed use of error checking" />
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="test session_destory() and unset session">
+      <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,20 +69,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00008" summary="added login href link to index.php">
-      <created>1620073825790</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1620073825790</updated>
-    </task>
-    <task id="LOCAL-00009" summary="added login href link to index.php">
-      <created>1620074265422</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1620074265422</updated>
     </task>
     <task id="LOCAL-00010" summary="fixed query within $result = mysql_query">
       <created>1620076679266</created>
@@ -411,7 +399,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620179845502</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="test readd use of !empty">
+      <created>1620179984154</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1620179984154</updated>
+    </task>
+    <task id="LOCAL-00058" summary="test session_destory() and unset session">
+      <created>1620180136574</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1620180136574</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -439,8 +441,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="edited background cover to no repeat" />
-    <MESSAGE value="edited background cover, added placeholder for battletag" />
     <MESSAGE value="signup.php fix, implement empty field checks, change if username exists check to if email exists check; added password encryption" />
     <MESSAGE value="edit signup.php indentation" />
     <MESSAGE value="fix login and register buttons, edit home page to redirect user to index if not logged in" />
@@ -464,6 +464,8 @@
     <MESSAGE value="testing removed use of $errors" />
     <MESSAGE value="syntax error" />
     <MESSAGE value="removed use of error checking" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed use of error checking" />
+    <MESSAGE value="test readd use of !empty" />
+    <MESSAGE value="test session_destory() and unset session" />
+    <option name="LAST_COMMIT_MESSAGE" value="test session_destory() and unset session" />
   </component>
 </project>
