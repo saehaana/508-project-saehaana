@@ -2,6 +2,7 @@
 ini_set("display_errors", 1);
 ERROR_REPORTING(E_ALL);
 ?>
+<?php include('process.php'); ?>
 <?php include('signup.php'); ?>
 <!DOCTYPE html>
 <html>
