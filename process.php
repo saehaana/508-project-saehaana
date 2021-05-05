@@ -3,14 +3,15 @@ ini_set("display_errors", 1);
 ERROR_REPORTING(E_ALL);
 
 session_start();
-$errors = array(); //initialize array
 //connect to server
 $conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
 
+$errors = array(); //initialize array
+
 //if(!empty($_POST['Login'])){
     //get values from form in login.php
-$username = mysqli_real_escape_string($conn,$_POST['username']);
-$password = mysqli_real_escape_string($conn,$_POST['password']);
+$username = $_POST['username'];
+$password = $_POST['password'];
 
     //checks for empty fields in registration form, if empty add into $errors array
 if(empty($username)){ array_push($errors, "Username is required");}
