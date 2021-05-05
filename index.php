@@ -1,6 +1,5 @@
 <?php include('signup.php'); ?>
 
-<!DOCTYPE html>
 <html>
 <head>
     <title>Valorant Stat Tracker</title>
@@ -20,7 +19,7 @@
     <br><div id="Login">
             <h2>Login Here</h2>
             <p>Please enter username and password</p>
-            <form action="process.php" method="POST">
+            <form action="signup.php" method="POST">
                 <?php include('errors.php'); ?>
                 <p>
                 <label>Username:</label>
