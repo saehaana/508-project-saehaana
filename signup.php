@@ -44,4 +44,5 @@ if(!empty($_POST['Register'])){
         header('location: index.php');
     }
 }
+
 ?>

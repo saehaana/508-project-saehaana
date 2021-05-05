@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="fix 1">
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="remove include error.php">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/errors.php" beforeDir="false" afterPath="$PROJECT_DIR$/errors.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -317,7 +317,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620172974054</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="test !empty instead of isset">
+      <created>1620173969743</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1620173969743</updated>
+    </task>
+    <task id="LOCAL-00037" summary="remove include error.php">
+      <created>1620174082217</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1620174082217</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -345,8 +359,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="html test change" />
-    <MESSAGE value="added multiple php files involving players, match, and login; &#10;implemented functionality to login.php;&#10;changed graphic using style.css;&#10;implemented functionality to process.php" />
     <MESSAGE value="added login href link to index.php" />
     <MESSAGE value="fixed query within $result = mysql_query" />
     <MESSAGE value="login fix" />
@@ -370,6 +382,8 @@
     <MESSAGE value="fix login and register buttons, edit home page to redirect user to index if not logged in" />
     <MESSAGE value="removed inlcude(errors.php) temporarily" />
     <MESSAGE value="fix 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix 1" />
+    <MESSAGE value="test !empty instead of isset" />
+    <MESSAGE value="remove include error.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove include error.php" />
   </component>
 </project>
