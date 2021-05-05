@@ -8,7 +8,7 @@ $errors = array(); //initialize array
 $conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
 
 //register
-if(!empty($_POST['Register'])){
+if(isset($_POST['Register'])){
     //get values from registration form
     $battletag = mysqli_real_escape_string($conn,$_POST['battletag']);
     $username = mysqli_real_escape_string($conn,$_POST['username']);
@@ -47,7 +47,7 @@ if(!empty($_POST['Register'])){
         header('location: index.php');
     }
 }
-if(!empty($_POST['Login'])){
+if(isset($_POST['Login'])){
     //get values from form in login.php
     $username = mysqli_real_escape_string($conn,$_POST['username']);
     $password = mysqli_real_escape_string($conn,$_POST['password']);
