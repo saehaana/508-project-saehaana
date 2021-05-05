@@ -20,7 +20,7 @@ if(!empty($_POST['Register'])){
     if(empty($password)){ array_push($errors, "Password is required");}
     if(empty($email)){ array_push($errors, "Email is required");}
     if(empty($first_name)){ array_push($errors, "First name is required");}
-    if(empty($last_name){ array_push($errors, "Last name is required");}
+    if(empty($last_name)){ array_push($errors, "Last name is required");}
 
     //check Player table if email already exists
     $query = "select * from Player where email = '$email' LIMIT 1";
