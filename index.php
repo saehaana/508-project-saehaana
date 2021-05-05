@@ -15,7 +15,7 @@
     </style>
     <h1>Valorant Stat Tracker</h1>
     <br>Welcome to Valorant Stat Tracker! Login or register below to view or add your matches.
-    <br><div id="login">
+    <br><div id="Login">
             <h2>Login Here</h2>
             <form action="process.php" method="POST">
                 <p>
@@ -30,7 +30,7 @@
                 <input type="submit" id="btn1" value="Login" name="Login"/>
                 </p>
             </form>
-        <div id="signup">
+        <div id="Register">
             <h3>Register Here</h3>
             <p>Please fill in all fields below</p>
             <form action="signup.php" method="POST">

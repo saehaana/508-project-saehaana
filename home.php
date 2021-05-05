@@ -13,6 +13,7 @@ if (isset($_GET['logout'])) {
 }
 ?>
 
+<!DOCTYPE HTML>
 <html>
 <head>
     <title>Home</title>
