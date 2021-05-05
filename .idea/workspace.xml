@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="test session_destory() and unset session">
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="similar error use removed from signup.php">
       <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,13 +69,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00010" summary="fixed query within $result = mysql_query">
-      <created>1620076679266</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1620076679266</updated>
     </task>
     <task id="LOCAL-00011" summary="fixed query within $result = mysql_query">
       <created>1620076881722</created>
@@ -413,7 +406,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620180136574</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="similar error use removed from signup.php">
+      <created>1620180491821</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1620180491821</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -441,7 +441,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="signup.php fix, implement empty field checks, change if username exists check to if email exists check; added password encryption" />
     <MESSAGE value="edit signup.php indentation" />
     <MESSAGE value="fix login and register buttons, edit home page to redirect user to index if not logged in" />
     <MESSAGE value="removed inlcude(errors.php) temporarily" />
@@ -466,6 +465,7 @@
     <MESSAGE value="removed use of error checking" />
     <MESSAGE value="test readd use of !empty" />
     <MESSAGE value="test session_destory() and unset session" />
-    <option name="LAST_COMMIT_MESSAGE" value="test session_destory() and unset session" />
+    <MESSAGE value="similar error use removed from signup.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="similar error use removed from signup.php" />
   </component>
 </project>

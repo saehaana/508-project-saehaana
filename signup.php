@@ -38,11 +38,11 @@ $conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
 
     //registers user if no errors exist
     //if(count($errors) == 0){
-        $password = md5($password); //encrypt password
+        //$password = md5($password); //encrypt password
         $query = "insert into Player (Battletag,Username,Password,Email,firstName,lastName)
         values ('$battletag','$username','$password','$email','$firstName','$lastName')";
         mysqli_query($conn,$query);
-        $_SESSION['username'] = $username;
+        //$_SESSION['username'] = $username;
         header('location: index.php');
     //}
 //}
