@@ -22,12 +22,11 @@ $conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
     //$password = md5($password); //encrypt password
     $query = "SELECT * FROM Player WHERE username='$username' AND password='$password'";
     $results = mysqli_query($conn,$query);
-    if(($results) == 1){
+    $num = mysqli_num_rows($results);
+    if($num == 1){
         $_SESSION['username'] = $username;
         header('location: home.php');
     }else{
-        session_destroy();
-        unset($_SESSION['username']);
         header('location: index.php');
     }
 //}
