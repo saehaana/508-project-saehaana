@@ -30,6 +30,6 @@ $password = $_POST['password'];
         echo "Wrong username or password";
         header('location: index.php');
     }
-}
+//}
 //}
 ?>
