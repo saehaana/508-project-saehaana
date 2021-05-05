@@ -2,8 +2,7 @@
 ini_set("display_errors", 1);
 ERROR_REPORTING(E_ALL);
 ?>
-<?php include('process.php'); ?>
-<?php include('signup.php'); ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,7 +24,7 @@ ERROR_REPORTING(E_ALL);
             <h2>Login Here</h2>
             <p>Please enter username and password</p>
             <form action="process.php" method="POST">
-                <?php include('errors.php'); ?>
+
                 <p>
                 <label>Username:</label>
                 <input type="text" name="username">
@@ -42,7 +41,7 @@ ERROR_REPORTING(E_ALL);
             <h3>Register Here</h3>
             <p>Please fill in all fields below</p>
             <form action="signup.php" method="POST">
-                <?php include('errors.php'); ?>
+
                 <p>
                 <label>Battletag:</label>
                 <input type="text" placeholder="4 characters e.g. #NA1" name="battletag">

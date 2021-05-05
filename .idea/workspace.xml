@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="testing just post for user and pass" />
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="syntax error" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,20 +67,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00005" summary="php website test change">
-      <created>1620020195544</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1620020195544</updated>
-    </task>
-    <task id="LOCAL-00006" summary="html test change">
-      <created>1620020515134</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1620020515134</updated>
     </task>
     <task id="LOCAL-00007" summary="added multiple php files involving players, match, and login; &#10;implemented functionality to login.php;&#10;changed graphic using style.css;&#10;implemented functionality to process.php">
       <created>1620073611501</created>
@@ -411,7 +397,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620179146488</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="testing removed use of $errors">
+      <created>1620179458889</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1620179458889</updated>
+    </task>
+    <task id="LOCAL-00055" summary="syntax error">
+      <created>1620179501795</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1620179501795</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -439,8 +439,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="process fix attempt" />
-    <MESSAGE value="process fix successful, cleanup process.php; added css file to fix home.php image placement;&#10;return user to index after successful signup" />
     <MESSAGE value="added cover image to index page" />
     <MESSAGE value="edited background cover to no repeat" />
     <MESSAGE value="edited background cover, added placeholder for battletag" />
@@ -464,6 +462,8 @@
     <MESSAGE value="fixed sql query in process.php" />
     <MESSAGE value="what if (!empty $_POST) removed" />
     <MESSAGE value="testing just post for user and pass" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing just post for user and pass" />
+    <MESSAGE value="testing removed use of $errors" />
+    <MESSAGE value="syntax error" />
+    <option name="LAST_COMMIT_MESSAGE" value="syntax error" />
   </component>
 </project>
