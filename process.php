@@ -8,7 +8,7 @@ $conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
 
 //$errors = array(); //initialize array
 
-//if(!empty($_POST['Login'])){
+if(!empty($_POST['Login'])){
     //get values from form in login.php
 $username = $_POST['username'];
 $password = $_POST['password'];
@@ -29,5 +29,5 @@ $password = $_POST['password'];
         header('location: index.php');
     }
 //}
-//}
+}
 ?>
