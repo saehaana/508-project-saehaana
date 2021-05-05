@@ -1,5 +1,7 @@
+<?php
 ini_set("display_errors", 1);
 ERROR_REPORTING(E_ALL);
+?>
 <?php include('signup.php'); ?>
 <!DOCTYPE html>
 <html>
