@@ -1,12 +1,13 @@
 <?php
 ini_set("display_errors", 1);
 ERROR_REPORTING(E_ALL);
+
 session_start();
 $errors = array(); //initialize array
 //connect to server
 $conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
 
-if(!empty($_POST['Login'])){
+//if(!empty($_POST['Login'])){
     //get values from form in login.php
     $username = mysqli_real_escape_string($conn,$_POST['username']);
     $password = mysqli_real_escape_string($conn,$_POST['password']);
@@ -28,5 +29,5 @@ if(!empty($_POST['Login'])){
             array_push($errors, "Wrong username or password");
         }
     }
-}
+//}
 ?>
