@@ -5,7 +5,7 @@ $errors = array(); //initialize array
 $conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
 
 //register
-if(isset($_POST['Register'])){
+if(!empty($_POST['Register'])){
     //get values from registration form
     $battletag = mysqli_real_escape_string($conn,$_POST['battletag']);
     $username = mysqli_real_escape_string($conn,$_POST['username']);
@@ -23,8 +23,8 @@ if(isset($_POST['Register'])){
     if(empty($last_name){ array_push($errors, "Last name is required");}
 
     //check Player table if email already exists
-    $sql = "select * from Player where email = '$email' LIMIT 1";
-    $result = mysqli_query($conn,$sql);
+    $query = "select * from Player where email = '$email' LIMIT 1";
+    $result = mysqli_query($conn,$query);
     $checkEmail = mysqli_fetch_assoc($result);
 
     if($checkEmail){ //if email exists

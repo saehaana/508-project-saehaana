@@ -17,7 +17,9 @@
     <br>Welcome to Valorant Stat Tracker! Login or register below to view or add your matches.
     <br><div id="Login">
             <h2>Login Here</h2>
+            <p>Please enter username and password</p>
             <form action="process.php" method="POST">
+                <?php include('errors.php'); ?>
                 <p>
                 <label>Username:</label>
                 <input type="text" id="username" name="username"/>
@@ -34,6 +36,7 @@
             <h3>Register Here</h3>
             <p>Please fill in all fields below</p>
             <form action="signup.php" method="POST">
+                <?php include('errors.php'); ?>
                 <p>
                 <label>Battletag:</label>
                 <input type="text" id="battletag" placeholder="4 characters e.g. #NA1" name="battletag"/>
