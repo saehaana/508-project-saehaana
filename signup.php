@@ -25,4 +25,6 @@ $num = mysqli_num_rows($results);
         mysqli_query($conn,$queryInsert);
         echo "registration successful, please go back and login";
     }
+    //*******add if field empty please enter in form; problem:
+    //registering blank form still counts as registration*******//
 ?>

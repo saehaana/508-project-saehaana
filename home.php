@@ -23,11 +23,20 @@ if(!isset($_SESSION['username'])) {
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <style>
+        body{
+        background-image: url('cover.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        }
+    </style>
     <a href="logout.php"> Logout </a>
     <h1> Welcome <?php echo $_SESSION['username']; ?> </h1>
     <p> Things to do: </p>
-    <br> Add matches to your match history:
-    <br> Edit stats for a match you already entered:
+    <br> Add matches to your match history: <a href="addMatch.php"> Add Matches </a>
+    <br> Edit stats for a match you already entered: <a href="editMatch.php"> Edit Matches </a>
     <br> Or view your matches below:
+
 </body>
 </html>
