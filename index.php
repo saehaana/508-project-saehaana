@@ -23,8 +23,7 @@ ERROR_REPORTING(E_ALL);
     <br><div id="Login">
             <h2>Login Here</h2>
             <p>Please enter username and password</p>
-            <form action="process.php" method="POST">
-
+            <form action="login.php" method="POST">
                 <p>
                 <label>Username:</label>
                 <input type="text" name="username">
@@ -40,8 +39,7 @@ ERROR_REPORTING(E_ALL);
         <div id="Register">
             <h3>Register Here</h3>
             <p>Please fill in all fields below</p>
-            <form action="signup.php" method="POST">
-
+            <form action="register.php" method="POST">
                 <p>
                 <label>Battletag:</label>
                 <input type="text" placeholder="4 characters e.g. #NA1" name="battletag">

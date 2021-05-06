@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="remove password encryption">
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="added cover img to home page,link addMatch.php and editMatch.php to corresponding text by href;listed possible problems in signup.php">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addMatch.php" beforeDir="false" afterPath="$PROJECT_DIR$/addMatch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editMatch.php" beforeDir="false" afterPath="$PROJECT_DIR$/editMatch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/match.php" beforeDir="false" afterPath="$PROJECT_DIR$/matchData.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,13 +75,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00015" summary="remake connections.php to dbconnection.php">
-      <created>1620140213762</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1620140213762</updated>
     </task>
     <task id="LOCAL-00016" summary="added signup.php, added temp description to readme, readded sqlinjection protection into process.php">
       <created>1620142447031</created>
@@ -414,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620182774826</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="added cover img to home page,link addMatch.php and editMatch.php to corresponding text by href;listed possible problems in signup.php">
+      <created>1620270980365</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1620270980366</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -442,7 +447,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test !empty instead of isset" />
     <MESSAGE value="remove include error.php" />
     <MESSAGE value="reattempting includes" />
     <MESSAGE value="reattempting includes, merge process with include" />
@@ -467,6 +471,7 @@
     <MESSAGE value="fixed process and signup header redirects" />
     <MESSAGE value="delete unused code; retry password encryption" />
     <MESSAGE value="remove password encryption" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove password encryption" />
+    <MESSAGE value="added cover img to home page,link addMatch.php and editMatch.php to corresponding text by href;listed possible problems in signup.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="added cover img to home page,link addMatch.php and editMatch.php to corresponding text by href;listed possible problems in signup.php" />
   </component>
 </project>
