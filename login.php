@@ -6,7 +6,7 @@ session_start();
 //connect to server
 $conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
 
-//get values from form in login.php
+//get values from login form
 $username = $_POST['username'];
 $password = $_POST['password'];
 

@@ -2,6 +2,7 @@
 ini_set("display_errors", 1);
 ERROR_REPORTING(E_ALL);
 
+
 ?>
 
 <!DOCTYPE HTML>
@@ -29,8 +30,6 @@ ERROR_REPORTING(E_ALL);
             <option value="Loss">Loss</option>
             <option value="Draw">Draw</option>
           </select>
-          <br><br>
-          <input type="submit" value="Submit">
         </form>
         <form action="matchData.php" method="POST">
         <label for="Game_Mode">Game type:</label>
@@ -38,15 +37,11 @@ ERROR_REPORTING(E_ALL);
             <option value="Ranked">Ranked</option>
             <option value="Unranked">Unranked</option>
           </select>
-          <br><br>
-          <input type="submit" value="Submit">
         </form>
         <form action="matchData.php" method="POST">
           <p>
           <label>Combat Score:</label>
           <input type="text" placeholder="Enter a number up to 3 digits e.g. 253" name="Combat Score">
-          </p>
-          <input type="submit" value="Combat_score" name="Combat_score">
           </p>
         </form>
         <form action="matchData.php" method="POST">
@@ -68,8 +63,6 @@ ERROR_REPORTING(E_ALL);
             <option value="Viper"></option>
             <option value="Yoru"></option>
           </select>
-          <br><br>
-          <input type="submit" value="Submit">
         </form>
         <form action="matchData.php" method="POST">
         <label for="Map">Map:</label>
@@ -81,8 +74,6 @@ ERROR_REPORTING(E_ALL);
             <option value="Icebox">Breeze</option>
             <option value="Split">Breeze</option>
           </select>
-          <br><br>
-          <input type="submit" value="Submit">
         </form>
         </form>
         <form action="matchData.php" method="POST">
