@@ -2,7 +2,12 @@
 ini_set("display_errors", 1);
 ERROR_REPORTING(E_ALL);
 
-
+session_start();
+//if user not logged in, redirect to index.php
+if(!isset($_SESSION['username'])) {
+    $_SESSION['msg'] = "You must log in first";
+  	header('location: index.php');
+}
 ?>
 
 <!DOCTYPE HTML>
@@ -20,6 +25,7 @@ ERROR_REPORTING(E_ALL);
         background-size: cover;
         }
     </style>
+    <a href="logout.php"> Logout </a>
     <div id="addMatch">
         <h1>Match</h1>
         <p>Please select an option from each drop down box</p>
