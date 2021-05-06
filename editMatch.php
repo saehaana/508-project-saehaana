@@ -46,21 +46,21 @@ ERROR_REPORTING(E_ALL);
         <form action="matchData.php" method="POST">
         <label for="Agent">Agent:</label>
           <select name="Agent" id="Agent">
-            <option value="Astra"></option>
-            <option value="Breach"></option>
-            <option value="Brimstone"></option>
-            <option value="Cypher"></option>
-            <option value="Jett"></option>
-            <option value="Killjoy"></option>
-            <option value="Omen"></option>
-            <option value="Phoenix"></option>
-            <option value="Raze"></option>
-            <option value="Reyna"></option>
-            <option value="Sage"></option>
-            <option value="Skye"></option>
-            <option value="Sova"></option>
-            <option value="Viper"></option>
-            <option value="Yoru"></option>
+            <option value="Astra">Astra</option>
+            <option value="Breach">Breach</option>
+            <option value="Brimstone">Brimstone</option>
+            <option value="Cypher">Cypher</option>
+            <option value="Jett">Jett</option>
+            <option value="Killjoy">Killjoy</option>
+            <option value="Omen">Omen</option>
+            <option value="Phoenix">Phoenix</option>
+            <option value="Raze">Raze</option>
+            <option value="Reyna">Reyna</option>
+            <option value="Sage">Sage</option>
+            <option value="Skye">Skye</option>
+            <option value="Sova">Sova</option>
+            <option value="Viper">Viper</option>
+            <option value="Yoru">Yoru</option>
           </select>
         </form>
         <form action="matchData.php" method="POST">
