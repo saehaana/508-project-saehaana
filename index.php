@@ -54,7 +54,7 @@ ERROR_REPORTING(E_ALL);
                 </p>
                 <p>
                 <label>Email:</label>
-                <input type="email" name="email" >
+                <input type="text" name="email" >
                 </p>
                 <p>
                 <label>First Name:</label>
