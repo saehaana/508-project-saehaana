@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="check if email echo on home" />
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="add email field to login" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,34 +67,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00040" summary="reattempting includes, merge process with include">
-      <created>1620176181278</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1620176181278</updated>
-    </task>
-    <task id="LOCAL-00041" summary="reattempting includes, merge process with include;&#10;added error handler to help debug">
-      <created>1620176499643</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1620176499643</updated>
-    </task>
-    <task id="LOCAL-00042" summary="reattempting includes, merge process with include;&#10;added error handler to help debug">
-      <created>1620176534329</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1620176534329</updated>
-    </task>
-    <task id="LOCAL-00043" summary="add php tags">
-      <created>1620176627102</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1620176627102</updated>
     </task>
     <task id="LOCAL-00044" summary="error debugger reported syntax error">
       <created>1620176691209</created>
@@ -411,7 +383,35 @@
       <option name="project" value="LOCAL" />
       <updated>1620460024486</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="check if email echo on home">
+      <created>1620460125246</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1620460125246</updated>
+    </task>
+    <task id="LOCAL-00090" summary="check if email echo on home">
+      <created>1620460152491</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1620460152491</updated>
+    </task>
+    <task id="LOCAL-00091" summary="add session start to index">
+      <created>1620460316925</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1620460316925</updated>
+    </task>
+    <task id="LOCAL-00092" summary="add email field to login">
+      <created>1620460627226</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1620460627226</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -439,8 +439,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="similar error use removed from signup.php" />
-    <MESSAGE value="drop isset use" />
     <MESSAGE value="fixed process and signup header redirects" />
     <MESSAGE value="delete unused code; retry password encryption" />
     <MESSAGE value="remove password encryption" />
@@ -464,6 +462,8 @@
     <MESSAGE value="attempt to access session email using get in login.php" />
     <MESSAGE value="testing null coalescing operator to fix undefined array error" />
     <MESSAGE value="check if email echo on home" />
-    <option name="LAST_COMMIT_MESSAGE" value="check if email echo on home" />
+    <MESSAGE value="add session start to index" />
+    <MESSAGE value="add email field to login" />
+    <option name="LAST_COMMIT_MESSAGE" value="add email field to login" />
   </component>
 </project>

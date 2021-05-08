@@ -45,7 +45,7 @@ else{
         </form>
         <form action="matchData.php" method="POST">
         <label for="Game_Type">Game Type:</label>
-          <select name="Game_Type">
+          <select id="Game_Type" name="Game_Type">
             <option value="Ranked">Ranked</option>
             <option value="Unranked">Unranked</option>
           </select>
@@ -58,7 +58,7 @@ else{
         </form>
         <form action="matchData.php" method="POST">
         <label for="Agent">Agent:</label>
-          <select name="Agent">
+          <select id = "Agent" name="Agent">
             <option value="Astra">Astra</option>
             <option value="Breach">Breach</option>
             <option value="Brimstone">Brimstone</option>
@@ -78,7 +78,7 @@ else{
         </form>
         <form action="matchData.php" method="POST">
         <label for="Map">Map:</label>
-          <select name="Map">
+          <select id="Map" name="Map">
             <option value="Ascent">Ascent</option>
             <option value="Bind">Bind</option>
             <option value="Breeze">Breeze</option>
@@ -90,7 +90,7 @@ else{
         </form>
         <form action="matchData.php" method="POST">
         <label for="Weapon">Weapon:</label>
-          <select name="Weapon">
+          <select id="Weapon" name="Weapon">
             <option value="Phantom">Phantom</option>
             <option value="Vandal">Vandal</option>
           </select>
