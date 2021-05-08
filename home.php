@@ -8,6 +8,7 @@ if(!isset($_SESSION['username'])) {
     $_SESSION['msg'] = "You must log in first";
   	header('location: index.php');
 }
+$email=$_GET['email'];
 //if user clicks logout, redirect to index.php
 /*if (isset($_GET['logout'])) {
     session_destroy();

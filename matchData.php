@@ -5,12 +5,6 @@ ERROR_REPORTING(E_ALL);
 session_start();
 //connect to server
 $conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
-if(isset($_SESSION['email'])){
-    echo $_SESSION['email'];
-}
-else{
-    echo 'email not set';
-}
 
 //get values from addMatch form
 $Game_Status = $_POST['Game_Status'];
@@ -20,7 +14,12 @@ $Agent = $_POST['Agent'];
 $Map = $_POST['Map'];
 $Weapon = $_POST['Weapon'];
 $email = $_GET['email'];
-
+if(isset($_SESSION['email'])){
+    echo $_SESSION['email'];
+}
+else{
+    echo 'email not set';
+}
 
 //submit form to db and redirect to home.php
 $queryInsert = "insert into Match_History (Email,Game_Status,Game_Type,Combat_Score,Agent,Map,Weapon)
