@@ -41,10 +41,53 @@ else{
             <option value="Win">Win</option>
             <option value="Loss">Loss</option>
             <option value="Draw">Draw</option>
+            <label for="Game_Type">Game Type:</label>
+                      <select id="Game_Type" name="Game_Type">
+                        <option value="Ranked">Ranked</option>
+                        <option value="Unranked">Unranked</option>
+<p>
+          <label>Combat Score:</label>
+          <input type="text" placeholder="Enter a number up to 3 digits e.g. 253" name="Combat_Score">
+          </p>
           </select>
+          <label for="Agent">Agent:</label>
+                    <select id = "Agent" name="Agent">
+                      <option value="Astra">Astra</option>
+                      <option value="Breach">Breach</option>
+                      <option value="Brimstone">Brimstone</option>
+                      <option value="Cypher">Cypher</option>
+                      <option value="Jett">Jett</option>
+                      <option value="Killjoy">Killjoy</option>
+                      <option value="Omen">Omen</option>
+                      <option value="Phoenix">Phoenix</option>
+                      <option value="Raze">Raze</option>
+                      <option value="Reyna">Reyna</option>
+                      <option value="Sage">Sage</option>
+                      <option value="Skye">Skye</option>
+                      <option value="Sova">Sova</option>
+                      <option value="Viper">Viper</option>
+                      <option value="Yoru">Yoru</option>
+                    </select>
+<label for="Map">Map:</label>
+          <select id="Map" name="Map">
+            <option value="Ascent">Ascent</option>
+            <option value="Bind">Bind</option>
+            <option value="Breeze">Breeze</option>
+            <option value="Haven">Haven</option>
+            <option value="Icebox">Icebox</option>
+            <option value="Split">Split</option>
+          </select>
+<label for="Weapon">Weapon:</label>
+          <select id="Weapon" name="Weapon">
+            <option value="Phantom">Phantom</option>
+            <option value="Vandal">Vandal</option>
+          </select>
+          <br><br>
           <input type="submit">
         </form>
-        <form action="matchData.php" method="POST">
+
+
+     /*   <form action="matchData.php" method="POST">
         <label for="Game_Type">Game Type:</label>
           <select id="Game_Type" name="Game_Type">
             <option value="Ranked">Ranked</option>
@@ -100,7 +143,7 @@ else{
           </select>
           <br><br>
          <input type="submit">
-        </form>
+        </form>***/
         </div>
 </body>
 </html>
