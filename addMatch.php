@@ -1,8 +1,8 @@
 <?php
+session_start();
 ini_set("display_errors", 1);
 ERROR_REPORTING(E_ALL);
 
-session_start();
 //if user not logged in, redirect to index.php
 if(!isset($_SESSION['username'])) {
     $_SESSION['msg'] = "You must log in first";
