@@ -23,7 +23,7 @@ if($Agent == 'Cypher' || $Agent == 'Killjoy' || $Agent == 'Sage'){$AgentType = '
 if($Agent == 'Jett' || $Agent == 'Phoenix' || $Agent == 'Raze' || $Agent == '$Reyna' || $Agent == 'Yoru'){$AgentType = 'Duelist';}
 
 //associate weapons with weapon type
-if($WeaponType == 'Phantom' || $WeaponType == 'Vandal'){$WeaponType = 'Rifle'};
+if($Weapon == 'Phantom' || $Weapon == 'Vandal'){$WeaponType = 'Rifle'};
 
 //submit form to db
 $queryInsert1 = "insert into Match_History values ('$email','$Match_ID','$Game_Status','$date')";
