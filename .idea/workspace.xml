@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="added missing agent names to agent field in editMatch.php; added logout button to add and edit match; checks if user is in session for both add and edit match">
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="fixed duplicate map names appearing in map field of addMatch submission form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addMatch.php" beforeDir="false" afterPath="$PROJECT_DIR$/addMatch.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matchData.php" beforeDir="false" afterPath="$PROJECT_DIR$/matchData.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,13 +70,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00021" summary="added more fields to signup form (battltag,email,firstname,lastname)">
-      <created>1620156455054</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1620156455054</updated>
     </task>
     <task id="LOCAL-00022" summary="fixed sql query">
       <created>1620156813645</created>
@@ -415,7 +407,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620275308321</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="fixed duplicate map names appearing in map field of addMatch submission form">
+      <created>1620446266340</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1620446266341</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -443,7 +442,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="error debugger reported syntax error" />
     <MESSAGE value="error debugger added to php files" />
     <MESSAGE value="fixed login query" />
     <MESSAGE value="fix php code showing in registration fields when refreshing after failed login or registration" />
@@ -468,6 +466,7 @@
     <MESSAGE value="added missing agent names to agent field in addMatch.php" />
     <MESSAGE value="added missing agent names to agent field in editMatch.php" />
     <MESSAGE value="added missing agent names to agent field in editMatch.php; added logout button to add and edit match; checks if user is in session for both add and edit match" />
-    <option name="LAST_COMMIT_MESSAGE" value="added missing agent names to agent field in editMatch.php; added logout button to add and edit match; checks if user is in session for both add and edit match" />
+    <MESSAGE value="fixed duplicate map names appearing in map field of addMatch submission form" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed duplicate map names appearing in map field of addMatch submission form" />
   </component>
 </project>
