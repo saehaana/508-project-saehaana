@@ -20,8 +20,7 @@ if($Agent == Astra){$AgentType=$_POST['Controller'];}
 
 
 //submit form to db
-$queryInsert1 = "insert into Match_History (Email,Game_Status,Date)
-values ('$email','$Game_Status','$date')";
+$queryInsert1 = "insert into Match_History values ('$email','$Match_ID','$Game_Status','$date')";
 mysqli_query($conn,$queryInsert1);
 
 $queryInsert2 = "insert into Game_Type (MatchID,Game_Type) values ('$Match_ID','$Game_Type')";
