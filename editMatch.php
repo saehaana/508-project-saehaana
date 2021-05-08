@@ -39,7 +39,7 @@ if(!isset($_SESSION['username'])) {
         <p>e.g. 'Email: email@example.com' changes your current email to the email inputted</p>
         <p>
         <label>Email:</label>
-        <input type="emailUpdate" name="emailUpdate">
+        <input type="email" name="emailUpdate">
         </p>
         <p>
         <label>Date:</label>
