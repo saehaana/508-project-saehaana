@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="lowercase $email">
-      <change beforePath="$PROJECT_DIR$/matchData.php" beforeDir="false" afterPath="$PROJECT_DIR$/matchData.php" afterDir="false" />
-    </list>
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="post email from login  to session" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,13 +67,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00026" summary="process fix successful, cleanup process.php; added css file to fix home.php image placement;&#10;return user to index after successful signup">
-      <created>1620158564781</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1620158564781</updated>
     </task>
     <task id="LOCAL-00027" summary="added cover image to index page">
       <created>1620163468385</created>
@@ -413,7 +404,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620448547866</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="post email from login  to session">
+      <created>1620448935227</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1620448935227</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -441,7 +439,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add errors array to process.php" />
     <MESSAGE value="fixed sql query in process.php" />
     <MESSAGE value="what if (!empty $_POST) removed" />
     <MESSAGE value="testing just post for user and pass" />
@@ -466,6 +463,7 @@
     <MESSAGE value="fixed naming key error when getting values from addMatch form" />
     <MESSAGE value="added user's email to session login, added email field into addMatch query" />
     <MESSAGE value="lowercase $email" />
-    <option name="LAST_COMMIT_MESSAGE" value="lowercase $email" />
+    <MESSAGE value="post email from login  to session" />
+    <option name="LAST_COMMIT_MESSAGE" value="post email from login  to session" />
   </component>
 </project>
