@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="test email field in addmatch">
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="edit add match query">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addMatch.php" beforeDir="false" afterPath="$PROJECT_DIR$/addMatch.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matchData.php" beforeDir="false" afterPath="$PROJECT_DIR$/matchData.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,27 +70,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00052" summary="what if (!empty $_POST) removed">
-      <created>1620178940777</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1620178940777</updated>
-    </task>
-    <task id="LOCAL-00053" summary="testing just post for user and pass">
-      <created>1620179146488</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1620179146488</updated>
-    </task>
-    <task id="LOCAL-00054" summary="testing removed use of $errors">
-      <created>1620179458889</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1620179458889</updated>
     </task>
     <task id="LOCAL-00055" summary="syntax error">
       <created>1620179501795</created>
@@ -417,7 +393,28 @@
       <option name="project" value="LOCAL" />
       <updated>1620463279583</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="db edit, checking functionality, edit add match form fields to match db columns">
+      <created>1620480938830</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1620480938830</updated>
+    </task>
+    <task id="LOCAL-00102" summary="fixed fatal error">
+      <created>1620481034759</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1620481034759</updated>
+    </task>
+    <task id="LOCAL-00103" summary="edit add match query">
+      <created>1620481150409</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1620481150409</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -445,9 +442,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added missing agent names to agent field in editMatch.php; added logout button to add and edit match; checks if user is in session for both add and edit match" />
-    <MESSAGE value="fixed duplicate map names appearing in map field of addMatch submission form" />
-    <MESSAGE value="allowed addMatch submission to db, sends info to Match_History table" />
     <MESSAGE value="fixed naming key error when getting values from addMatch form" />
     <MESSAGE value="added user's email to session login, added email field into addMatch query" />
     <MESSAGE value="lowercase $email" />
@@ -470,6 +464,9 @@
     <MESSAGE value="added missing /select for game status field, removed /select from combat score field, cleaned up html indentation" />
     <MESSAGE value="echo email into addmatch" />
     <MESSAGE value="test email field in addmatch" />
-    <option name="LAST_COMMIT_MESSAGE" value="test email field in addmatch" />
+    <MESSAGE value="db edit, checking functionality, edit add match form fields to match db columns" />
+    <MESSAGE value="fixed fatal error" />
+    <MESSAGE value="edit add match query" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit add match query" />
   </component>
 </project>
