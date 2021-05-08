@@ -5,7 +5,7 @@ ERROR_REPORTING(E_ALL);
 session_start();
 //connect to server
 $conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
-if(isset($_SESSION['email']){
+if(isset($_SESSION['email'])){
     echo $_SESSION['email'];
 }
 else{

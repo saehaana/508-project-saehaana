@@ -8,7 +8,7 @@ if(!isset($_SESSION['username'])) {
     $_SESSION['msg'] = "You must log in first";
   	header('location: index.php');
 }
-if(isset($_SESSION['email']){
+if(isset($_SESSION['email'])){
     echo $_SESSION['email'];
 }
 else{
