@@ -19,11 +19,12 @@ $Combat_Score = $_POST['Combat_Score'];
 $Agent = $_POST['Agent'];
 $Map = $_POST['Map'];
 $Weapon = $_POST['Weapon'];
+$email = $_REQUEST['email'];
 
 
 //submit form to db and redirect to home.php
 $queryInsert = "insert into Match_History (Email,Game_Status,Game_Type,Combat_Score,Agent,Map,Weapon)
-values (echo $_SESSION['email'],'$Game_Status','$Game_Type','$Combat_Score','$Agent','$Map','$Weapon')";
+values ('$email','$Game_Status','$Game_Type','$Combat_Score','$Agent','$Map','$Weapon')";
 mysqli_query($conn,$queryInsert);
 //echo "match added successfully, go back to view the match under match history";
 ?>

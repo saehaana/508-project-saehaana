@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="changed within query: Game_Mode to Game_Type to match db column">
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="session email check missing parentheses">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,27 +69,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00029" summary="edited background cover, added placeholder for battletag">
-      <created>1620166227688</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1620166227688</updated>
-    </task>
-    <task id="LOCAL-00030" summary="signup.php fix, implement empty field checks, change if username exists check to if email exists check; added password encryption">
-      <created>1620169321157</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1620169321157</updated>
-    </task>
-    <task id="LOCAL-00031" summary="edit signup.php indentation">
-      <created>1620169418126</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1620169418126</updated>
     </task>
     <task id="LOCAL-00032" summary="changed process implementation formatting to match signup">
       <created>1620171626862</created>
@@ -413,7 +392,28 @@
       <option name="project" value="LOCAL" />
       <updated>1620449175162</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="session email check">
+      <created>1620449712736</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1620449712736</updated>
+    </task>
+    <task id="LOCAL-00079" summary="session email check">
+      <created>1620449755447</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1620449755447</updated>
+    </task>
+    <task id="LOCAL-00080" summary="session email check missing parentheses">
+      <created>1620449948259</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1620449948259</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -441,8 +441,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="testing just post for user and pass" />
-    <MESSAGE value="testing removed use of $errors" />
     <MESSAGE value="syntax error" />
     <MESSAGE value="removed use of error checking" />
     <MESSAGE value="test readd use of !empty" />
@@ -466,6 +464,8 @@
     <MESSAGE value="post email from login  to session" />
     <MESSAGE value="attempt to get email using echo" />
     <MESSAGE value="changed within query: Game_Mode to Game_Type to match db column" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed within query: Game_Mode to Game_Type to match db column" />
+    <MESSAGE value="session email check" />
+    <MESSAGE value="session email check missing parentheses" />
+    <option name="LAST_COMMIT_MESSAGE" value="session email check missing parentheses" />
   </component>
 </project>
