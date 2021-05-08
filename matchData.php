@@ -23,6 +23,7 @@ if($Agent == 'Cypher' || $Agent == 'Killjoy' || $Agent == 'Sage'){$AgentType = '
 if($Agent == 'Jett' || $Agent == 'Phoenix' || $Agent == 'Raze' || $Agent == '$Reyna' || $Agent == 'Yoru'){$AgentType = 'Duelist';}
 
 //associate weapons with weapon type
+$WeaponType;
 if($Weapon == 'Phantom' || $Weapon == 'Vandal'){$WeaponType = 'Rifle'};
 
 //submit form to db
