@@ -42,6 +42,7 @@ else{
             <option value="Loss">Loss</option>
             <option value="Draw">Draw</option>
           </select>
+          <input type="submit">
         </form>
         <form action="matchData.php" method="POST">
         <label for="Game_Type">Game Type:</label>
@@ -49,12 +50,14 @@ else{
             <option value="Ranked">Ranked</option>
             <option value="Unranked">Unranked</option>
           </select>
+          <input type="submit">
         </form>
         <form action="matchData.php" method="POST">
           <p>
           <label>Combat Score:</label>
           <input type="text" placeholder="Enter a number up to 3 digits e.g. 253" name="Combat_Score">
           </p>
+          <input type="submit">
         </form>
         <form action="matchData.php" method="POST">
         <label for="Agent">Agent:</label>
@@ -75,6 +78,7 @@ else{
             <option value="Viper">Viper</option>
             <option value="Yoru">Yoru</option>
           </select>
+          <input type="submit">
         </form>
         <form action="matchData.php" method="POST">
         <label for="Map">Map:</label>
@@ -86,6 +90,7 @@ else{
             <option value="Icebox">Icebox</option>
             <option value="Split">Split</option>
           </select>
+          <input type="submit">
         </form>
         <form action="matchData.php" method="POST">
         <label for="Weapon">Weapon:</label>

@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="remove coalescing">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addMatch.php" beforeDir="false" afterPath="$PROJECT_DIR$/addMatch.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matchData.php" beforeDir="false" afterPath="$PROJECT_DIR$/matchData.php" afterDir="false" />
-    </list>
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="added end to div, removed extra /form" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,13 +67,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00045" summary="error debugger added to php files">
-      <created>1620176792835</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1620176792835</updated>
     </task>
     <task id="LOCAL-00046" summary="error debugger added to php files">
       <created>1620176814787</created>
@@ -415,7 +404,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620461103314</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="added end to div, removed extra /form">
+      <created>1620461927221</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1620461927221</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -443,7 +439,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="delete unused code; retry password encryption" />
     <MESSAGE value="remove password encryption" />
     <MESSAGE value="added cover img to home page,link addMatch.php and editMatch.php to corresponding text by href;listed possible problems in signup.php" />
     <MESSAGE value="renamed process.php to login and signup.php to register, removed match.php and added matchData.php;enabled error displaying for add and edit match;add background to add and edit php;&#10;implementation of drop down box to replace fill in form for addMatch.php" />
@@ -468,6 +463,7 @@
     <MESSAGE value="add session start to index" />
     <MESSAGE value="add email field to login" />
     <MESSAGE value="remove coalescing" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove coalescing" />
+    <MESSAGE value="added end to div, removed extra /form" />
+    <option name="LAST_COMMIT_MESSAGE" value="added end to div, removed extra /form" />
   </component>
 </project>
