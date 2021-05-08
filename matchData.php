@@ -2,6 +2,7 @@
 session_start();
 ini_set("display_errors", 1);
 ERROR_REPORTING(E_ALL);
+$conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
 
 //get values from addMatch form
 $Game_Status = $_POST['Game_Status'];
@@ -10,7 +11,7 @@ $Combat_Score = $_POST['Combat_Score'];
 $Agent = $_POST['Agent'];
 $Map = $_POST['Map'];
 $Weapon = $_POST['Weapon'];
-$email = $_GET['email'];
+$email = $_POST['email'];
 if(isset($_SESSION['email'])){
     echo $_SESSION['email'];
 }
