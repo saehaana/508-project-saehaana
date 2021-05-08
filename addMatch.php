@@ -38,7 +38,7 @@ else{
         <p>Please select an option from each drop down box</p>
         <form action="matchData.php" method="POST">
         <label for="Game_Status">Game Status:</label>
-          <select name="Game_Status">
+          <select id="Game_Status" name="Game_Status">
             <option value="Win">Win</option>
             <option value="Loss">Loss</option>
             <option value="Draw">Draw</option>
