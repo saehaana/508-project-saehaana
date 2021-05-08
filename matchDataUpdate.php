@@ -38,6 +38,9 @@ mysqli_query($conn,$queryUpdate2a);
 $queryUpdate2b = "UPDATE Match_History SET Game_Status = '$Game_StatusUpdate' where MatchID = '$Match_ID'";
 mysqli_query($conn,$queryUpdate2b);
 
+$queryUpdate2c = "UPDATE Match_History SET Date = '$dateUpdate' where MatchID = '$Match_ID'";
+mysqli_query($conn,$queryUpdate2c);
+
 $queryUpdate3 = "UPDATE Game_Type SET Game_Type = '$Game_TypeUpdate' where MatchID = '$Match_ID'";
 mysqli_query($conn,$queryUpdate3);
 
