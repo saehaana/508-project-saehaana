@@ -43,7 +43,7 @@ if(!isset($_SESSION['username'])) {
         </p>
         <p>
         <label>Date:</label>
-        <input type="dateUpdate" placeholder="mm/dd/yyyy" name="dateUpdate">
+        <input type="date" placeholder="mm/dd/yyyy" name="dateUpdate">
         </p>
         <label for="Game_Status">Game Status:</label>
         <select id="Game_StatusUpdate" name="Game_StatusUpdate">
