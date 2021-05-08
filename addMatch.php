@@ -36,6 +36,7 @@ else{
         <h1>Match</h1>
         <p>Please select an option from each drop down box</p>
         <form action="matchData.php" method="POST">
+        <?php echo $_SESSION['email']; ?>
         <label for="Game_Status">Game Status:</label>
         <select id="Game_Status" name="Game_Status">
             <option value="Win">Win</option>
