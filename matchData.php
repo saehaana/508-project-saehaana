@@ -42,7 +42,7 @@ mysqli_query($conn,$queryInsert4);
 $queryInsert4 = "INSERT INTO Agent (Email,MatchID,AgentName,AgentType) VALUES ('$email','$Match_ID','$Agent','$AgentType')";
 mysqli_query($conn,$queryInsert4);
 
-$queryInsert5 = "INSERT INTO Weapon (MatchID,WeaponName,WeaponType) VALUES ('$Match_ID','$WeaponName','$WeaponType')";
+$queryInsert5 = "INSERT INTO Weapon (MatchID,WeaponName,WeaponType) VALUES ('$Match_ID','$Weapon','$WeaponType')";
 mysqli_query($conn,$queryInsert5);
 
 echo "match added successfully, go back to view the match under match history";
