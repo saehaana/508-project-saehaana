@@ -29,14 +29,14 @@ if(!isset($_SESSION['username'])) {
     <a href="logout.php"> Logout </a>
     <div id="editMatch">
         <h1>Edit Match</h1>
-        <p>Please select an option from each drop down box</p>
+        <p>Please fill out field(s) you want to update</p>
         <form action="matchDataUpdate.php" method="POST">
         <p>
         <label>Email:</label>
         <input type="emailUpdate" name="emailUpdate">
         </p>
         <p>
-        <label>Match ID:</label>
+        <label>Which Match ID are you updating for?:</label>
         <input type="text" placeholder="Top-right corner of your scorecard" name="Match_ID">
         </p>
         <p>
@@ -44,22 +44,22 @@ if(!isset($_SESSION['username'])) {
         <input type="date" placeholder="mm/dd/yyyy" name="date">
         </p>
         <label for="Game_Status">Game Status:</label>
-        <select id="Game_Status" name="Game_Status">
+        <select id="Game_StatusUpdate" name="Game_StatusUpdate">
             <option value="Win">Win</option>
             <option value="Loss">Loss</option>
             <option value="Draw">Draw</option>
         </select>
         <label for="Game_Type">Game Type:</label>
-        <select id="Game_Type" name="Game_Type">
+        <select id="Game_TypeUpdate" name="Game_TypeUpdate">
             <option value="Ranked">Ranked</option>
             <option value="Unranked">Unranked</option>
         </select>
         <p>
-        <label>Combat Score:</label>
-        <input type="text" placeholder="Enter a number up to 3 digits e.g. 253" name="Combat_Score">
+        <label>Combat Score :</label>
+        <input type="text" placeholder="Enter a number up to 3 digits e.g. 253" name="Combat_ScoreUpdate">
         </p>
         <label for="Agent">Agent:</label>
-        <select id = "Agent" name="Agent">
+        <select id = "AgentUpdate" name="AgentUpdate">
             <option value="Astra">Astra</option>
             <option value="Breach">Breach</option>
             <option value="Brimstone">Brimstone</option>
@@ -77,7 +77,7 @@ if(!isset($_SESSION['username'])) {
             <option value="Yoru">Yoru</option>
         </select>
         <label for="Map">Map:</label>
-        <select id="Map" name="Map">
+        <select id="MapUpdate" name="MapUpdate">
             <option value="Ascent">Ascent</option>
             <option value="Bind">Bind</option>
             <option value="Breeze">Breeze</option>
@@ -86,7 +86,7 @@ if(!isset($_SESSION['username'])) {
             <option value="Split">Split</option>
         </select>
         <label for="Weapon">Weapon:</label>
-        <select id="Weapon" name="Weapon">
+        <select id="WeaponUpdate" name="WeaponUpdate">
             <option value="Phantom">Phantom</option>
             <option value="Vandal">Vandal</option>
         </select>
