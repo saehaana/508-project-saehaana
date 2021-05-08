@@ -8,7 +8,6 @@ if(!isset($_SESSION['username'])) {
     $_SESSION['msg'] = "You must log in first";
   	header('location: index.php');
 }
-echo $_SESSION['email'];
 //if user clicks logout, redirect to index.php
 /*if (isset($_GET['logout'])) {
     session_destroy();
@@ -33,7 +32,7 @@ echo $_SESSION['email'];
         }
     </style>
     <a href="logout.php"> Logout </a>
-    <h1> Welcome <?php echo $_SESSION['username']; ?> </h1>
+    <h1> Welcome <?php echo $_SESSION['username']; echo $_SESSION['email'];?> </h1>
     <p> Things to do: </p>
     <br> Add matches to your match history: <a href="addMatch.php"> Add Matches </a>
     <br> Edit stats for a match you already entered: <a href="editMatch.php"> Edit Matches </a>
