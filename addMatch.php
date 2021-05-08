@@ -87,7 +87,6 @@ else{
             <option value="Split">Split</option>
           </select>
         </form>
-        </form>
         <form action="matchData.php" method="POST">
         <label for="Weapon">Weapon:</label>
           <select id="Weapon" name="Weapon">
@@ -95,7 +94,8 @@ else{
             <option value="Vandal">Vandal</option>
           </select>
           <br><br>
-          <input type="submit" value="Submit">
+         <input type="submit">
         </form>
+        </div>
 </body>
 </html>
