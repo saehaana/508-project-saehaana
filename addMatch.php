@@ -35,6 +35,14 @@ if(!isset($_SESSION['username'])) {
         <label>Email:</label>
         <input type="email" name="email">
         </p>
+        <p>
+        <label>Match ID:</label>
+        <input type="text" placeholder="Top-right corner of your scorecard" name="Match_ID">
+        </p>
+        <p>
+        <label>Date:</label>
+        <input type="date" placeholder="mm/dd/yyyy" name="date">
+        </p>
         <label for="Game_Status">Game Status:</label>
         <select id="Game_Status" name="Game_Status">
             <option value="Win">Win</option>

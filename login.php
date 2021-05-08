@@ -12,7 +12,7 @@ $password = $_POST['password'];
 $email = $_POST['email'];
 
 //login the user and redirect to home.php
-$query = "SELECT * FROM Player WHERE username='$username' AND password='$password'";
+$query = "SELECT * FROM Player WHERE Username = '$username' AND Password = '$password'";
 $results = mysqli_query($conn,$query);
 $num = mysqli_num_rows($results);
 if($num == 1){

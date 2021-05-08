@@ -38,5 +38,6 @@ if(!isset($_SESSION['username'])) {
     <br> Add matches to your match history: <a href="addMatch.php"> Add Matches </a>
     <br> Edit stats for a match you already entered: <a href="editMatch.php"> Edit Matches </a>
     <br> Or view your matches below:
+
 </body>
 </html>
