@@ -36,10 +36,6 @@ if(!isset($_SESSION['username'])) {
         <input type="email" name="email">
         </p>
         <p>
-        <label>Match ID:</label>
-        <input type="text" placeholder="Top-right corner of your scorecard" name="Match_ID">
-        </p>
-        <p>
         <label>Date:</label>
         <input type="date" placeholder="mm/dd/yyyy" name="date">
         </p>
