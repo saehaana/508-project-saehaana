@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="added all agents to their agent types, added all insert queries for add match">
-      <change beforePath="$PROJECT_DIR$/matchData.php" beforeDir="false" afterPath="$PROJECT_DIR$/matchData.php" afterDir="false" />
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="edit name declaration">
+      <change afterPath="$PROJECT_DIR$/matchDataUpdate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addMatch.php" beforeDir="false" afterPath="$PROJECT_DIR$/addMatch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editMatch.php" beforeDir="false" afterPath="$PROJECT_DIR$/editMatch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matchData.php" beforeDir="false" afterPath="$PROJECT_DIR$/matchDataInsert.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,41 +74,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00061" summary="fixed process and signup header redirects">
-      <created>1620182391505</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1620182391505</updated>
-    </task>
-    <task id="LOCAL-00062" summary="delete unused code; retry password encryption">
-      <created>1620182620028</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1620182620028</updated>
-    </task>
-    <task id="LOCAL-00063" summary="remove password encryption">
-      <created>1620182774826</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1620182774826</updated>
-    </task>
-    <task id="LOCAL-00064" summary="added cover img to home page,link addMatch.php and editMatch.php to corresponding text by href;listed possible problems in signup.php">
-      <created>1620270980365</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1620270980366</updated>
-    </task>
-    <task id="LOCAL-00065" summary="renamed process.php to login and signup.php to register, removed match.php and added matchData.php;enabled error displaying for add and edit match;add background to add and edit php;&#10;implementation of drop down box to replace fill in form for addMatch.php">
-      <created>1620274407903</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1620274407904</updated>
     </task>
     <task id="LOCAL-00066" summary="removed extra submit buttons from add match form (only 1 submit button at bottom of form), edit match form will be similar implmentation to add match">
       <created>1620274936785</created>
@@ -413,7 +383,42 @@
       <option name="project" value="LOCAL" />
       <updated>1620508460038</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="added weapon type association">
+      <created>1620508652731</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1620508652731</updated>
+    </task>
+    <task id="LOCAL-00111" summary="fixed weapon type association">
+      <created>1620508711045</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1620508711045</updated>
+    </task>
+    <task id="LOCAL-00112" summary="initialize weapontype">
+      <created>1620508817881</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1620508817881</updated>
+    </task>
+    <task id="LOCAL-00113" summary="added missed semicolon">
+      <created>1620508902296</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1620508902296</updated>
+    </task>
+    <task id="LOCAL-00114" summary="edit name declaration">
+      <created>1620508957448</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1620508957448</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -441,11 +446,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed within query: Game_Mode to Game_Type to match db column" />
-    <MESSAGE value="session email check" />
-    <MESSAGE value="session email check missing parentheses" />
-    <MESSAGE value="getting session email using hidden field that submits from addMatch to matchData" />
-    <MESSAGE value="attempt to access session email using get in login.php" />
     <MESSAGE value="testing null coalescing operator to fix undefined array error" />
     <MESSAGE value="check if email echo on home" />
     <MESSAGE value="add session start to index" />
@@ -466,6 +466,11 @@
     <MESSAGE value="readded match id field" />
     <MESSAGE value="fix agent association" />
     <MESSAGE value="added all agents to their agent types, added all insert queries for add match" />
-    <option name="LAST_COMMIT_MESSAGE" value="added all agents to their agent types, added all insert queries for add match" />
+    <MESSAGE value="added weapon type association" />
+    <MESSAGE value="fixed weapon type association" />
+    <MESSAGE value="initialize weapontype" />
+    <MESSAGE value="added missed semicolon" />
+    <MESSAGE value="edit name declaration" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit name declaration" />
   </component>
 </project>

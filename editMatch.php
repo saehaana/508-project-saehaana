@@ -1,19 +1,20 @@
 <?php
+session_start();
 ini_set("display_errors", 1);
 ERROR_REPORTING(E_ALL);
 
-session_start();
 //if user not logged in, redirect to index.php
 if(!isset($_SESSION['username'])) {
     $_SESSION['msg'] = "You must log in first";
   	header('location: index.php');
 }
+
 ?>
 
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Home</title>
+    <title>Edit Match</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -26,33 +27,39 @@ if(!isset($_SESSION['username'])) {
         }
     </style>
     <a href="logout.php"> Logout </a>
-    <div id="addMatch">
+    <div id="editMatch">
         <h1>Match</h1>
         <p>Please select an option from each drop down box</p>
-        <form action="matchData.php" method="POST">
-        <label for="Match_History">Game status:</label>
-          <select name="Match_History" id="Match_History">
+        <form action="matchDataUpdate.php" method="POST">
+        <p>
+        <label>Email:</label>
+        <input type="emailUpdate" name="emailUpdate">
+        </p>
+        <p>
+        <label>Match ID:</label>
+        <input type="text" placeholder="Top-right corner of your scorecard" name="Match_ID">
+        </p>
+        <p>
+        <label>Date:</label>
+        <input type="date" placeholder="mm/dd/yyyy" name="date">
+        </p>
+        <label for="Game_Status">Game Status:</label>
+        <select id="Game_Status" name="Game_Status">
             <option value="Win">Win</option>
             <option value="Loss">Loss</option>
             <option value="Draw">Draw</option>
-          </select>
-        </form>
-        <form action="matchData.php" method="POST">
-        <label for="Game_Mode">Game type:</label>
-          <select name="Game_Mode" id="Game_Mode">
+        </select>
+        <label for="Game_Type">Game Type:</label>
+        <select id="Game_Type" name="Game_Type">
             <option value="Ranked">Ranked</option>
             <option value="Unranked">Unranked</option>
-          </select>
-        </form>
-        <form action="matchData.php" method="POST">
-          <p>
-          <label>Combat Score:</label>
-          <input type="text" placeholder="Enter a number up to 3 digits e.g. 253" name="Combat Score">
-          </p>
-        </form>
-        <form action="matchData.php" method="POST">
+        </select>
+        <p>
+        <label>Combat Score:</label>
+        <input type="text" placeholder="Enter a number up to 3 digits e.g. 253" name="Combat_Score">
+        </p>
         <label for="Agent">Agent:</label>
-          <select name="Agent" id="Agent">
+        <select id = "Agent" name="Agent">
             <option value="Astra">Astra</option>
             <option value="Breach">Breach</option>
             <option value="Brimstone">Brimstone</option>
@@ -68,28 +75,24 @@ if(!isset($_SESSION['username'])) {
             <option value="Sova">Sova</option>
             <option value="Viper">Viper</option>
             <option value="Yoru">Yoru</option>
-          </select>
-        </form>
-        <form action="matchData.php" method="POST">
+        </select>
         <label for="Map">Map:</label>
-          <select name="Map" id="Map">
+        <select id="Map" name="Map">
             <option value="Ascent">Ascent</option>
-            <option value="Bind">Breeze</option>
+            <option value="Bind">Bind</option>
             <option value="Breeze">Breeze</option>
-            <option value="Haven">Breeze</option>
-            <option value="Icebox">Breeze</option>
-            <option value="Split">Breeze</option>
-          </select>
-        </form>
-        </form>
-        <form action="matchData.php" method="POST">
+            <option value="Haven">Haven</option>
+            <option value="Icebox">Icebox</option>
+            <option value="Split">Split</option>
+        </select>
         <label for="Weapon">Weapon:</label>
-          <select name="Weapon" id="Weapon">
+        <select id="Weapon" name="Weapon">
             <option value="Phantom">Phantom</option>
             <option value="Vandal">Vandal</option>
-          </select>
-          <br><br>
-          <input type="submit" value="Submit">
+        </select>
+        <br><br>
+        <input type="submit">
         </form>
+    </div>
 </body>
 </html>

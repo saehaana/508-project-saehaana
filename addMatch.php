@@ -14,7 +14,7 @@ if(!isset($_SESSION['username'])) {
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Home</title>
+    <title>Add Match</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -30,7 +30,7 @@ if(!isset($_SESSION['username'])) {
     <div id="addMatch">
         <h1>Match</h1>
         <p>Please select an option from each drop down box</p>
-        <form action="matchData.php" method="POST">
+        <form action="matchDataInsert.php" method="POST">
         <p>
         <label>Email:</label>
         <input type="email" name="email">
