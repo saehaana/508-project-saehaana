@@ -26,6 +26,10 @@ ERROR_REPORTING(E_ALL);
             <p>Please enter username and password</p>
             <form action="login.php" method="POST">
                 <p>
+                <label>Email:</label>
+                <input type="email" name="email">
+                </p>
+                <p>
                 <label>Username:</label>
                 <input type="text" name="username">
                 </p>
@@ -36,6 +40,7 @@ ERROR_REPORTING(E_ALL);
                 <p>
                 <input type="submit" value="Login" name="Login">
                 </p>
+
             </form>
         <div id="Register">
             <h3>Register Here</h3>
@@ -55,7 +60,7 @@ ERROR_REPORTING(E_ALL);
                 </p>
                 <p>
                 <label>Email:</label>
-                <input type="text" name="email" >
+                <input type="email" name="email" >
                 </p>
                 <p>
                 <label>First Name:</label>
