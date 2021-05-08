@@ -17,7 +17,7 @@ $Weapon = $_POST['Weapon'];
 
 
 //submit form to db
-$queryInsert = "insert into Match_History (Email,Match_ID,Game_Status,Date)
+$queryInsert = "insert into Match_History (Email,MatchID,Game_Status,Date)
 values ('$email','$Match_ID','$Game_Status','$date')";
 mysqli_query($conn,$queryInsert);
 echo "match added successfully, go back to view the match under match history";
