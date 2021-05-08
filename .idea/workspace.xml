@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="update query attempt">
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="add other update queries, rename declarations,">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/editMatch.php" beforeDir="false" afterPath="$PROJECT_DIR$/editMatch.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matchDataUpdate.php" beforeDir="false" afterPath="$PROJECT_DIR$/matchDataUpdate.php" afterDir="false" />
@@ -71,13 +71,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00068" summary="added missing agent names to agent field in editMatch.php">
-      <created>1620275169377</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1620275169377</updated>
     </task>
     <task id="LOCAL-00069" summary="added missing agent names to agent field in editMatch.php; added logout button to add and edit match; checks if user is in session for both add and edit match">
       <created>1620275308321</created>
@@ -415,7 +408,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620512562286</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="add other update queries, rename declarations,">
+      <created>1620513459833</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1620513459833</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -443,7 +443,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add session start to index" />
     <MESSAGE value="add email field to login" />
     <MESSAGE value="remove coalescing" />
     <MESSAGE value="added end to div, removed extra /form" />
@@ -468,6 +467,7 @@
     <MESSAGE value="edit name declaration" />
     <MESSAGE value="remove email heading from home, made edit  form same as add form, rename matchData to matchDataInsert, added matchDataUpdate.php, edit html titles of add and edit forms, test update query" />
     <MESSAGE value="update query attempt" />
-    <option name="LAST_COMMIT_MESSAGE" value="update query attempt" />
+    <MESSAGE value="add other update queries, rename declarations," />
+    <option name="LAST_COMMIT_MESSAGE" value="add other update queries, rename declarations," />
   </component>
 </project>

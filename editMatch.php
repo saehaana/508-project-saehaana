@@ -29,15 +29,17 @@ if(!isset($_SESSION['username'])) {
     <a href="logout.php"> Logout </a>
     <div id="editMatch">
         <h1>Edit Match</h1>
-        <p>Please fill out field(s) you want to update</p>
         <form action="matchDataUpdate.php" method="POST">
-        <p>
-        <label>Email:</label>
-        <input type="emailUpdate" name="emailUpdate">
-        </p>
         <p>
         <label>Which Match ID are you updating for?:</label>
         <input type="text" placeholder="Top-right corner of your scorecard" name="Match_ID">
+        </p>
+        <p>Please fill out field(s) you want to update</p>
+        <p>Filling out a field indicates you are going to change your current value to the value you typed in</p>
+        <p>e.g. 'Email: email@example.com' changes your current email to the email inputted</p>
+        <p>
+        <label>Email:</label>
+        <input type="emailUpdate" name="emailUpdate">
         </p>
         <p>
         <label>Date:</label>
