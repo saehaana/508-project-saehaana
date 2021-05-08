@@ -17,8 +17,10 @@ $Weapon = $_POST['Weapon'];
 
 //associate all agents with their agent type
 $AgentType;
-if($Agent == 'Astra'){$AgentType = 'Controller';}
-
+if($Agent == 'Astra' || $Agent == 'Brimstone' || $Agent == 'Omen' || $Agent == 'Viper'){$AgentType = 'Controller';}
+if($Agent == 'Breach' || $Agent == 'Skye' || $Agent == 'Sova'){$AgentType = 'Initiator';}
+if($Agent == 'Cypher' || $Agent == 'Killjoy' || $Agent == 'Sage'){$AgentType = 'Sentinel';}
+if($Agent == 'Jett' || $Agent == 'Phoenix' || $Agent == 'Raze' || $Agent == '$Reyna' || $Agent == 'Yoru'){$AgentType = 'Duelist';}
 
 //submit form to db
 $queryInsert1 = "insert into Match_History values ('$email','$Match_ID','$Game_Status','$date')";
@@ -35,6 +37,9 @@ mysqli_query($conn,$queryInsert4);
 
 $queryInsert4 = "INSERT INTO Agent (Email,MatchID,AgentName,AgentType) VALUES ('$email','$Match_ID','$Agent','$AgentType')";
 mysqli_query($conn,$queryInsert4);
+
+$queryInsert5 = "INSERT INTO Weapon (MatchID,WeaponName,WeaponType) VALUES ('$Match_ID','$WeaponName','$WeaponType')";
+mysqli_query($conn,$queryInsert5);
 
 echo "match added successfully, go back to view the match under match history";
 ?>
