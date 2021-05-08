@@ -28,7 +28,7 @@ if(!isset($_SESSION['username'])) {
     </style>
     <a href="logout.php"> Logout </a>
     <div id="editMatch">
-        <h1>Match</h1>
+        <h1>Edit Match</h1>
         <p>Please select an option from each drop down box</p>
         <form action="matchDataUpdate.php" method="POST">
         <p>
