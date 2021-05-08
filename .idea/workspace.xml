@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="edit add match query">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matchData.php" beforeDir="false" afterPath="$PROJECT_DIR$/matchData.php" afterDir="false" />
-    </list>
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="readded match id field" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,27 +67,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00055" summary="syntax error">
-      <created>1620179501795</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1620179501795</updated>
-    </task>
-    <task id="LOCAL-00056" summary="removed use of error checking">
-      <created>1620179845502</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1620179845502</updated>
-    </task>
-    <task id="LOCAL-00057" summary="test readd use of !empty">
-      <created>1620179984154</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1620179984154</updated>
     </task>
     <task id="LOCAL-00058" summary="test session_destory() and unset session">
       <created>1620180136574</created>
@@ -414,7 +390,28 @@
       <option name="project" value="LOCAL" />
       <updated>1620481150409</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="fixed entire db, edit add match query,">
+      <created>1620506929376</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1620506929376</updated>
+    </task>
+    <task id="LOCAL-00105" summary="removed addmatch field">
+      <created>1620506987944</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1620506987944</updated>
+    </task>
+    <task id="LOCAL-00106" summary="readded match id field">
+      <created>1620507149857</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1620507149857</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -442,9 +439,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed naming key error when getting values from addMatch form" />
-    <MESSAGE value="added user's email to session login, added email field into addMatch query" />
-    <MESSAGE value="lowercase $email" />
     <MESSAGE value="post email from login  to session" />
     <MESSAGE value="attempt to get email using echo" />
     <MESSAGE value="changed within query: Game_Mode to Game_Type to match db column" />
@@ -467,6 +461,9 @@
     <MESSAGE value="db edit, checking functionality, edit add match form fields to match db columns" />
     <MESSAGE value="fixed fatal error" />
     <MESSAGE value="edit add match query" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit add match query" />
+    <MESSAGE value="fixed entire db, edit add match query," />
+    <MESSAGE value="removed addmatch field" />
+    <MESSAGE value="readded match id field" />
+    <option name="LAST_COMMIT_MESSAGE" value="readded match id field" />
   </component>
 </project>

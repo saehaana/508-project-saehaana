@@ -16,7 +16,7 @@ $Map = $_POST['Map'];
 $Weapon = $_POST['Weapon'];
 
 //associate all agents with their agent type
-if($Agent == Astra){$AgentType=$_POST['Controller'];}
+if($Agent == Astra){$AgentType='Controller';}
 
 
 //submit form to db
