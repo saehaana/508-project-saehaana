@@ -16,6 +16,7 @@ $results = mysqli_query($conn,$query);
 $num = mysqli_num_rows($results);
 if($num == 1){
     $_SESSION['username'] = $username;
+    $_SESSION['email'] = $email;
     header('location: home.php');
 }else{
     header('location: index.php');
