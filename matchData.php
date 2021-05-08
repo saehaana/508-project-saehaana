@@ -19,7 +19,7 @@ $Combat_Score = $_POST['Combat_Score'];
 $Agent = $_POST['Agent'];
 $Map = $_POST['Map'];
 $Weapon = $_POST['Weapon'];
-$email = $_REQUEST['email'];
+$email = $_GET['email'];
 
 
 //submit form to db and redirect to home.php

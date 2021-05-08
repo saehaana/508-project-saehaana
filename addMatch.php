@@ -97,9 +97,5 @@ else{
           <br><br>
           <input type="submit" value="Submit">
         </form>
-        <form method="get" action="matchData.php">
-            <input type="hidden" name="email" value="email">
-            <input type="submit">
-        </form>
 </body>
 </html>
