@@ -8,12 +8,7 @@ if(!isset($_SESSION['username'])) {
     $_SESSION['msg'] = "You must log in first";
   	header('location: index.php');
 }
-if(isset($_SESSION['email'])){
-    echo $_SESSION['email'];
-}
-else{
-    echo 'email not set';
-}
+
 ?>
 
 <!DOCTYPE HTML>
@@ -36,7 +31,10 @@ else{
         <h1>Match</h1>
         <p>Please select an option from each drop down box</p>
         <form action="matchData.php" method="POST">
-        <?php echo $_SESSION['email']; ?>
+        <p>
+        <label>Email:</label>
+        <input type="email" name="email">
+        </p>
         <label for="Game_Status">Game Status:</label>
         <select id="Game_Status" name="Game_Status">
             <option value="Win">Win</option>
