@@ -40,7 +40,7 @@ if(!isset($_SESSION['username'])) {
     </style>
     <h2>Match History</h2>
 <?php
-$result = mysqli_query($conn,"select * from Match_History");
+$result = mysqli_query($conn,"select * from Match_History where Email = '$email'");
 echo"
 <table>
 <tr>
