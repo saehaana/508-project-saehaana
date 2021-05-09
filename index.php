@@ -19,26 +19,6 @@ ERROR_REPORTING(E_ALL);
         background-size: cover;
         }
     </style>
-    <php?
-    $usernameErr;
-    $passwordErr;
-    $emailErr;
-    $username;
-    $password;
-    $email;
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-      if (empty($_POST["username"])) {
-        $usernameErr = "Name is required";
-      } else {
-        $username = test_input($_POST["username"]);
-      }
-    function test_input($data) {
-      $data = trim($data);
-      $data = stripslashes($data);
-      $data = htmlspecialchars($data);
-      return $data;
-    }
-    ?>
     <h1>Valorant Stat Tracker</h1>
     <br>Welcome to Valorant Stat Tracker! Login or register below to view or add your matches.
     <br><div id="Login">

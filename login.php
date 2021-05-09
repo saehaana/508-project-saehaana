@@ -7,8 +7,12 @@ ERROR_REPORTING(E_ALL);
 $conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
 
 //get values from login form
-$username = $password = $email = ;
-$usernameErr = $passwordErr = $emailErr ;
+$username;
+$password;
+$email;
+$usernameErr;
+$passwordErr;
+$emailErr;
 
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
     if(empty($_POST["username"])){
