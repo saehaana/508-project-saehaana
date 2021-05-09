@@ -29,10 +29,14 @@ $WeaponTypeUpdate;
 if($WeaponUpdate == 'Phantom' || $WeaponUpdate == 'Vandal'){$WeaponTypeUpdate = 'Rifle';}
 
 //submit form to db
-if($emailUpdate != ''){
-$queryUpdate1 = "UPDATE Player SET Email = '$emailUpdate' where Email = '$email'";
-mysqli_query($conn,$queryUpdate1);
-}else{;}
+if($Match_ID == 1){
+    if($emailUpdate != ''){
+        $queryUpdate1 = "UPDATE Player SET Email = '$emailUpdate' where Email = '$email' AND MatchID = '$Match_ID'";
+        mysqli_query($conn,$queryUpdate1);
+    }else{
+        ;
+    }
+}
 
 $queryUpdate2a = "UPDATE Match_History SET Email = '$emailUpdate' where Email = '$email'";
 mysqli_query($conn,$queryUpdate2a);
