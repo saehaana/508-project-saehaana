@@ -47,27 +47,27 @@ ERROR_REPORTING(E_ALL);
             <form action="register.php" method="POST">
                 <p>
                 <label>Battletag:</label>
-                <input type="text" placeholder="4 characters e.g. #NA1" name="battletag">
+                <input type="text" placeholder="4 characters e.g. #NA1" name="battletag" required>
                 </p>
                 <p>
                 <label>Username:</label>
-                <input type="text" name="username">
+                <input type="text" name="username" required>
                 </p>
                 <p>
                 <label>Password:</label>
-                <input type="password" name="password">
+                <input type="password" name="password" required>
                 </p>
                 <p>
                 <label>Email:</label>
-                <input type="email" name="email" >
+                <input type="email" name="email" required>
                 </p>
                 <p>
                 <label>First Name:</label>
-                <input type="text" name="firstName">
+                <input type="text" name="firstName" required>
                 </p>
                 <p>
                 <label>Last Name:</label>
-                <input type="text" name="lastName">
+                <input type="text" name="lastName" required>
                 </p>
                 <p>
                 <input type="submit" value="Register" name="Register">

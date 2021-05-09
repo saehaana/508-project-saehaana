@@ -33,29 +33,29 @@ if(!isset($_SESSION['username'])) {
         <form action="matchDataInsert.php" method="POST">
         <p>
         <label>Match ID:</label>
-        <input type="text" placeholder="Top-right corner of your scorecard" name="Match_ID">
+        <input type="text" placeholder="Top-right corner of your scorecard" name="Match_ID" required>
         </p>
         <p>
         <label>Date:</label>
-        <input type="date" placeholder="mm/dd/yyyy" name="date">
+        <input type="date" placeholder="mm/dd/yyyy" name="date" required>
         </p>
         <label for="Game_Status">Game Status:</label>
-        <select id="Game_Status" name="Game_Status">
+        <select id="Game_Status" name="Game_Status" required>
             <option value="Win">Win</option>
             <option value="Loss">Loss</option>
             <option value="Draw">Draw</option>
         </select>
         <label for="Game_Type">Game Type:</label>
-        <select id="Game_Type" name="Game_Type">
+        <select id="Game_Type" name="Game_Type" required>
             <option value="Ranked">Ranked</option>
             <option value="Unranked">Unranked</option>
         </select>
         <p>
         <label>Combat Score:</label>
-        <input type="text" placeholder="Enter a number up to 3 digits e.g. 253" name="Combat_Score">
+        <input type="text" placeholder="Enter a number up to 3 digits e.g. 253" name="Combat_Score" required>
         </p>
         <label for="Agent">Agent:</label>
-        <select id = "Agent" name="Agent">
+        <select id = "Agent" name="Agent" required>
             <option value="Astra">Astra</option>
             <option value="Breach">Breach</option>
             <option value="Brimstone">Brimstone</option>
@@ -73,7 +73,7 @@ if(!isset($_SESSION['username'])) {
             <option value="Yoru">Yoru</option>
         </select>
         <label for="Map">Map:</label>
-        <select id="Map" name="Map">
+        <select id="Map" name="Map" required>
             <option value="Ascent">Ascent</option>
             <option value="Bind">Bind</option>
             <option value="Breeze">Breeze</option>
@@ -82,7 +82,7 @@ if(!isset($_SESSION['username'])) {
             <option value="Split">Split</option>
         </select>
         <label for="Weapon">Weapon:</label>
-        <select id="Weapon" name="Weapon">
+        <select id="Weapon" name="Weapon" required>
             <option value="Phantom">Phantom</option>
             <option value="Vandal">Vandal</option>
         </select>

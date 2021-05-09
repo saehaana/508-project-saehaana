@@ -43,3 +43,11 @@ $num = mysqli_num_rows($results);
     //*******add if field empty please enter in form; problem:
     //registering blank form still counts as registration*******//
 ?>
+<!DOCTYPE HTML>
+<html>
+<body>
+<p>
+<a href="index.php">Login</a>
+</p>
+</body>
+</html>
