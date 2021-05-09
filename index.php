@@ -1,3 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Valorant Stat Tracker</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+<style>
+.error {color: #FF0000;}
+</style>
+</head>
+<body>
+<style>
+body{
+        background-image: url('cover.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        }
+        </style>
 <?php
 session_start();
 ini_set("display_errors", 1);
@@ -53,22 +71,6 @@ if($num == 1){
     header('location: index.php');
 }
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Valorant Stat Tracker</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-    <style>
-        body{
-        background-image: url('cover.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        }
-    </style>
     <h1>Valorant Stat Tracker</h1>
     <br>Welcome to Valorant Stat Tracker! Login or register below to view or add your matches.
     <br><div id="Login">
