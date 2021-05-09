@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="edit html layout">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/home.php" afterDir="false" />
-    </list>
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="edit query to only show results for user" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,34 +67,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00102" summary="fixed fatal error">
-      <created>1620481034759</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1620481034759</updated>
-    </task>
-    <task id="LOCAL-00103" summary="edit add match query">
-      <created>1620481150409</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1620481150409</updated>
-    </task>
-    <task id="LOCAL-00104" summary="fixed entire db, edit add match query,">
-      <created>1620506929376</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1620506929376</updated>
-    </task>
-    <task id="LOCAL-00105" summary="removed addmatch field">
-      <created>1620506987944</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1620506987944</updated>
     </task>
     <task id="LOCAL-00106" summary="readded match id field">
       <created>1620507149857</created>
@@ -414,7 +383,35 @@
       <option name="project" value="LOCAL" />
       <updated>1620579964095</updated>
     </task>
-    <option name="localTasksCounter" value="151" />
+    <task id="LOCAL-00151" summary="edit html layout">
+      <created>1620580469616</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1620580469616</updated>
+    </task>
+    <task id="LOCAL-00152" summary="edit html layout">
+      <created>1620580516322</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1620580516322</updated>
+    </task>
+    <task id="LOCAL-00153" summary="edit html layout">
+      <created>1620580650765</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1620580650765</updated>
+    </task>
+    <task id="LOCAL-00154" summary="edit query to only show results for user">
+      <created>1620580759364</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1620580759364</updated>
+    </task>
+    <option name="localTasksCounter" value="155" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -442,7 +439,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="initialize weapontype" />
     <MESSAGE value="added missed semicolon" />
     <MESSAGE value="edit name declaration" />
     <MESSAGE value="remove email heading from home, made edit  form same as add form, rename matchData to matchDataInsert, added matchDataUpdate.php, edit html titles of add and edit forms, test update query" />
@@ -467,6 +463,7 @@
     <MESSAGE value="test if conn else die for login; add  match history view in home" />
     <MESSAGE value="edit mysqli query" />
     <MESSAGE value="edit html layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit html layout" />
+    <MESSAGE value="edit query to only show results for user" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit query to only show results for user" />
   </component>
 </project>
