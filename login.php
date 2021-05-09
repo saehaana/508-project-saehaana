@@ -8,6 +8,19 @@ $conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
 //if values entered don't match, kill connection
 if(!$conn){die('Could not connect:'.mysqli_error());}
 
+
+function check_input($data, $problem='')
+{
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    if ($problem && strlen($data) == 0)
+    {
+        die($problem);
+    }
+    return $data;
+}
+
 //get values from login form
 $username = check_input($_POST['username'],"Username required");
 $password = check_input($_POST['password'],"Password required");
