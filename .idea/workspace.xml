@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="edit sql query to show more columns" />
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="added more echos to home to reveal columns">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,20 +70,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00109" summary="added all agents to their agent types, added all insert queries for add match">
-      <created>1620508460038</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1620508460038</updated>
-    </task>
-    <task id="LOCAL-00110" summary="added weapon type association">
-      <created>1620508652731</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1620508652731</updated>
     </task>
     <task id="LOCAL-00111" summary="fixed weapon type association">
       <created>1620508711045</created>
@@ -411,7 +400,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620581612322</updated>
     </task>
-    <option name="localTasksCounter" value="158" />
+    <task id="LOCAL-00158" summary="edit data insert query columns to match updated db">
+      <created>1620581766073</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1620581766073</updated>
+    </task>
+    <task id="LOCAL-00159" summary="added more echos to home to reveal columns">
+      <created>1620581880976</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1620581880976</updated>
+    </task>
+    <option name="localTasksCounter" value="160" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -439,8 +442,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="edit name declaration" />
-    <MESSAGE value="remove email heading from home, made edit  form same as add form, rename matchData to matchDataInsert, added matchDataUpdate.php, edit html titles of add and edit forms, test update query" />
     <MESSAGE value="update query attempt" />
     <MESSAGE value="add other update queries, rename declarations," />
     <MESSAGE value="updated declarations, added more update queries" />
@@ -464,6 +465,8 @@
     <MESSAGE value="edit html layout" />
     <MESSAGE value="edit query to only show results for user" />
     <MESSAGE value="edit sql query to show more columns" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit sql query to show more columns" />
+    <MESSAGE value="edit data insert query columns to match updated db" />
+    <MESSAGE value="added more echos to home to reveal columns" />
+    <option name="LAST_COMMIT_MESSAGE" value="added more echos to home to reveal columns" />
   </component>
 </project>
