@@ -23,8 +23,8 @@ ERROR_REPORTING(E_ALL);
     <br>Welcome to Valorant Stat Tracker! Login or register below to view or add your matches.
     <br><div id="Login">
             <h2>Login Here</h2>
-            <p>Please enter username and password</p>
-            <p><span class="error">* required field</span></p>
+            <p>Please enter email, username and password</p>
+
             <form action="login.php" method="POST">
                 <p>
                 <label>Email:</label>
@@ -46,7 +46,7 @@ ERROR_REPORTING(E_ALL);
         <div id="Register">
             <h3>Register Here</h3>
             <p>Please fill in all fields below</p>
-            <p><span class="error">* required field</span></p>
+
             <form action="register.php" method="POST">
                 <p>
                 <label>Battletag:</label>
