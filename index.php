@@ -1,3 +1,11 @@
+<?php
+session_start();
+//error handling
+ini_set("display_errors", 1);
+ERROR_REPORTING(E_ALL);
+//connect to server
+$conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -79,6 +87,7 @@ return $data;
         <div id="Register">
             <h3>Register Here</h3>
             <p>Please fill in all fields below</p>
+            <p><span class="error">* required field</span></p>
             <form action="register.php" method="POST">
                 <p>
                 <label>Battletag:</label>
@@ -112,13 +121,6 @@ return $data;
 </body>
 </html>
 <?php
-session_start();
-//error handling
-ini_set("display_errors", 1);
-ERROR_REPORTING(E_ALL);
-//connect to server
-$conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
-
 //login the user and redirect to home.php
 $query = "SELECT * FROM Player WHERE Username = '$username' AND Password = '$password'";
 $results = mysqli_query($conn,$query);
