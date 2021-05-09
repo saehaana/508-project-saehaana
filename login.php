@@ -22,9 +22,9 @@ function check_input($data, $problem='')
 }
 
 //get values from login form
+$email = check_input($_POST['email'],"Email required");
 $username = check_input($_POST['username'],"Username required");
 $password = check_input($_POST['password'],"Password required");
-$email = check_input($_POST['email'],"Email required");
 
 $hash = password_hash($password,PASSWORD_DEFAULT);
 

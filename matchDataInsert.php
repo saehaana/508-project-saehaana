@@ -4,17 +4,28 @@ ini_set("display_errors", 1);
 ERROR_REPORTING(E_ALL);
 $conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
 
+function check_input($data, $problem='')
+{
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    if ($problem && strlen($data) == 0)
+    {
+        die($problem);
+    }
+    return $data;
+}
+
 //get values from addMatch form
 $email = $_SESSION['email'];
-if($Match_ID == $_POST['']){
-;}else{$Match_ID = $_POST['Match_ID'];}
-$date = $_POST['date'];
-$Game_Status = $_POST['Game_Status'];
-$Game_Type = $_POST['Game_Type'];
-$Combat_Score = $_POST['Combat_Score'];
-$Agent = $_POST['Agent'];
-$Map = $_POST['Map'];
-$Weapon = $_POST['Weapon'];
+$Match_ID = check_input($_POST['Match_ID'],"Match ID required");
+$date = check_input($_POST['date'],"Date required");
+$Game_Status = check_input($_POST['Game_Status'],"Game Status required");
+$Game_Type = check_input($_POST['Game_Type'],"Game Type required");
+$Combat_Score = check_input($_POST['Combat_Score'],"Combat Score required");
+$Agent = check_input($_POST['Agent'],"Agent required");
+$Map = check_input($_POST['Map'],"Map required");
+$Weapon = check_input($_POST['Weapon'],"Weapon required");
 
 //associate all agents with their agent type
 $AgentType;

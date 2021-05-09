@@ -4,13 +4,25 @@ ini_set("display_errors", 1);
 ERROR_REPORTING(E_ALL);
 $conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
 
+function check_input($data, $problem='')
+{
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    if ($problem && strlen($data) == 0)
+    {
+        die($problem);
+    }
+    return $data;
+}
+
 //get values from registration form
-$battletag = $_POST['battletag'];
-$username = $_POST['username'];
-$password = $_POST['password'];
-$email = $_POST['email'];
-$firstName = $_POST['firstName'];
-$lastName = $_POST['lastName'];
+$battletag = check_input($_POST['battletag'],"Battletag required");
+$username = check_input($_POST['username'],"Username required");
+$password = check_input($_POST['password'],"Password required");
+$email = check_input($_POST['email'],"Email required");
+$firstName = check_input($_POST['firstName'],"First Name required");
+$lastName = check_input($_POST['lastName'],"Last Name required");
 
 //check Player table if email already exists
 $querySelect = "SELECT * FROM Player WHERE email = '$email' LIMIT 1";

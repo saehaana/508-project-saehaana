@@ -4,9 +4,21 @@ ini_set("display_errors", 1);
 ERROR_REPORTING(E_ALL);
 $conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
 
+function check_input($data, $problem='')
+{
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    if ($problem && strlen($data) == 0)
+    {
+        die($problem);
+    }
+    return $data;
+}
+
 //get values from editMatch form
 $email = $_SESSION['email'];
-$Match_ID = $_POST['Match_ID'];
+$Match_ID = check_input($_POST['Match_ID'],"Match ID required");
 $emailUpdate = $_POST['emailUpdate'];
 $dateUpdate = $_POST['dateUpdate'];
 $Game_StatusUpdate = $_POST['Game_StatusUpdate'];
