@@ -32,10 +32,7 @@ if(!isset($_SESSION['username'])) {
         <p>Please select an option from each drop down box</p>
         <form action="matchDataInsert.php" method="POST">
 
-        <p>
-        <label>Match ID:</label>
-        <input type="text" placeholder="Top-right corner of your scorecard" name="Match_ID">
-        </p>
+
         <p>
         <label>Date:</label>
         <input type="date" placeholder="mm/dd/yyyy" name="date">
