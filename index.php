@@ -24,8 +24,7 @@ ERROR_REPORTING(E_ALL);
     <br><div id="Login">
             <h2>Login Here</h2>
             <p>Please enter email, username and password</p>
-
-            <form action="<?php echo htmlspecialchars($_SERVER["login.php"]);?>" method="POST">
+            <form action="login.php" method="POST">
                 <p>
                 <label>Email:</label>
                 <input type="email" name="email">
@@ -45,7 +44,6 @@ ERROR_REPORTING(E_ALL);
         <div id="Register">
             <h3>Register Here</h3>
             <p>Please fill in all fields below</p>
-
             <form action="register.php" method="POST">
                 <p>
                 <label>Battletag:</label>
