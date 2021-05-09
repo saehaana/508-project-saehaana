@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="test password hash" />
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="test password hash, fix db update error" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,34 +67,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00092" summary="add email field to login">
-      <created>1620460627226</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1620460627226</updated>
-    </task>
-    <task id="LOCAL-00093" summary="remove coalescing">
-      <created>1620461103314</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1620461103314</updated>
-    </task>
-    <task id="LOCAL-00094" summary="added end to div, removed extra /form">
-      <created>1620461927221</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1620461927221</updated>
-    </task>
-    <task id="LOCAL-00095" summary="added extra submit buttons">
-      <created>1620462119105</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1620462119105</updated>
     </task>
     <task id="LOCAL-00096" summary="put all select boxes within one form, all submitted by one submit button">
       <created>1620462468284</created>
@@ -411,7 +383,35 @@
       <option name="project" value="LOCAL" />
       <updated>1620529440644</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="test password hash">
+      <created>1620529511996</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1620529511996</updated>
+    </task>
+    <task id="LOCAL-00142" summary="test password hash">
+      <created>1620529603432</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1620529603432</updated>
+    </task>
+    <task id="LOCAL-00143" summary="test password hash, fix db update error">
+      <created>1620529701598</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1620529701598</updated>
+    </task>
+    <task id="LOCAL-00144" summary="test password hash, fix db update error">
+      <created>1620529763261</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1620529763261</updated>
+    </task>
+    <option name="localTasksCounter" value="145" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -439,7 +439,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="removed addmatch field" />
     <MESSAGE value="readded match id field" />
     <MESSAGE value="fix agent association" />
     <MESSAGE value="added all agents to their agent types, added all insert queries for add match" />
@@ -464,6 +463,7 @@
     <MESSAGE value="testing blank option" />
     <MESSAGE value="testing blank option on db" />
     <MESSAGE value="test password hash" />
-    <option name="LAST_COMMIT_MESSAGE" value="test password hash" />
+    <MESSAGE value="test password hash, fix db update error" />
+    <option name="LAST_COMMIT_MESSAGE" value="test password hash, fix db update error" />
   </component>
 </project>

@@ -14,6 +14,8 @@ $hash = password_hash($password,PASSWORD_DEFAULT);
 
 //login the user and redirect to home.php
 if(password_verify($password,$hash)){
+$username = $_SESSION['username'];
+$email = $_SESSION['email'];
 header('location: home.php');
 }
 else{
