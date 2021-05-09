@@ -47,6 +47,7 @@ if(!isset($_SESSION['username'])) {
         </p>
         <label for="Game_Status">Game Status:</label>
         <select id="Game_StatusUpdate" name="Game_StatusUpdate">
+            <option selected disabled hidden style='display: none' value=''></option>
             <option value="Win">Win</option>
             <option value="Loss">Loss</option>
             <option value="Draw">Draw</option>
