@@ -14,16 +14,9 @@ $hash = password_hash($password,PASSWORD_DEFAULT);
 
 //login the user and redirect to home.php
 if(password_verify($password,$hash)){
-$query = "SELECT * FROM Player WHERE Username = '$username' AND Password = '$password'";
-$results = mysqli_query($conn,$query);
-$num = mysqli_num_rows($results);
-if($num == 1){
-    $_SESSION['username'] = $username;
-    $_SESSION['password'] = $password;
-    $_SESSION['email'] = $email;
-    header('location: home.php');
+header('location: home.php');
 }
-}else{
- header('location: index.php');
- }
+else{
+header('location: index.php');
+}
 ?>
