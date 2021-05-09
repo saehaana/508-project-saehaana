@@ -9,9 +9,9 @@ $conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
 if(!$conn){die('Could not connect:'.mysqli_error());}
 
 //get values from login form
-$username = $_POST['username'];
-$password = $_POST['password'];
-$email = $_POST['email'];
+$username = check_input($_POST['username'],"Username required");
+$password = check_input($_POST['password'],"Password required");
+$email = check_input($_POST['email'],"Email required");
 
 $hash = password_hash($password,PASSWORD_DEFAULT);
 

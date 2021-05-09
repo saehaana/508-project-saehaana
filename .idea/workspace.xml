@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="added redirect links&#10;after update form">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
-    </list>
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="test if empty for login" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,13 +67,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00122" summary="fixed input types for date and email in edit form">
-      <created>1620515801757</created>
-      <option name="number" value="00122" />
-      <option name="presentableId" value="LOCAL-00122" />
-      <option name="project" value="LOCAL" />
-      <updated>1620515801757</updated>
     </task>
     <task id="LOCAL-00123" summary="testing security">
       <created>1620523788542</created>
@@ -414,7 +404,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620595548032</updated>
     </task>
-    <option name="localTasksCounter" value="171" />
+    <task id="LOCAL-00171" summary="test if empty for login">
+      <created>1620596411693</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1620596411693</updated>
+    </task>
+    <option name="localTasksCounter" value="172" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -442,7 +439,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="testing form validation" />
     <MESSAGE value="revert to working site" />
     <MESSAGE value="testing blank option" />
     <MESSAGE value="testing blank option on db" />
@@ -467,6 +463,7 @@
     <MESSAGE value="initialize variables before if statements" />
     <MESSAGE value="revert if statement changes" />
     <MESSAGE value="added redirect links&#10;after update form" />
-    <option name="LAST_COMMIT_MESSAGE" value="added redirect links&#10;after update form" />
+    <MESSAGE value="test if empty for login" />
+    <option name="LAST_COMMIT_MESSAGE" value="test if empty for login" />
   </component>
 </project>
