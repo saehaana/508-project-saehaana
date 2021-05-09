@@ -10,11 +10,10 @@ $conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
 $username = $_POST['username'];
 $password = $_POST['password'];
 $email = $_POST['email'];
-$hash = "$2y$10$6ZOUkdv5iaU.KrDEF.8fp.v8QhEe.0Z9ERD/PVXo6BUe1rtj4DEN2";
-$verify = password_verify($password,$hash);
+$hash = password_hash($password,PASSWORD_DEFAULT);
 
 //login the user and redirect to home.php
-if($verify){
+if(password_verify($password,$hash)){
 $query = "SELECT * FROM Player WHERE Username = '$username' AND Password = '$password'";
 $results = mysqli_query($conn,$query);
 $num = mysqli_num_rows($results);
