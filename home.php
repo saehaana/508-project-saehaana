@@ -37,6 +37,7 @@ if(!isset($_SESSION['username'])) {
 <?php
 $result = mysqli_query($conn,"select * from Match_History");
 echo "<tableborder='1'>
+<tr>
 <th>MatchID</th>
 <th>Game Status</th>
 <th>Date</th>
