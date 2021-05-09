@@ -7,37 +7,9 @@ ERROR_REPORTING(E_ALL);
 $conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
 
 //get values from login form
-$username;
-$password;
-$email;
-$usernameErr;
-$passwordErr;
-$emailErr;
-
-if ($_SERVER["REQUEST_METHOD"] == "POST"){
-    if(empty($_POST["username"])){
-        $usernameErr = "Username required";
-    }else{
-        $username = test_input($POST["username"]);
-    }
-    if(empty($_POST["password"])){
-        $passwordErr = "Password required";
-    }else{
-        $password = test_input($POST["password"]);
-    }
-    if(empty($_POST["username"])){
-        $emailErr = "Username required";
-    }else{
-        $email = test_input($POST["email"]);
-    }
-}
-
-function test_input($data){
-$data = trim($data);
-$data = stripslashes($data);
-$data = htmlspecialchars($data);
-return $data;
-}
+$username = $_POST['username'];
+$password = $_POST['password'];
+$email = $_POST['email'];
 
 //login the user and redirect to home.php
 $query = "SELECT * FROM Player WHERE Username = '$username' AND Password = '$password'";

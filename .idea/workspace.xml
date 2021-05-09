@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="testing security">
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="revert security test changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,27 +71,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00082" summary="attempt to access session email using get in login.php">
-      <created>1620451373306</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1620451373306</updated>
-    </task>
-    <task id="LOCAL-00083" summary="attempt to access session email using get in login.php">
-      <created>1620457187168</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1620457187168</updated>
-    </task>
-    <task id="LOCAL-00084" summary="attempt to access session email using get in login.php">
-      <created>1620457991452</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1620457991452</updated>
     </task>
     <task id="LOCAL-00085" summary="attempt to access session email using get in login.php">
       <created>1620458776571</created>
@@ -414,7 +394,28 @@
       <option name="project" value="LOCAL" />
       <updated>1620524858833</updated>
     </task>
-    <option name="localTasksCounter" value="131" />
+    <task id="LOCAL-00131" summary="revert security test changes">
+      <created>1620525578491</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1620525578491</updated>
+    </task>
+    <task id="LOCAL-00132" summary="revert security test changes">
+      <created>1620525737483</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1620525737483</updated>
+    </task>
+    <task id="LOCAL-00133" summary="revert security test changes">
+      <created>1620525837709</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1620525837709</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -442,7 +443,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added missing /select for game status field, removed /select from combat score field, cleaned up html indentation" />
     <MESSAGE value="echo email into addmatch" />
     <MESSAGE value="test email field in addmatch" />
     <MESSAGE value="db edit, checking functionality, edit add match form fields to match db columns" />
@@ -467,6 +467,7 @@
     <MESSAGE value="fixed input type for date in edit form" />
     <MESSAGE value="fixed input types for date and email in edit form" />
     <MESSAGE value="testing security" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing security" />
+    <MESSAGE value="revert security test changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="revert security test changes" />
   </component>
 </project>
