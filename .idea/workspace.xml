@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="test no match id field for add match; add email match requirement when validating login">
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="remove match id field">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addMatch.php" beforeDir="false" afterPath="$PROJECT_DIR$/addMatch.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matchDataInsert.php" beforeDir="false" afterPath="$PROJECT_DIR$/matchDataInsert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matchDataUpdate.php" beforeDir="false" afterPath="$PROJECT_DIR$/matchDataUpdate.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,20 +72,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00112" summary="initialize weapontype">
-      <created>1620508817881</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1620508817881</updated>
-    </task>
-    <task id="LOCAL-00113" summary="added missed semicolon">
-      <created>1620508902296</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1620508902296</updated>
     </task>
     <task id="LOCAL-00114" summary="edit name declaration">
       <created>1620508957448</created>
@@ -415,7 +402,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620583061930</updated>
     </task>
-    <option name="localTasksCounter" value="161" />
+    <task id="LOCAL-00161" summary="test form field if empty, remove email field from addmatch(use session email instead);add home redirect button and addmatch link">
+      <created>1620583798888</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1620583798888</updated>
+    </task>
+    <task id="LOCAL-00162" summary="remove match id field">
+      <created>1620583850426</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1620583850426</updated>
+    </task>
+    <option name="localTasksCounter" value="163" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -443,8 +444,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add other update queries, rename declarations," />
-    <MESSAGE value="updated declarations, added more update queries" />
     <MESSAGE value="rename date to dateUpdate" />
     <MESSAGE value="fixed date update query" />
     <MESSAGE value="fixed input type for date in edit form" />
@@ -468,6 +467,8 @@
     <MESSAGE value="edit data insert query columns to match updated db" />
     <MESSAGE value="added more echos to home to reveal columns" />
     <MESSAGE value="test no match id field for add match; add email match requirement when validating login" />
-    <option name="LAST_COMMIT_MESSAGE" value="test no match id field for add match; add email match requirement when validating login" />
+    <MESSAGE value="test form field if empty, remove email field from addmatch(use session email instead);add home redirect button and addmatch link" />
+    <MESSAGE value="remove match id field" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove match id field" />
   </component>
 </project>

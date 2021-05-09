@@ -6,7 +6,8 @@ $conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
 
 //get values from addMatch form
 $email = $_SESSION['email'];
-$Match_ID = $_POST['Match_ID'];
+if($Match_ID == $_POST['']){
+;}else{$Match_ID = $_POST['Match_ID'];}
 $date = $_POST['date'];
 $Game_Status = $_POST['Game_Status'];
 $Game_Type = $_POST['Game_Type'];
@@ -27,23 +28,22 @@ $WeaponType;
 if($Weapon == 'Phantom' || $Weapon == 'Vandal'){$WeaponType = 'Rifle';}
 
 //submit form to db
-if(empty($_POST[""])){}
-$queryInsert1 = "insert into Match_History (Email,Game_Status,Date) values ('$email','$Game_Status','$date')";
+$queryInsert1 = "insert into Match_History (Email,MatchID,Game_Status,Date) values ('$email','$Match_ID','$Game_Status','$date')";
 mysqli_query($conn,$queryInsert1);
 
-$queryInsert2 = "insert into Game_Type (Game_Type) values ('$Game_Type')";
+$queryInsert2 = "insert into Game_Type (MatchID,Game_Type) values ('$Match_ID','$Game_Type')";
 mysqli_query($conn,$queryInsert2);
 
-$queryInsert3 = "INSERT INTO Combat_Rating (RatingNumber) VALUES ('$Combat_Score')";
+$queryInsert3 = "INSERT INTO Combat_Rating (MatchID,RatingNumber) VALUES ('$Match_ID','$Combat_Score')";
 mysqli_query($conn,$queryInsert3);
 
-$queryInsert4 = "INSERT INTO Map (MapName) VALUES ('$Map')";
+$queryInsert4 = "INSERT INTO Map (MatchID,MapName) VALUES ('$Match_ID','$Map')";
 mysqli_query($conn,$queryInsert4);
 
-$queryInsert4 = "INSERT INTO Agent (AgentName,AgentType) VALUES ('$Agent','$AgentType')";
+$queryInsert4 = "INSERT INTO Agent (MatchID,AgentName,AgentType) VALUES ('$Match_ID','$Agent','$AgentType')";
 mysqli_query($conn,$queryInsert4);
 
-$queryInsert5 = "INSERT INTO Weapon (WeaponName,WeaponType) VALUES ('$Weapon','$WeaponType')";
+$queryInsert5 = "INSERT INTO Weapon (MatchID,WeaponName,WeaponType) VALUES ('$Match_ID','$Weapon','$WeaponType')";
 mysqli_query($conn,$queryInsert5);
 
 echo "match added successfully, click home button below to view the match under match history or add another match";
