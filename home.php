@@ -38,5 +38,10 @@ if(!isset($_SESSION['username'])) {
     <br> Edit stats for a match you already entered: <a href="editMatch.php"> Edit Matches </a>
     <br> Or view your matches below:
 
+<?php
+
+?>
+
+
 </body>
 </html>
