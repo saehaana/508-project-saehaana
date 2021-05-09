@@ -4,43 +4,17 @@ ini_set("display_errors", 1);
 ERROR_REPORTING(E_ALL);
 $conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
 
-//initialize variables
-$emailUpdate;
-$Game_StatusUpdate;
-$Game_TypeUpdate;
-$Combat_ScoreUpdate;
-$AgentUpdate;
-$MapUpdate;
-$WeaponUpdate;
-
 //get values from editMatch form
 $email = $_SESSION['email'];
 $Match_ID = $_POST['Match_ID'];
-
-if($emailUpdate == $_POST['']){
-;}else{$emailUpdate = $_POST['emailUpdate'];}
-
-if($Game_StatusUpdate == $_POST['']){
-;}else{$Game_StatusUpdate = $_POST['Game_StatusUpdate'];}
-
-if($Game_TypeUpdate == $_POST['']){
-;}else{$Game_TypeUpdate = $_POST['Game_TypeUpdate'];}
-
-if($Combat_ScoreUpdate == $_POST['']){
-;}else{$Combat_ScoreUpdate = $_POST['Combat_ScoreUpdate'];}
-
-if($AgentUpdate == $_POST['']){
-;}else{$AgentUpdate = $_POST['AgentUpdate'];}
-
-if($MapUpdate == $_POST['']){
-;}else{$MapUpdate = $_POST['MapUpdate'];}
-
-if($WeaponUpdate == $_POST['']){
-;}else{$WeaponUpdate = $_POST['WeaponUpdate'];}
-
+$emailUpdate = $_POST['emailUpdate'];
 $dateUpdate = $_POST['dateUpdate'];
-
-
+$Game_StatusUpdate = $_POST['Game_StatusUpdate'];
+$Game_TypeUpdate = $_POST['Game_TypeUpdate'];
+$Combat_ScoreUpdate = $_POST['Combat_ScoreUpdate'];
+$AgentUpdate = $_POST['AgentUpdate'];
+$MapUpdate = $_POST['MapUpdate'];
+$WeaponUpdate = $_POST['WeaponUpdate'];
 
 //associate all agents with their agent type
 $AgentTypeUpdate;
@@ -55,74 +29,41 @@ if($WeaponUpdate == 'Phantom' || $WeaponUpdate == 'Vandal'){$WeaponTypeUpdate = 
 
 //submit form to db
 if($Match_ID == 1){
-    if($emailUpdate != ''){
-        $queryUpdate1 = "UPDATE Player SET Email = '$emailUpdate' where Email = '$email' AND MatchID = '$Match_ID'";
-        mysqli_query($conn,$queryUpdate1);
-    }else{
-        ;
-    }
-    if($emailUpdate != ''){
-        $queryUpdate2a = "UPDATE Match_History SET Email = '$emailUpdate' where Email = '$email'";
-        mysqli_query($conn,$queryUpdate2a);
-    }else{
-        ;
-    }
-    if($Game_StatusUpdate != ''){
-        $queryUpdate2b = "UPDATE Match_History SET Game_Status = '$Game_StatusUpdate' where MatchID = '$Match_ID'";
-        mysqli_query($conn,$queryUpdate2b);
-    }else{
-        ;
-    }
-    if($dateUpdate != ''){
-        $queryUpdate2c = "UPDATE Match_History SET Date = '$dateUpdate' where MatchID = '$Match_ID'";
-        mysqli_query($conn,$queryUpdate2c);
-    }else{
-        ;
-    }
-    if($Game_TypeUpdate != ''){
-        $queryUpdate3 = "UPDATE Game_Type SET Game_Type = '$Game_TypeUpdate' where MatchID = '$Match_ID'";
-        mysqli_query($conn,$queryUpdate3);
-    }else{
-        ;
-    }
-    if($Combat_ScoreUpdate != ''){
-        $queryUpdate4 = "UPDATE Combat_Rating SET RatingNumber = '$Combat_ScoreUpdate' where MatchID = '$Match_ID'";
-        mysqli_query($conn,$queryUpdate4);
-    }else{
-        ;
-    }
-    if($MapUpdate != ''){
-        $queryUpdate4 = "UPDATE Map SET MapName = '$MapUpdate' where MatchID = '$Match_ID'";
-        mysqli_query($conn,$queryUpdate4);
-    }else{
-        ;
-    }
-    if($AgentUpdate != ''){
-        $queryUpdate5a = "UPDATE Agent SET AgentName = '$AgentUpdate' where MatchID = '$Match_ID'";
-        mysqli_query($conn,$queryUpdate5a);
-    }else{
-        ;
-    }
-    if($AgentUpdate != ''){
-        $queryUpdate5b = "UPDATE Agent SET AgentType = '$AgentTypeUpdate' where MatchID = '$Match_ID'";
-        mysqli_query($conn,$queryUpdate5b);
-    }else{
-        ;
-    }
-if($WeaponUpdate != ''){
-        $queryUpdate6a = "UPDATE Weapon SET WeaponName = '$WeaponUpdate' where MatchID = '$Match_ID'";
-        mysqli_query($conn,$queryUpdate6a);
-    }else{
-        ;
-    }
-if($WeaponUpdate != ''){
-        $queryUpdate6b = "UPDATE Weapon SET WeaponType = '$WeaponTypeUpdate' where MatchID = '$Match_ID'";
-        mysqli_query($conn,$queryUpdate6b);
-    }else{
-        ;
-    }
-}else{
-    echo "No match found for Match ID: $Match_ID";
-}
+$queryUpdate1 = "UPDATE Player SET Email = '$emailUpdate' where Email = '$email'";
+mysqli_query($conn,$queryUpdate1);
+
+$queryUpdate2a = "UPDATE Match_History SET Email = '$emailUpdate' where Email = '$email'";
+mysqli_query($conn,$queryUpdate2a);
+
+$queryUpdate2b = "UPDATE Match_History SET Game_Status = '$Game_StatusUpdate' where MatchID = '$Match_ID'";
+mysqli_query($conn,$queryUpdate2b);
+
+$queryUpdate2c = "UPDATE Match_History SET Date = '$dateUpdate' where MatchID = '$Match_ID'";
+mysqli_query($conn,$queryUpdate2c);
+
+$queryUpdate3 = "UPDATE Game_Type SET Game_Type = '$Game_TypeUpdate' where MatchID = '$Match_ID'";
+mysqli_query($conn,$queryUpdate3);
+
+$queryUpdate4 = "UPDATE Combat_Rating SET RatingNumber = '$Combat_ScoreUpdate' where MatchID = '$Match_ID'";
+mysqli_query($conn,$queryUpdate4);
+
+$queryUpdate4 = "UPDATE Map SET MapName = '$MapUpdate' where MatchID = '$Match_ID'";
+mysqli_query($conn,$queryUpdate4);
+
+$queryUpdate5a = "UPDATE Agent SET AgentName = '$AgentUpdate' where MatchID = '$Match_ID'";
+mysqli_query($conn,$queryUpdate5a);
+
+$queryUpdate5b = "UPDATE Agent SET AgentType = '$AgentTypeUpdate' where MatchID = '$Match_ID'";
+mysqli_query($conn,$queryUpdate5b);
+
+$queryUpdate6a = "UPDATE Weapon SET WeaponName = '$WeaponUpdate' where MatchID = '$Match_ID'";
+mysqli_query($conn,$queryUpdate6a);
+
+$queryUpdate6b = "UPDATE Weapon SET WeaponType = '$WeaponTypeUpdate' where MatchID = '$Match_ID'";
+mysqli_query($conn,$queryUpdate6b);
+
 echo "match added successfully, go back to view the match under match history";
+}else{
+echo "No match found for Match ID: $Match_ID";
+}
 ?>

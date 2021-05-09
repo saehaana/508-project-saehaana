@@ -4,39 +4,17 @@ ini_set("display_errors", 1);
 ERROR_REPORTING(E_ALL);
 $conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
 
-//initialize variables
-$Match_ID;
-$Game_Status;
-$Game_Type;
-$Combat_Score;
-$Agent;
-$Map;
-$Weapon;
-
 //get values from addMatch form
 $email = $_SESSION['email'];
-$date = $_POST['date'];
-
 if($Match_ID == $_POST['']){
 ;}else{$Match_ID = $_POST['Match_ID'];}
-
-if($Game_Status == $_POST['']){
-;}else{$Game_Status = $_POST['Game_Status'];}
-
-if($Game_Type == $_POST['']){
-;}else{$Game_Type = $_POST['Game_Type'];}
-
-if($Combat_Score == $_POST['']){
-;}else{$Combat_Score = $_POST['Combat_Score'];}
-
-if($Agent == $_POST['']){
-;}else{$Agent = $_POST['Agent'];}
-
-if($Map == $_POST['']){
-;}else{$Map = $_POST['Map'];}
-
-if($Weapon == $_POST['']){
-;}else{$Weapon = $_POST['Weapon'];}
+$date = $_POST['date'];
+$Game_Status = $_POST['Game_Status'];
+$Game_Type = $_POST['Game_Type'];
+$Combat_Score = $_POST['Combat_Score'];
+$Agent = $_POST['Agent'];
+$Map = $_POST['Map'];
+$Weapon = $_POST['Weapon'];
 
 //associate all agents with their agent type
 $AgentType;
