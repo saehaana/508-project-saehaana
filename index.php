@@ -2,24 +2,17 @@
 <html>
 <head>
     <title>Valorant Stat Tracker</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+
 <style>
 .error {color: #FF0000;}
 </style>
 </head>
 <body>
-<style>
-body{
-        background-image: url('cover.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        }
-        </style>
+
 <?php
 //get values from login form
 $username = $password = $email = ;
-$usernameErr = $passwordErr = $emailErr ;
+$usernameErr = $passwordErr = $emailErr =;
 
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
     if(empty($_POST["username"])){

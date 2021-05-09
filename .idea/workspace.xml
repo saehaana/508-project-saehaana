@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="fixed input types for date and email in edit form">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-    </list>
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="testing security" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,27 +67,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00074" summary="lowercase $email">
-      <created>1620448547866</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1620448547866</updated>
-    </task>
-    <task id="LOCAL-00075" summary="post email from login  to session">
-      <created>1620448935227</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1620448935227</updated>
-    </task>
-    <task id="LOCAL-00076" summary="attempt to get email using echo">
-      <created>1620449040103</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1620449040103</updated>
     </task>
     <task id="LOCAL-00077" summary="changed within query: Game_Mode to Game_Type to match db column">
       <created>1620449175162</created>
@@ -416,7 +390,28 @@
       <option name="project" value="LOCAL" />
       <updated>1620515801757</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="testing security">
+      <created>1620523788542</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1620523788542</updated>
+    </task>
+    <task id="LOCAL-00124" summary="testing security">
+      <created>1620524047094</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1620524047094</updated>
+    </task>
+    <task id="LOCAL-00125" summary="testing security">
+      <created>1620524102915</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1620524102915</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -444,7 +439,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added missing /select for game type field" />
     <MESSAGE value="added missing /select for game status field, removed /select from combat score field, cleaned up html indentation" />
     <MESSAGE value="echo email into addmatch" />
     <MESSAGE value="test email field in addmatch" />
@@ -469,6 +463,7 @@
     <MESSAGE value="fixed date update query" />
     <MESSAGE value="fixed input type for date in edit form" />
     <MESSAGE value="fixed input types for date and email in edit form" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed input types for date and email in edit form" />
+    <MESSAGE value="testing security" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing security" />
   </component>
 </project>
