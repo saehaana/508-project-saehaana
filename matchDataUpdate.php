@@ -36,6 +36,8 @@ if($Match_ID == 1){
     }else{
         ;
     }
+}else{
+    echo "No match found for '$Match_ID'";
 }
 
 $queryUpdate2a = "UPDATE Match_History SET Email = '$emailUpdate' where Email = '$email'";
