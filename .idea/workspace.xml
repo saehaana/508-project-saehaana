@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="revert security test changes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="revert login php security changes">
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,13 +69,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00085" summary="attempt to access session email using get in login.php">
-      <created>1620458776571</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1620458776571</updated>
     </task>
     <task id="LOCAL-00086" summary="attempt to access session email using get in login.php">
       <created>1620459152266</created>
@@ -415,7 +406,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620525837709</updated>
     </task>
-    <option name="localTasksCounter" value="134" />
+    <task id="LOCAL-00134" summary="revert login php security changes">
+      <created>1620526357244</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1620526357244</updated>
+    </task>
+    <option name="localTasksCounter" value="135" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -443,7 +441,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="echo email into addmatch" />
     <MESSAGE value="test email field in addmatch" />
     <MESSAGE value="db edit, checking functionality, edit add match form fields to match db columns" />
     <MESSAGE value="fixed fatal error" />
@@ -468,6 +465,7 @@
     <MESSAGE value="fixed input types for date and email in edit form" />
     <MESSAGE value="testing security" />
     <MESSAGE value="revert security test changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="revert security test changes" />
+    <MESSAGE value="revert login php security changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="revert login php security changes" />
   </component>
 </project>

@@ -25,7 +25,7 @@ ERROR_REPORTING(E_ALL);
             <h2>Login Here</h2>
             <p>Please enter email, username and password</p>
 
-            <form action="<?php echo $_SERVER['login.php'];?>" method="POST">
+            <form action="<?php echo htmlspecialchars($_SERVER["login.php"]);?>" method="POST">
                 <p>
                 <label>Email:</label>
                 <input type="email" name="email">
@@ -42,17 +42,6 @@ ERROR_REPORTING(E_ALL);
                 <input type="submit" value="Login" name="Login">
                 </p>
             </form>
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  // collect value of input field
-  $username = $_REQUEST['username'];
-  if (empty($username)) {
-    echo "Name is empty";
-  } else {
-    echo $username;
-  }
-}
-?>
         <div id="Register">
             <h3>Register Here</h3>
             <p>Please fill in all fields below</p>
