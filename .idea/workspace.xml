@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="initialize variables before if statements">
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="added redirect links&#10;after update form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matchDataUpdate.php" beforeDir="false" afterPath="$PROJECT_DIR$/matchDataUpdate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,20 +70,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00120" summary="fixed date update query">
-      <created>1620515575051</created>
-      <option name="number" value="00120" />
-      <option name="presentableId" value="LOCAL-00120" />
-      <option name="project" value="LOCAL" />
-      <updated>1620515575051</updated>
-    </task>
-    <task id="LOCAL-00121" summary="fixed input type for date in edit form">
-      <created>1620515734105</created>
-      <option name="number" value="00121" />
-      <option name="presentableId" value="LOCAL-00121" />
-      <option name="project" value="LOCAL" />
-      <updated>1620515734105</updated>
     </task>
     <task id="LOCAL-00122" summary="fixed input types for date and email in edit form">
       <created>1620515801757</created>
@@ -414,7 +400,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620593298808</updated>
     </task>
-    <option name="localTasksCounter" value="169" />
+    <task id="LOCAL-00169" summary="revert if statement changes">
+      <created>1620595464173</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1620595464173</updated>
+    </task>
+    <task id="LOCAL-00170" summary="added redirect links&#10;after update form">
+      <created>1620595548032</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1620595548032</updated>
+    </task>
+    <option name="localTasksCounter" value="171" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -442,8 +442,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="revert security test changes" />
-    <MESSAGE value="revert login php security changes" />
     <MESSAGE value="testing form validation" />
     <MESSAGE value="revert to working site" />
     <MESSAGE value="testing blank option" />
@@ -467,6 +465,8 @@
     <MESSAGE value="put all update queries within if statements to fix if empty" />
     <MESSAGE value="fixed fields being tied to post" />
     <MESSAGE value="initialize variables before if statements" />
-    <option name="LAST_COMMIT_MESSAGE" value="initialize variables before if statements" />
+    <MESSAGE value="revert if statement changes" />
+    <MESSAGE value="added redirect links&#10;after update form" />
+    <option name="LAST_COMMIT_MESSAGE" value="added redirect links&#10;after update form" />
   </component>
 </project>

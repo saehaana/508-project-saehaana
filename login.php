@@ -19,6 +19,18 @@ $hash = password_hash($password,PASSWORD_DEFAULT);
 $query = "SELECT * FROM Player WHERE Email = '$email' AND Username = '$username' AND Password = '$password'";
 $results = mysqli_query($conn,$query);
 $num = mysqli_num_rows($results);
+if(empty($username)){
+    echo "Username field is empty. Please enter a username.";
+    header('location:index.php');
+}
+if(empty($password)){
+    echo "Password field is empty. Please enter a password.";
+    header('location:index.php');
+}
+if(empty($email)){
+    echo "Email field is empty. Please enter an email.";
+    header('location:index.php');
+}
 if($num == 1){
     $_SESSION['username'] = $username;
     $_SESSION['email'] = $email;
