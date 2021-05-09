@@ -11,8 +11,13 @@
 
 <?php
 //get values from login form
-$username = $password = $email = ;
-$usernameErr = $passwordErr = $emailErr =;
+$username;
+$password;
+$email;
+
+$usernameErr;
+$passwordErr;
+$emailErr;
 
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
     if(empty($_POST["username"])){

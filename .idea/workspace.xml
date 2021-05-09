@@ -68,27 +68,6 @@
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
     </task>
-    <task id="LOCAL-00077" summary="changed within query: Game_Mode to Game_Type to match db column">
-      <created>1620449175162</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1620449175162</updated>
-    </task>
-    <task id="LOCAL-00078" summary="session email check">
-      <created>1620449712736</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1620449712736</updated>
-    </task>
-    <task id="LOCAL-00079" summary="session email check">
-      <created>1620449755447</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1620449755447</updated>
-    </task>
     <task id="LOCAL-00080" summary="session email check missing parentheses">
       <created>1620449948259</created>
       <option name="number" value="00080" />
@@ -411,7 +390,28 @@
       <option name="project" value="LOCAL" />
       <updated>1620524102915</updated>
     </task>
-    <option name="localTasksCounter" value="126" />
+    <task id="LOCAL-00126" summary="testing security">
+      <created>1620524326160</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1620524326160</updated>
+    </task>
+    <task id="LOCAL-00127" summary="testing security">
+      <created>1620524397035</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1620524397035</updated>
+    </task>
+    <task id="LOCAL-00128" summary="testing security">
+      <created>1620524434369</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1620524434369</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
