@@ -33,14 +33,14 @@ if(!isset($_SESSION['username'])) {
     <br> Add matches to your match history: <a href="addMatch.php"> Add Matches </a>
     <br> Edit stats for a match you already entered: <a href="editMatch.php"> Edit Matches </a>
     <p> Or view your matches below: </p>
+    <style>
+    table, th, td {
+      border: 1px solid black;
+    }
+    </style>
+    <h2>Match History</h2>
 <?php
 $result = mysqli_query($conn,"select * from Match_History");
-<style>
-table, th, td {
-  border: 1px solid black;
-}
-</style>
-<h2>Match History</h2>
 echo"
 <table>
 <tr>
@@ -51,11 +51,11 @@ echo"
 while($row = mysqli_fetch_array($result)){
 echo "<tr>";
 echo "<td>" . $row['MatchID'] . "</td>";
-echo "</tr>"
-echo "<tr>"
+echo "</tr>";
+echo "<tr>";
 echo "<td>" . $row['Game_Status'] . "</td>";
-echo "</tr>"
-echo "<tr>"
+echo "</tr>";
+echo "<tr>";
 echo "<td>" . $row['Date'] . "</td>";
 echo "</tr>";
 }
