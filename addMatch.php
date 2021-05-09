@@ -31,10 +31,7 @@ if(!isset($_SESSION['username'])) {
         <h1>Add Match</h1>
         <p>Please select an option from each drop down box</p>
         <form action="matchDataInsert.php" method="POST">
-        <p>
-        <label>Email:</label>
-        <input type="email" name="email">
-        </p>
+
         <p>
         <label>Match ID:</label>
         <input type="text" placeholder="Top-right corner of your scorecard" name="Match_ID">

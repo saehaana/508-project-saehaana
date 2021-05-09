@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="added more echos to home to reveal columns">
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="test no match id field for add match; add email match requirement when validating login">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addMatch.php" beforeDir="false" afterPath="$PROJECT_DIR$/addMatch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matchDataInsert.php" beforeDir="false" afterPath="$PROJECT_DIR$/matchDataInsert.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,13 +71,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00111" summary="fixed weapon type association">
-      <created>1620508711045</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1620508711045</updated>
     </task>
     <task id="LOCAL-00112" summary="initialize weapontype">
       <created>1620508817881</created>
@@ -414,7 +408,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620581880976</updated>
     </task>
-    <option name="localTasksCounter" value="160" />
+    <task id="LOCAL-00160" summary="test no match id field for add match; add email match requirement when validating login">
+      <created>1620583061930</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1620583061930</updated>
+    </task>
+    <option name="localTasksCounter" value="161" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -442,7 +443,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update query attempt" />
     <MESSAGE value="add other update queries, rename declarations," />
     <MESSAGE value="updated declarations, added more update queries" />
     <MESSAGE value="rename date to dateUpdate" />
@@ -467,6 +467,7 @@
     <MESSAGE value="edit sql query to show more columns" />
     <MESSAGE value="edit data insert query columns to match updated db" />
     <MESSAGE value="added more echos to home to reveal columns" />
-    <option name="LAST_COMMIT_MESSAGE" value="added more echos to home to reveal columns" />
+    <MESSAGE value="test no match id field for add match; add email match requirement when validating login" />
+    <option name="LAST_COMMIT_MESSAGE" value="test no match id field for add match; add email match requirement when validating login" />
   </component>
 </project>
