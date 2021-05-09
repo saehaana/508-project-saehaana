@@ -7,14 +7,30 @@ $conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
 //get values from editMatch form
 $email = $_SESSION['email'];
 $Match_ID = $_POST['Match_ID'];
-$emailUpdate = $_POST['emailUpdate'];
+
+if($emailUpdate == $_POST['']){
+;}else{$emailUpdate = $_POST['emailUpdate'];}
+
+if($Game_StatusUpdate == $_POST['']){
+;}else{$Game_StatusUpdate = $_POST['Game_StatusUpdate'];}
+
+if($Game_TypeUpdate == $_POST['']){
+;}else{$Game_TypeUpdate = $_POST['Game_TypeUpdate'];}
+
+if($Combat_ScoreUpdate == $_POST['']){
+;}else{$Combat_ScoreUpdate = $_POST['Combat_ScoreUpdate'];}
+
+if($AgentUpdate == $_POST['']){
+;}else{$AgentUpdate = $_POST['AgentUpdate'];}
+
+if($MapUpdate == $_POST['']){
+;}else{$MapUpdate = $_POST['MapUpdate'];}
+
+if($WeaponUpdate == $_POST['']){
+;}else{$WeaponUpdate = $_POST['WeaponUpdate'];}
+
 $dateUpdate = $_POST['dateUpdate'];
-$Game_StatusUpdate = $_POST['Game_StatusUpdate'];
-$Game_TypeUpdate = $_POST['Game_TypeUpdate'];
-$Combat_ScoreUpdate = $_POST['Combat_ScoreUpdate'];
-$AgentUpdate = $_POST['AgentUpdate'];
-$MapUpdate = $_POST['MapUpdate'];
-$WeaponUpdate = $_POST['WeaponUpdate'];
+
 
 
 //associate all agents with their agent type
