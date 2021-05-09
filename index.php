@@ -1,83 +1,62 @@
 <?php
 session_start();
-//error handling
 ini_set("display_errors", 1);
 ERROR_REPORTING(E_ALL);
-//connect to server
-$conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
 ?>
-<!DOCTYPE HTML>
+
+<!DOCTYPE html>
 <html>
 <head>
     <title>Valorant Stat Tracker</title>
-
-<style>
-.error {color: #FF0000;}
-</style>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
-<?php
-//get values from login form
-$username;
-$password;
-$email;
-
-$usernameErr;
-$passwordErr;
-$emailErr;
-
-if ($_SERVER["REQUEST_METHOD"] == "POST"){
-    if(empty($_POST["username"])){
-        $usernameErr = "Username required";
-    }else{
-        $username = test_input($POST["username"]);
-        if (!preg_match("/^[a-zA-Z-' ]*$/",$username)) {
-              $usernameErr = "Only letters and white space allowed";
+    <style>
+        body{
+        background-image: url('cover.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
         }
+    </style>
+    <php?
+    $usernameErr;
+    $passwordErr;
+    $emailErr;
+    $username;
+    $password;
+    $email;
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+      if (empty($_POST["username"])) {
+        $usernameErr = "Name is required";
+      } else {
+        $username = test_input($_POST["username"]);
+      }
+    function test_input($data) {
+      $data = trim($data);
+      $data = stripslashes($data);
+      $data = htmlspecialchars($data);
+      return $data;
     }
-    if(empty($_POST["password"])){
-        $passwordErr = "Password required";
-    }else{
-        $password = test_input($POST["password"]);
-    }
-    if(empty($_POST["email"])){
-        $emailErr = "email required";
-    }else{
-        $email = test_input($POST["email"]);
-        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-              $emailErr = "Invalid email format";
-        }
-    }
-}
-
-function test_input($data){
-$data = trim($data);
-$data = stripslashes($data);
-$data = htmlspecialchars($data);
-return $data;
-}
-?>
+    ?>
     <h1>Valorant Stat Tracker</h1>
     <br>Welcome to Valorant Stat Tracker! Login or register below to view or add your matches.
     <br><div id="Login">
             <h2>Login Here</h2>
+            <p>Please enter username and password</p>
             <p><span class="error">* required field</span></p>
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
+            <form action="login.php" method="POST">
                 <p>
                 <label>Email:</label>
-                <input type="email" name="email" value="<?php echo $email;?>">
-                <span class="error">* <?php echo $emailErr;?></span>
+                <input type="email" name="email">
                 </p>
                 <p>
                 <label>Username:</label>
-                <input type="text" name="username" value="<?php echo $username;?>">
-                <span class="error">* <?php echo $usernameErr;?></span>
+                <input type="text" name="username">
                 </p>
                 <p>
                 <label>Password:</label>
-                <input type="password" name="password" value="<?php echo $password;?>">
-                <span class="error">* <?php echo $passwordErr;?></span>
+                <input type="password" name="password">
                 </p>
                 <p>
                 <input type="submit" value="Login" name="Login">
@@ -120,16 +99,3 @@ return $data;
         </div>
 </body>
 </html>
-<?php
-//login the user and redirect to home.php
-$query = "SELECT * FROM Player WHERE Username = '$username' AND Password = '$password'";
-$results = mysqli_query($conn,$query);
-$num = mysqli_num_rows($results);
-if($num == 1){
-    $_SESSION['username'] = $username;
-    $_SESSION['email'] = $email;
-    header('location: home.php');
-}else{
-    header('location: index.php');
-}
-?>
