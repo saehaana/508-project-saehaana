@@ -59,6 +59,5 @@ echo "</tr>";
 }
 echo "</table>";
 ?>
-    <h3>
 </body>
 </html>
