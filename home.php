@@ -8,12 +8,7 @@ if(!isset($_SESSION['username'])) {
     $_SESSION['msg'] = "You must log in first";
   	header('location: index.php');
 }
-//if user clicks logout, redirect to index.php
-/*if (isset($_GET['logout'])) {
-    session_destroy();
-  	unset($_SESSION['username']);
-  	header("location: index.php");
-}***/
+
 ?>
 
 <!DOCTYPE HTML>
@@ -39,9 +34,20 @@ if(!isset($_SESSION['username'])) {
     <br> Or view your matches below:
 
 <?php
-
+$result = mysqli_query("select * from Match_History");
+echo "<tableborder='1'>
+<th>MatchID</th>
+<th>Game Status</th>
+<th>Date</th>
+</tr>";
+while($row = mysqli_fetch_array($result)){
+echo "<tr>";
+echo "<td>" . $row['MatchID'] . "</td>";
+echo "<td>" . $row['Game_Status'] . "</td>";
+echo "<td>" . $row['Date'] . "</td>";
+echo "</tr>";
+}
+echo "</table>";
 ?>
-
-
 </body>
 </html>

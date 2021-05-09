@@ -5,6 +5,7 @@ ini_set("display_errors", 1);
 ERROR_REPORTING(E_ALL);
 //connect to server
 $conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
+if(!$conn){die('Could not connect:'.mysqli_error());}
 
 //get values from login form
 $username = $_POST['username'];
