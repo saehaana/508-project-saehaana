@@ -51,11 +51,7 @@ echo"
 while($row = mysqli_fetch_array($result)){
 echo "<tr>";
 echo "<td>" . $row['MatchID'] . "</td>";
-echo "</tr>";
-echo "<tr>";
 echo "<td>" . $row['Game_Status'] . "</td>";
-echo "</tr>";
-echo "<tr>";
 echo "<td>" . $row['Date'] . "</td>";
 echo "</tr>";
 }
