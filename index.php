@@ -44,18 +44,6 @@ $data = stripslashes($data);
 $data = htmlspecialchars($data);
 return $data;
 }
-
-//login the user and redirect to home.php
-$query = "SELECT * FROM Player WHERE Username = '$username' AND Password = '$password'";
-$results = mysqli_query($conn,$query);
-$num = mysqli_num_rows($results);
-if($num == 1){
-    $_SESSION['username'] = $username;
-    $_SESSION['email'] = $email;
-    header('location: home.php');
-}else{
-    header('location: index.php');
-}
 ?>
     <h1>Valorant Stat Tracker</h1>
     <br>Welcome to Valorant Stat Tracker! Login or register below to view or add your matches.
@@ -118,3 +106,16 @@ if($num == 1){
         </div>
 </body>
 </html>
+<?php
+//login the user and redirect to home.php
+$query = "SELECT * FROM Player WHERE Username = '$username' AND Password = '$password'";
+$results = mysqli_query($conn,$query);
+$num = mysqli_num_rows($results);
+if($num == 1){
+    $_SESSION['username'] = $username;
+    $_SESSION['email'] = $email;
+    header('location: home.php');
+}else{
+    header('location: index.php');
+}
+?>
