@@ -27,15 +27,15 @@ ERROR_REPORTING(E_ALL);
             <form action="login.php" method="POST">
                 <p>
                 <label>Email:</label>
-                <input type="email" name="email">
+                <input type="email" name="email" required>
                 </p>
                 <p>
                 <label>Username:</label>
-                <input type="text" name="username">
+                <input type="text" name="username" required>
                 </p>
                 <p>
                 <label>Password:</label>
-                <input type="password" name="password">
+                <input type="password" name="password" required>
                 </p>
                 <p>
                 <input type="submit" value="Login" name="Login">
