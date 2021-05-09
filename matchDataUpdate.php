@@ -67,3 +67,14 @@ echo "match added successfully, go back to view the match under match history";
 echo "No match found for Match ID: $Match_ID";
 }
 ?>
+<!DOCTYPE HTML>
+<html>
+<body>
+<p>
+<a href="home.php">Home</a>
+</p>
+<p>
+<a href="addMatch.php">Add another match</a>
+</p>
+</body>
+</html>
