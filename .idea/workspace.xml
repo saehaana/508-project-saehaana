@@ -68,13 +68,6 @@
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
     </task>
-    <task id="LOCAL-00091" summary="add session start to index">
-      <created>1620460316925</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1620460316925</updated>
-    </task>
     <task id="LOCAL-00092" summary="add email field to login">
       <created>1620460627226</created>
       <option name="number" value="00092" />
@@ -411,7 +404,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620529127871</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="test password hash">
+      <created>1620529440644</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1620529440644</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
