@@ -4,6 +4,15 @@ ini_set("display_errors", 1);
 ERROR_REPORTING(E_ALL);
 $conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
 
+//initialize variables
+$Match_ID;
+$Game_Status;
+$Game_Type;
+$Combat_Score;
+$Agent;
+$Map;
+$Weapon;
+
 //get values from addMatch form
 $email = $_SESSION['email'];
 $date = $_POST['date'];

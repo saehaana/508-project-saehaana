@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="put all update queries within if statements to fix if empty" />
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="fixed fields being tied to post" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,13 +67,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00118" summary="updated declarations, added more update queries">
-      <created>1620515195849</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1620515195849</updated>
     </task>
     <task id="LOCAL-00119" summary="rename date to dateUpdate">
       <created>1620515396353</created>
@@ -411,7 +404,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620592419815</updated>
     </task>
-    <option name="localTasksCounter" value="167" />
+    <task id="LOCAL-00167" summary="fixed fields being tied to post">
+      <created>1620593062435</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1620593062435</updated>
+    </task>
+    <option name="localTasksCounter" value="168" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -439,7 +439,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed input types for date and email in edit form" />
     <MESSAGE value="testing security" />
     <MESSAGE value="revert security test changes" />
     <MESSAGE value="revert login php security changes" />
@@ -464,6 +463,7 @@
     <MESSAGE value="if emailUpdate field empty do nothing;   readd match id field to add match, test other ifempty fields" />
     <MESSAGE value="update update email query with if statements" />
     <MESSAGE value="put all update queries within if statements to fix if empty" />
-    <option name="LAST_COMMIT_MESSAGE" value="put all update queries within if statements to fix if empty" />
+    <MESSAGE value="fixed fields being tied to post" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed fields being tied to post" />
   </component>
 </project>
