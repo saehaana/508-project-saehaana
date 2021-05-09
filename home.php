@@ -41,8 +41,7 @@ if(!isset($_SESSION['username'])) {
     <h2>Match History</h2>
 <?php
 $email = $_SESSION['email'];
-$result = mysqli_query($conn,"select MatchID,Game_Status,Date,MapName,AgentName,WeaponName,RatingNumber from Match_History join Map using(MatchID) join Agent using(MatchID)
-                              join Weapon using(MatchID) join Combat_Rating using(MatchID) where Email = '$email'");
+$result = mysqli_query($conn,"select MatchID,Game_Status,Date,MapName,AgentName,WeaponName,RatingNumber from Match_History join Map using(MatchID) join Agent using(MatchID) join Weapon using(MatchID) join Combat_Rating using(MatchID) where Email = '$email'");
 echo"
 <table>
 <tr>

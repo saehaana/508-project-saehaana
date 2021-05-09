@@ -33,13 +33,13 @@ mysqli_query($conn,$queryInsert1);
 $queryInsert2 = "insert into Game_Type (MatchID,Game_Type) values ('$Match_ID','$Game_Type')";
 mysqli_query($conn,$queryInsert2);
 
-$queryInsert3 = "INSERT INTO Combat_Rating (Email,MatchID,RatingNumber) VALUES ('$email','$Match_ID','$Combat_Score')";
+$queryInsert3 = "INSERT INTO Combat_Rating (MatchID,RatingNumber) VALUES ('$Match_ID','$Combat_Score')";
 mysqli_query($conn,$queryInsert3);
 
 $queryInsert4 = "INSERT INTO Map (MatchID,MapName) VALUES ('$Match_ID','$Map')";
 mysqli_query($conn,$queryInsert4);
 
-$queryInsert4 = "INSERT INTO Agent (Email,MatchID,AgentName,AgentType) VALUES ('$email','$Match_ID','$Agent','$AgentType')";
+$queryInsert4 = "INSERT INTO Agent (MatchID,AgentName,AgentType) VALUES ('$Match_ID','$Agent','$AgentType')";
 mysqli_query($conn,$queryInsert4);
 
 $queryInsert5 = "INSERT INTO Weapon (MatchID,WeaponName,WeaponType) VALUES ('$Match_ID','$Weapon','$WeaponType')";
