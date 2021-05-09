@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="revert to working site">
-      <change beforePath="$PROJECT_DIR$/editMatch.php" beforeDir="false" afterPath="$PROJECT_DIR$/editMatch.php" afterDir="false" />
-    </list>
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="testing blank option on db" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,20 +67,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00088" summary="check if email echo on home">
-      <created>1620460024486</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1620460024486</updated>
-    </task>
-    <task id="LOCAL-00089" summary="check if email echo on home">
-      <created>1620460125246</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1620460125246</updated>
     </task>
     <task id="LOCAL-00090" summary="check if email echo on home">
       <created>1620460152491</created>
@@ -413,7 +397,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620526849415</updated>
     </task>
-    <option name="localTasksCounter" value="137" />
+    <task id="LOCAL-00137" summary="testing blank option">
+      <created>1620526961458</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1620526961458</updated>
+    </task>
+    <task id="LOCAL-00138" summary="testing blank option on db">
+      <created>1620527016845</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1620527016845</updated>
+    </task>
+    <option name="localTasksCounter" value="139" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -441,8 +439,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed fatal error" />
-    <MESSAGE value="edit add match query" />
     <MESSAGE value="fixed entire db, edit add match query," />
     <MESSAGE value="removed addmatch field" />
     <MESSAGE value="readded match id field" />
@@ -466,6 +462,8 @@
     <MESSAGE value="revert login php security changes" />
     <MESSAGE value="testing form validation" />
     <MESSAGE value="revert to working site" />
-    <option name="LAST_COMMIT_MESSAGE" value="revert to working site" />
+    <MESSAGE value="testing blank option" />
+    <MESSAGE value="testing blank option on db" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing blank option on db" />
   </component>
 </project>
