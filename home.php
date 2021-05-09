@@ -34,7 +34,7 @@ if(!isset($_SESSION['username'])) {
     <br> Or view your matches below:
 
 <?php
-$result = mysqli_query("select * from Match_History");
+$result = mysqli_query($conn,"select * from Match_History");
 echo "<tableborder='1'>
 <th>MatchID</th>
 <th>Game Status</th>
