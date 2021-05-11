@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="remove indexOf search implementation, test get agent filter: added getAgent.php, agent select form below match history">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getAgent.php" beforeDir="false" afterPath="$PROJECT_DIR$/getAgent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/home.php" afterDir="false" />
-    </list>
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="change query to get agents in getAgent.php" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,13 +67,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00138" summary="testing blank option on db">
-      <created>1620527016845</created>
-      <option name="number" value="00138" />
-      <option name="presentableId" value="LOCAL-00138" />
-      <option name="project" value="LOCAL" />
-      <updated>1620527016845</updated>
     </task>
     <task id="LOCAL-00139" summary="test password hash">
       <created>1620529127871</created>
@@ -415,7 +404,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620697376351</updated>
     </task>
-    <option name="localTasksCounter" value="187" />
+    <task id="LOCAL-00187" summary="change query to get agents in getAgent.php">
+      <created>1620697932999</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
+      <option name="project" value="LOCAL" />
+      <updated>1620697932999</updated>
+    </task>
+    <option name="localTasksCounter" value="188" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -443,7 +439,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="edit html layout" />
     <MESSAGE value="edit query to only show results for user" />
     <MESSAGE value="edit sql query to show more columns" />
     <MESSAGE value="edit data insert query columns to match updated db" />
@@ -468,6 +463,7 @@
     <MESSAGE value="added game type to query, fixed joins" />
     <MESSAGE value="test indexOf search implementation" />
     <MESSAGE value="remove indexOf search implementation, test get agent filter: added getAgent.php, agent select form below match history" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove indexOf search implementation, test get agent filter: added getAgent.php, agent select form below match history" />
+    <MESSAGE value="change query to get agents in getAgent.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="change query to get agents in getAgent.php" />
   </component>
 </project>
