@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="test if statement for blank edit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matchDataUpdate.php" beforeDir="false" afterPath="$PROJECT_DIR$/matchDataUpdate.php" afterDir="false" />
-    </list>
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="fix redirect link for editing another match; test real_escape_string() on login query" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,13 +67,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00188" summary="test option value for agent filter">
-      <created>1620698650073</created>
-      <option name="number" value="00188" />
-      <option name="presentableId" value="LOCAL-00188" />
-      <option name="project" value="LOCAL" />
-      <updated>1620698650073</updated>
     </task>
     <task id="LOCAL-00189" summary="change query again">
       <created>1620698731494</created>
@@ -414,7 +404,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620752498186</updated>
     </task>
-    <option name="localTasksCounter" value="237" />
+    <task id="LOCAL-00237" summary="fix redirect link for editing another match; test real_escape_string() on login query">
+      <created>1620753116720</created>
+      <option name="number" value="00237" />
+      <option name="presentableId" value="LOCAL-00237" />
+      <option name="project" value="LOCAL" />
+      <updated>1620753116720</updated>
+    </task>
+    <option name="localTasksCounter" value="238" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -442,7 +439,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="connect compareMatch.php to db" />
     <MESSAGE value="move second table and search bar lower; add style to table,th,td" />
     <MESSAGE value="add more space between tables; label tables for other end-users; add third table" />
     <MESSAGE value="remove search table from home" />
@@ -467,6 +463,7 @@
     <MESSAGE value="change email type to string" />
     <MESSAGE value="revert check input and email type change" />
     <MESSAGE value="test if statement for blank edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="test if statement for blank edit" />
+    <MESSAGE value="fix redirect link for editing another match; test real_escape_string() on login query" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix redirect link for editing another match; test real_escape_string() on login query" />
   </component>
 </project>
