@@ -18,34 +18,15 @@ function check_input($data, $problem='')
 
 //get values from editMatch form
 $email = $_SESSION['email'];
-if(!empty($Match_ID)){
 $Match_ID = check_input($_POST['Match_ID'],"Match ID required");
-}
-if(!empty($emailUpdate)){
 $emailUpdate = $_POST['emailUpdate'];
-}
-if(!empty($dateUpdate)){
 $dateUpdate = $_POST['dateUpdate'];
-}
-if(!empty($Game_StatusUpdate)){
 $Game_StatusUpdate = $_POST['Game_StatusUpdate'];
-}
-if(!empty($Game_TypeUpdate)){
 $Game_TypeUpdate = $_POST['Game_TypeUpdate'];
-}
-if(!empty($Combat_ScoreUpdate)){
 $Combat_ScoreUpdate = $_POST['Combat_ScoreUpdate'];
-}
-if(!empty($AgentUpdate)){
 $AgentUpdate = $_POST['AgentUpdate'];
-}
-if(!empty($MapUpdate)){
 $MapUpdate = $_POST['MapUpdate'];
-}
-if(!empty($WeaponUpdate)){
 $WeaponUpdate = $_POST['WeaponUpdate'];
-}
-
 
 //associate all agents with their agent type
 $AgentTypeUpdate;
@@ -64,7 +45,7 @@ $queryUpdate1 = "UPDATE Player SET Email = '$emailUpdate' where Email = '$email'
 mysqli_query($conn,$queryUpdate1);
 }
 if(!empty($emailUpdate)){
-$queryUpdate2a = "UPDATE Match_History SET Email = '$emailUpdate' where Email = '$email'";
+$queryUpdate2a = "UPDATE Match_History SET Email = '$emailUpdate' where Email = '$email' AND MatchID = '$Match_ID'";
 mysqli_query($conn,$queryUpdate2a);
 }
 $queryUpdate2b = "UPDATE Match_History SET Game_Status = '$Game_StatusUpdate' where MatchID = '$Match_ID'";
