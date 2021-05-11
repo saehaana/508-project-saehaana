@@ -43,7 +43,6 @@ if(!isset($_SESSION['username'])) {
 
     td, th {
       border: 1px solid #dddddd;
-      background-color:Gray;
       text-align: left;
       padding: 8px;
     }
@@ -51,6 +50,9 @@ if(!isset($_SESSION['username'])) {
     tr:nth-child(even) {
       background-color: #dddddd;
     }
+    tr:nth-child(odd) {
+          background-color: gray;
+        }
     </style>
 
     <h2>Match History</h2>
