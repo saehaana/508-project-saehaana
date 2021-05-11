@@ -38,6 +38,9 @@ if(!isset($_SESSION['username'])) {
     table, th, td {
       border: 1px solid black;
     }
+    th {
+        cursor: pointer;
+    }
     </style>
 
     <h2>Match History</h2>
