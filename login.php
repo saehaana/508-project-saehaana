@@ -33,8 +33,8 @@ $hash = password_hash($password,PASSWORD_DEFAULT);
 
 //login the user and redirect to home.php
 $query = ("SELECT * FROM Player WHERE Email = '%s'",
-    $mysqli->real_escape_string($_POST['email']));
-$results = $mysqli->query($conn,$query);
+    $mysqli->real_escape_string($email));
+$results = $mysqli->query($query);
 $num = mysqli_num_rows($results);
 if(empty($username)){
     echo "Username field is empty. Please enter a username.";
