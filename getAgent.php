@@ -25,8 +25,7 @@ if (!$conn) {
   die('Could not connect: ' . mysqli_error($conn));
 }
 
-$sql="SELECT * FROM user WHERE id = '".$q."'";
-$result = mysqli_query($conn,$sql);
+$result = mysqli_query($conn,"select MatchID,Game_Status,Game_Type,Date,MapName,AgentName,WeaponName,RatingNumber from Match_History join Game_Type using(MatchID) join Map using(MatchID) join Agent using(MatchID) join Weapon using(MatchID) join Combat_Rating using(MatchID) where id = '".$q."'");
 
 echo"
 <table>
@@ -53,7 +52,7 @@ echo "<td>" . $row['RatingNumber'] . "</td>";
 echo "</tr>";
 }
 echo "</table>";
-mysqli_close($con);
+mysqli_close($conn);
 ?>
 </body>
 </html>
