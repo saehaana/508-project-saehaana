@@ -31,9 +31,24 @@ if(!isset($_SESSION['username'])) {
     <br>
     <a href="logout.php"> Logout </a>
     <style>
-        table, th, td {
-          border: 1px solid black;
-        }
+        table {
+              font-family: arial, sans-serif;
+              border-collapse: collapse;
+              width: 100%;
+            }
+
+            td, th {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 8px;
+            }
+
+            tr:nth-child(even) {
+              background-color: #dddddd;
+            }
+            tr:nth-child(odd) {
+                  background-color: gray;
+                }
         </style>
     <div id="editMatch">
         <h1>Edit Match</h1>
