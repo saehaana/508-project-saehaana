@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="add more space between tables; label tables for other end-users; add third table" />
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="remove search table from home">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compareMatch.php" beforeDir="false" afterPath="$PROJECT_DIR$/compareMatch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editMatch.php" beforeDir="false" afterPath="$PROJECT_DIR$/editMatch.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,13 +71,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00161" summary="test form field if empty, remove email field from addmatch(use session email instead);add home redirect button and addmatch link">
-      <created>1620583798888</created>
-      <option name="number" value="00161" />
-      <option name="presentableId" value="LOCAL-00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1620583798888</updated>
     </task>
     <task id="LOCAL-00162" summary="remove match id field">
       <created>1620583850426</created>
@@ -411,7 +408,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620746468080</updated>
     </task>
-    <option name="localTasksCounter" value="210" />
+    <task id="LOCAL-00210" summary="remove search table from home">
+      <created>1620746866103</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1620746866103</updated>
+    </task>
+    <option name="localTasksCounter" value="211" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -439,7 +443,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add check_input function" />
     <MESSAGE value="add check_input function to register form, add match, and update forms" />
     <MESSAGE value="test html required attribute" />
     <MESSAGE value="add login redirect after registration, add more required fields" />
@@ -464,6 +467,7 @@
     <MESSAGE value="connect compareMatch.php to db" />
     <MESSAGE value="move second table and search bar lower; add style to table,th,td" />
     <MESSAGE value="add more space between tables; label tables for other end-users; add third table" />
-    <option name="LAST_COMMIT_MESSAGE" value="add more space between tables; label tables for other end-users; add third table" />
+    <MESSAGE value="remove search table from home" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove search table from home" />
   </component>
 </project>

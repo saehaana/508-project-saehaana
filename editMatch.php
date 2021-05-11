@@ -33,9 +33,63 @@ if(!isset($_SESSION['username'])) {
         <h1>Edit Match</h1>
         <form action="matchDataUpdate.php" method="POST">
         <p>
-        <label>Which Match ID are you updating for?:</label>
-        <input type="text" placeholder="Top-right corner of your scorecard" name="Match_ID">
+        <label>Which Match are you updating for?:</label>
+        <input type="text" placeholder="Enter Match ID" name="Match_ID">
         </p>
+<h1>Match History</h1>
+<input type="text" input id='myInput2' onkeyup='searchTable2()' placeholder="Search">
+    <table id='myTable2'>
+    <tr>
+    <th>Match ID</th>
+    <th>Game Status</th>
+    <th>Game Mode</th>
+    <th>Date</th>
+    <th>Map</th>
+    <th>Agent</th>
+    <th>Weapon</th>
+    <th>Combat Score</th>
+    </tr>
+<?php
+$email = $_SESSION['email'];
+$result2 = mysqli_query($conn,"select MatchID,Game_Status,Game_Type,Date,MapName,AgentName,WeaponName,RatingNumber from Match_History join Game_Type using(MatchID) join Map using(MatchID) join Agent using(MatchID) join Weapon using(MatchID) join Combat_Rating using(MatchID) where Email = '$email'");
+?>
+<?php while($row = mysqli_fetch_array($result2)):?>
+<tr>
+<td><?php echo $row['MatchID'];?></td>
+<td><?php echo $row['Game_Status'];?></td>
+<td><?php echo $row['Game_Type'];?></td>
+<td><?php echo $row['Date'];?></td>
+<td><?php echo $row['MapName'];?></td>
+<td><?php echo $row['AgentName'];?></td>
+<td><?php echo $row['WeaponName'];?></td>
+<td><?php echo $row['RatingNumber'];?></td>
+</tr>
+<?php endwhile;?>
+</table>
+<script>
+function searchTable2() {
+    var input, filter, found, table, tr, td, i, j;
+    input = document.getElementById("myInput2");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable2");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td");
+        for (j = 0; j < td.length; j++) {
+            if (td[j].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                found = true;
+            }
+        }
+        if (found) {
+            tr[i].style.display = "";
+            found = false;
+        } else {
+            tr[i].style.display = "none";
+        }
+    }
+}
+</script>
+
         <p>Please fill out field(s) you want to update</p>
         <p>Filling out a field indicates you are going to change your current value to the value you typed in</p>
         <p>e.g. 'Email: email@example.com' changes your current email to the email inputted</p>

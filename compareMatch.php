@@ -37,7 +37,7 @@ if(!isset($_SESSION['username'])) {
 <h1> Compare Matches</h1>
 <p>Filter through your matches to find patterns in your games</p>
 <h2>Table 1</h2>
-<input id='myInput' onkeyup='searchTable()' type='text'>
+<input id='myInput' placeholder="Filter here" onkeyup='searchTable()' type='text'>
     <table id='myTable'>
     <tr>
     <th>Match ID</th>
@@ -93,7 +93,7 @@ function searchTable() {
 
 <br><br>
 <h3>Table 2</h3>
-<input id='myInput2' onkeyup='searchTable2()' type='text'>
+<input id='myInput2' placeholder="Filter here" onkeyup='searchTable2()' type='text'>
     <table id='myTable2'>
     <tr>
     <th>Match ID</th>
@@ -148,7 +148,7 @@ function searchTable2() {
 
 <br><br>
 <h4>Table 3</h4>
-<input id='myInput3' onkeyup='searchTable3()' type='text'>
+<input id='myInput3' placeholder="Filter here" onkeyup='searchTable3()' type='text'>
     <table id='myTable3'>
     <tr>
     <th>Match ID</th>
