@@ -45,9 +45,10 @@ if(!empty($emailUpdate)){
 $queryUpdate1 = "UPDATE Player SET Email = '$emailUpdate' where Email = '$email'";
 mysqli_query($conn,$queryUpdate1);
 }
+if(!empty($emailUpdate)){
 $queryUpdate2a = "UPDATE Match_History SET Email = '$emailUpdate' where Email = '$email'";
 mysqli_query($conn,$queryUpdate2a);
-
+}
 $queryUpdate2b = "UPDATE Match_History SET Game_Status = '$Game_StatusUpdate' where MatchID = '$Match_ID'";
 mysqli_query($conn,$queryUpdate2b);
 
