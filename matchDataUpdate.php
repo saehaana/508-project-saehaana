@@ -24,6 +24,7 @@ $dateUpdate = $_POST['dateUpdate'];
 $Game_StatusUpdate = $_POST['Game_StatusUpdate'];
 $Game_TypeUpdate = $_POST['Game_TypeUpdate'];
 $Combat_ScoreUpdate = $_POST['Combat_ScoreUpdate'];
+$Econ_ScoreUpdate = $_POST['Econ_ScoreUpdate'];
 $AgentUpdate = $_POST['AgentUpdate'];
 $MapUpdate = $_POST['MapUpdate'];
 $WeaponUpdate = $_POST['WeaponUpdate'];
@@ -62,6 +63,10 @@ mysqli_query($conn,$queryUpdate3);
 }
 if(!empty($Combat_ScoreUpdate)){
 $queryUpdate4 = "UPDATE Combat_Rating SET RatingNumber = '$Combat_ScoreUpdate' where MatchID = '$Match_ID'";
+mysqli_query($conn,$queryUpdate4);
+}
+if(!empty($Econ_ScoreUpdate)){
+$queryUpdate4 = "UPDATE Econ_Rating SET EconRatingNumber = '$Econ_ScoreUpdate' where MatchID = '$Match_ID'";
 mysqli_query($conn,$queryUpdate4);
 }
 if(!empty($MapUpdate)){

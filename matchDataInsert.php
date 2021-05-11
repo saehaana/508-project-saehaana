@@ -23,6 +23,7 @@ $date = check_input($_POST['date'],"Date required");
 $Game_Status = check_input($_POST['Game_Status'],"Game Status required");
 $Game_Type = check_input($_POST['Game_Type'],"Game Type required");
 $Combat_Score = check_input($_POST['Combat_Score'],"Combat Score required");
+$Econ_Score = check_input($_POST['Econ_Score'],"Econ Score required");
 $Agent = check_input($_POST['Agent'],"Agent required");
 $Map = check_input($_POST['Map'],"Map required");
 $Weapon = check_input($_POST['Weapon'],"Weapon required");
@@ -48,14 +49,17 @@ mysqli_query($conn,$queryInsert2);
 $queryInsert3 = "INSERT INTO Combat_Rating (MatchID,RatingNumber) VALUES ('$Match_ID','$Combat_Score')";
 mysqli_query($conn,$queryInsert3);
 
-$queryInsert4 = "INSERT INTO Map (MatchID,MapName) VALUES ('$Match_ID','$Map')";
+$queryInsert4 = "INSERT INTO Econ_Rating (MatchID,EconRatingNumber) VALUES ('$Match_ID','$Econ_Score')";
 mysqli_query($conn,$queryInsert4);
 
-$queryInsert4 = "INSERT INTO Agent (MatchID,AgentName,AgentType) VALUES ('$Match_ID','$Agent','$AgentType')";
-mysqli_query($conn,$queryInsert4);
-
-$queryInsert5 = "INSERT INTO Weapon (MatchID,WeaponName,WeaponType) VALUES ('$Match_ID','$Weapon','$WeaponType')";
+$queryInsert5 = "INSERT INTO Map (MatchID,MapName) VALUES ('$Match_ID','$Map')";
 mysqli_query($conn,$queryInsert5);
+
+$queryInsert5 = "INSERT INTO Agent (MatchID,AgentName,AgentType) VALUES ('$Match_ID','$Agent','$AgentType')";
+mysqli_query($conn,$queryInsert5);
+
+$queryInsert6 = "INSERT INTO Weapon (MatchID,WeaponName,WeaponType) VALUES ('$Match_ID','$Weapon','$WeaponType')";
+mysqli_query($conn,$queryInsert6);
 
 echo "match added successfully, click home button below to view the match under match history or add another match";
 ?>

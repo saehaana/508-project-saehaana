@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="change back ground color for nth child" />
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="change all table styles">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addMatch.php" beforeDir="false" afterPath="$PROJECT_DIR$/addMatch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matchDataInsert.php" beforeDir="false" afterPath="$PROJECT_DIR$/matchDataInsert.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,20 +71,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00200" summary="test home table creation without echo">
-      <created>1620704439080</created>
-      <option name="number" value="00200" />
-      <option name="presentableId" value="LOCAL-00200" />
-      <option name="project" value="LOCAL" />
-      <updated>1620704439080</updated>
-    </task>
-    <task id="LOCAL-00201" summary="change query">
-      <created>1620704567689</created>
-      <option name="number" value="00201" />
-      <option name="presentableId" value="LOCAL-00201" />
-      <option name="project" value="LOCAL" />
-      <updated>1620704567689</updated>
     </task>
     <task id="LOCAL-00202" summary="revert query">
       <created>1620704750266</created>
@@ -411,7 +401,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620759122682</updated>
     </task>
-    <option name="localTasksCounter" value="249" />
+    <task id="LOCAL-00249" summary="change back ground color for nth child">
+      <created>1620759167580</created>
+      <option name="number" value="00249" />
+      <option name="presentableId" value="LOCAL-00249" />
+      <option name="project" value="LOCAL" />
+      <updated>1620759167580</updated>
+    </task>
+    <task id="LOCAL-00250" summary="change all table styles">
+      <created>1620759267046</created>
+      <option name="number" value="00250" />
+      <option name="presentableId" value="LOCAL-00250" />
+      <option name="project" value="LOCAL" />
+      <updated>1620759267046</updated>
+    </task>
+    <option name="localTasksCounter" value="251" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -439,7 +443,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test just html table" />
     <MESSAGE value="add in script to html table" />
     <MESSAGE value="revert" />
     <MESSAGE value="fix all click functions" />
@@ -464,6 +467,7 @@
     <MESSAGE value="change name valorant stat tracker to match tracker" />
     <MESSAGE value="change ui table style" />
     <MESSAGE value="change back ground color for nth child" />
-    <option name="LAST_COMMIT_MESSAGE" value="change back ground color for nth child" />
+    <MESSAGE value="change all table styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="change all table styles" />
   </component>
 </project>

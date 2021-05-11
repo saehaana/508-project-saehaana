@@ -58,6 +58,10 @@ if(!isset($_SESSION['username'])) {
         <label>Combat Score:</label>
         <input type="text" placeholder="Enter a number up to 3 digits e.g. 253" name="Combat_Score" required>
         </p>
+        <p>
+        <label>Econ Score:</label>
+        <input type="text" placeholder="Enter a number up to 3 digits e.g. 253" name="Econ_Score" required>
+        </p>
         <label for="Agent">Agent:</label>
         <select id = "Agent" name="Agent" required>
             <option selected disabled hidden style='display: none' value=''></option>

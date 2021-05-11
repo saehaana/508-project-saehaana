@@ -63,6 +63,7 @@ if(!isset($_SESSION['username'])) {
     <th>Agent</th>
     <th>Weapon</th>
     <th>Combat Score</th>
+    <th>Econ Score</th>
     </tr>
 <?php
 $email = $_SESSION['email'];
@@ -78,6 +79,7 @@ $result = mysqli_query($conn,"select MatchID,Game_Status,Game_Type,Date,MapName,
 <td><?php echo $row['AgentName'];?></td>
 <td><?php echo $row['WeaponName'];?></td>
 <td><?php echo $row['RatingNumber'];?></td>
+<td><?php echo $row['EconRatingNumber'];?></td>
 </tr>
 <?php endwhile;?>
 </table>
@@ -119,6 +121,7 @@ function searchTable() {
     <th>Agent</th>
     <th>Weapon</th>
     <th>Combat Score</th>
+    <th>Econ Score</th>
     </tr>
 <?php
 $email = $_SESSION['email'];
@@ -134,6 +137,7 @@ $result2 = mysqli_query($conn,"select MatchID,Game_Status,Game_Type,Date,MapName
 <td><?php echo $row['AgentName'];?></td>
 <td><?php echo $row['WeaponName'];?></td>
 <td><?php echo $row['RatingNumber'];?></td>
+<td><?php echo $row['EconRatingNumber'];?></td>
 </tr>
 <?php endwhile;?>
 </table>
@@ -174,10 +178,11 @@ function searchTable2() {
     <th>Agent</th>
     <th>Weapon</th>
     <th>Combat Score</th>
+    <th>Econ Score</th>
     </tr>
 <?php
 $email = $_SESSION['email'];
-$result3 = mysqli_query($conn,"select MatchID,Game_Status,Game_Type,Date,MapName,AgentName,WeaponName,RatingNumber from Match_History join Game_Type using(MatchID) join Map using(MatchID) join Agent using(MatchID) join Weapon using(MatchID) join Combat_Rating using(MatchID) where Email = '$email'");
+$result3 = mysqli_query($conn,"select MatchID,Game_Status,Game_Type,Date,MapName,AgentName,WeaponName,RatingNumber,EconRatingNumber from Match_History join Game_Type using(MatchID) join Map using(MatchID) join Agent using(MatchID) join Weapon using(MatchID) join Combat_Rating using(MatchID) join Econ_Rating using(MatchID) where Email = '$email'");
 ?>
 <?php while($row = mysqli_fetch_array($result3)):?>
 <tr>
@@ -189,6 +194,7 @@ $result3 = mysqli_query($conn,"select MatchID,Game_Status,Game_Type,Date,MapName
 <td><?php echo $row['AgentName'];?></td>
 <td><?php echo $row['WeaponName'];?></td>
 <td><?php echo $row['RatingNumber'];?></td>
+<td><?php echo $row['EconRatingNumber'];?></td>
 </tr>
 <?php endwhile;?>
 </table>
