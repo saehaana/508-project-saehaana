@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="added game type to query, fixed joins">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="test indexOf search implementation" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,13 +67,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00130" summary="testing security">
-      <created>1620524858833</created>
-      <option name="number" value="00130" />
-      <option name="presentableId" value="LOCAL-00130" />
-      <option name="project" value="LOCAL" />
-      <updated>1620524858833</updated>
     </task>
     <task id="LOCAL-00131" summary="revert security test changes">
       <created>1620525578491</created>
@@ -413,7 +404,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620600998156</updated>
     </task>
-    <option name="localTasksCounter" value="179" />
+    <task id="LOCAL-00179" summary="test indexOf search implementation">
+      <created>1620695325781</created>
+      <option name="number" value="00179" />
+      <option name="presentableId" value="LOCAL-00179" />
+      <option name="project" value="LOCAL" />
+      <updated>1620695325781</updated>
+    </task>
+    <option name="localTasksCounter" value="180" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -441,7 +439,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test if conn else die for login; add  match history view in home" />
     <MESSAGE value="edit mysqli query" />
     <MESSAGE value="edit html layout" />
     <MESSAGE value="edit query to only show results for user" />
@@ -466,6 +463,7 @@
     <MESSAGE value="add login redirect after registration, add more required fields" />
     <MESSAGE value="added game type field to match history" />
     <MESSAGE value="added game type to query, fixed joins" />
-    <option name="LAST_COMMIT_MESSAGE" value="added game type to query, fixed joins" />
+    <MESSAGE value="test indexOf search implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="test indexOf search implementation" />
   </component>
 </project>
