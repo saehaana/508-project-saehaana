@@ -40,27 +40,19 @@ if(!isset($_SESSION['username'])) {
     </style>
     <h2>Match History</h2>
     <script>
-    function searchTable() {
-        var input, filter, found, table, tr, td, i, j;
-        input = document.getElementById("search");
-        filter = input.value.toUpperCase();
-        table = document.getElementById("table");
-        tr = table.getElementsByTagName("tr");
-        for (i = 0; i < tr.length; i++) {
-            td = tr[i].getElementsByTagName("td");
-            for (j = 0; j < td.length; j++) {
-                if (td[j].innerHTML.toUpperCase().indexOf(filter) > -1) {
-                    found = true;
-                }
-            }
-            if (found) {
-                tr[i].style.display = "";
-                found = false;
-            } else {
-                tr[i].style.display = "none";
-            }
-        }
-    }
+    var $rows = $('#table tr');
+    $('#search').keyup(function() {
+      var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase().split(' ');
+
+      $rows.hide().filter(function() {
+        var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
+        var matchesSearch = true;
+        $(val).each(function(index, value) {
+          matchesSearch = (!matchesSearch) ? false : ~text.indexOf(value);
+        });
+        return matchesSearch;
+      }).show();
+    });
     </script>
     <input type="text" id="search" placeholder="type to search" />
 <?php
