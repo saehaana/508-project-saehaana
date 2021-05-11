@@ -24,7 +24,7 @@ $conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
 if (!$conn) {
   die('Could not connect: ' . mysqli_error($conn));
 }
-mysqli_select_db($con,"project_saehaana");
+mysqli_select_db($conn,"project_saehaana");
 $result = mysqli_query($conn,"select MatchID,Game_Status,Game_Type,Date,MapName,AgentName,WeaponName,RatingNumber from Match_History join Game_Type using(MatchID) join Map using(MatchID) join Agent using(MatchID) join Weapon using(MatchID) join Combat_Rating using(MatchID) where AgentName = '".$q."'");
 
 echo"
