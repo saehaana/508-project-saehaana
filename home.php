@@ -35,11 +35,20 @@ if(!isset($_SESSION['username'])) {
     <br> Filter games on our comparison page: <a href="compareMatch.php"> Compare Matches </a>
     <p> Or view your matches below: </p>
     <style>
-    table, th, td {
-      border: 1px solid black;
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
     }
-    th {
-        cursor: pointer;
+
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
     }
     </style>
 

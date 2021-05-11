@@ -7,7 +7,7 @@ ERROR_REPORTING(E_ALL);
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Valorant Stat Tracker</title>
+    <title>Valorant Match Tracker</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
