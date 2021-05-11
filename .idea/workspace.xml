@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="test option value for agent filter" />
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="change query again" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,13 +67,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00140" summary="test password hash">
-      <created>1620529440644</created>
-      <option name="number" value="00140" />
-      <option name="presentableId" value="LOCAL-00140" />
-      <option name="project" value="LOCAL" />
-      <updated>1620529440644</updated>
     </task>
     <task id="LOCAL-00141" summary="test password hash">
       <created>1620529511996</created>
@@ -411,7 +404,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620698650073</updated>
     </task>
-    <option name="localTasksCounter" value="189" />
+    <task id="LOCAL-00189" summary="change query again">
+      <created>1620698731494</created>
+      <option name="number" value="00189" />
+      <option name="presentableId" value="LOCAL-00189" />
+      <option name="project" value="LOCAL" />
+      <updated>1620698731494</updated>
+    </task>
+    <option name="localTasksCounter" value="190" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -439,7 +439,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="edit sql query to show more columns" />
     <MESSAGE value="edit data insert query columns to match updated db" />
     <MESSAGE value="added more echos to home to reveal columns" />
     <MESSAGE value="test no match id field for add match; add email match requirement when validating login" />
@@ -464,6 +463,7 @@
     <MESSAGE value="remove indexOf search implementation, test get agent filter: added getAgent.php, agent select form below match history" />
     <MESSAGE value="change query to get agents in getAgent.php" />
     <MESSAGE value="test option value for agent filter" />
-    <option name="LAST_COMMIT_MESSAGE" value="test option value for agent filter" />
+    <MESSAGE value="change query again" />
+    <option name="LAST_COMMIT_MESSAGE" value="change query again" />
   </component>
 </project>
