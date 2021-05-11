@@ -42,7 +42,7 @@ if(!isset($_SESSION['username'])) {
     <script>
     function searchTable() {
         var input, filter, found, table, tr, td, i, j;
-        input = document.getElementById("'$result'");
+        input = document.getElementById("search");
         filter = input.value.toUpperCase();
         table = document.getElementById("table");
         tr = table.getElementsByTagName("tr");
