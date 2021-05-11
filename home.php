@@ -32,6 +32,7 @@ if(!isset($_SESSION['username'])) {
     <p> Things to do: </p>
     <br> Add matches to your match history: <a href="addMatch.php"> Add Matches </a>
     <br> Edit stats for a match you already entered: <a href="editMatch.php"> Edit Matches </a>
+    <br> Filter games on our comparison page: <a href="compareMatch.php"> Compare Matches </a>
     <p> Or view your matches below: </p>
     <style>
     table, th, td {
