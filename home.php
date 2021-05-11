@@ -9,7 +9,6 @@ if(!isset($_SESSION['username'])) {
     $_SESSION['msg'] = "You must log in first";
   	header('location: index.php');
 }
-
 ?>
 
 <!DOCTYPE HTML>
@@ -39,8 +38,9 @@ if(!isset($_SESSION['username'])) {
     }
     </style>
     <h2>Match History</h2>
-    <br>
-    <table class="testTable" id="test">
+<p> Or maybe try some of our filters</p>
+<input type="text" id="agentFilter" placeholder="Search for agents..">
+    <table>
     <tr>
     <th>Match ID</th>
     <th>Game Status</th>
@@ -51,22 +51,25 @@ if(!isset($_SESSION['username'])) {
     <th>Weapon</th>
     <th>Combat Score</th>
     </tr>
-    </table>
 <?php
 $email = $_SESSION['email'];
 $result = mysqli_query($conn,"select MatchID,Game_Status,Game_Type,Date,MapName,AgentName,WeaponName,RatingNumber from Match_History join Game_Type using(MatchID) join Map using(MatchID) join Agent using(MatchID) join Weapon using(MatchID) join Combat_Rating using(MatchID) where Email = '$email'");
-while($row = mysqli_fetch_array($result)){
-echo "<tr>";
-echo "<td>" . $row['MatchID'] . "</td>";
-echo "<td>" . $row['Game_Status'] . "</td>";
-echo "<td>" . $row['Game_Type'] . "</td>";
-echo "<td>" . $row['Date'] . "</td>";
-echo "<td>" . $row['MapName'] . "</td>";
-echo "<td>" . $row['AgentName'] . "</td>";
-echo "<td>" . $row['WeaponName'] . "</td>";
-echo "<td>" . $row['RatingNumber'] . "</td>";
-echo "</tr>";
-}
 ?>
+<?php while($row = mysqli_fetch_array($result)):?>
+<tr>
+<td><?php echo $row['MatchID'];?> </td>
+<td><?php echo  $row['Game_Status'];?> </td>
+<td><?php echo   $row['Game_Type'];?> </td>
+<td><?php echo   $row['Date'];?> </td>
+<td><?php echo   $row['MapName'];?> </td>
+<td><?php echo   $row['AgentName'];?> </td>
+<td><?php echo   $row['WeaponName'];?> </td>
+<td><?php echo   $row['RatingNumber'];?></td>
+</tr>
+<?php endwhile;?>
+</table>
+
+
+
 </body>
 </html>
