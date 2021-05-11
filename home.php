@@ -72,86 +72,19 @@ $result = mysqli_query($conn,"select MatchID,Game_Status,Game_Type,Date,MapName,
 </tbody>
 </table>
 <script>
-//  sortTable(f,n)
-//  f : 1 ascending order, -1 descending order
-//  n : n-th child(<td>) of <tr>
-function sortTable(f,n){
-    var rows = $('#myTable').get();
+const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
 
-    rows.sort(function(a, b) {
+const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+    v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
 
-        var A = getVal(a);
-        var B = getVal(b);
-
-        if(A < B) {
-            return -1*f;
-        }
-        if(A > B) {
-            return 1*f;
-        }
-        return 0;
-    });
-
-    function getVal(elm){
-        var v = $(elm).children('td').eq(n).text().toUpperCase();
-        if($.isNumeric(v)){
-            v = parseInt(v,10);
-        }
-        return v;
-    }
-
-    $.each(rows, function(index, row) {
-        $('#myTable').children('tbody').append(row);
-    });
-}
-var f_mID = 1; // flag to toggle the sorting order
-var f_gs = 1; // flag to toggle the sorting order
-var f_gm = 1; // flag to toggle the sorting order
-var f_d = 1; // flag to toggle the sorting order
-var f_m = 1; // flag to toggle the sorting order
-var f_a = 1; // flag to toggle the sorting order
-var f_w = 1; // flag to toggle the sorting order
-var f_cs = 1; // flag to toggle the sorting order
-$("#mID").click(function(){
-    f_mID *= -1; // toggle the sorting order
-    var n = $(this).prevAll().length;
-    sortTable(f_mID,n);
-});
-$("#gs").click(function(){
-    f_gs *= -1; // toggle the sorting order
-    var n = $(this).prevAll().length;
-    sortTable(f_gs,n);
-});
-$("#gm").click(function(){
-    f_gm *= -1; // toggle the sorting order
-    var n = $(this).prevAll().length;
-    sortTable(f_gm,n);
-});
-$("#d").click(function(){
-    f_d *= -1; // toggle the sorting order
-    var n = $(this).prevAll().length;
-    sortTable(f_d,n);
-});
-$("#m").click(function(){
-    f_m *= -1; // toggle the sorting order
-    var n = $(this).prevAll().length;
-    sortTable(f_m,n);
-});
-$("#a").click(function(){
-    f_a *= -1; // toggle the sorting order
-    var n = $(this).prevAll().length;
-    sortTable(f_a,n);
-});
-$("#w").click(function(){
-    f_w *= -1; // toggle the sorting order
-    var n = $(this).prevAll().length;
-    sortTable(f_w,n);
-});
-$("#cs").click(function(){
-    f_cs *= -1; // toggle the sorting order
-    var n = $(this).prevAll().length;
-    sortTable(f_cs,n);
-});
+// do the work...
+document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+    const table = th.closest('myTable');
+    Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+        .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+        .forEach(tr => table.appendChild(tr) );
+})));
 </script>
 
 </body>
