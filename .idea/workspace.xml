@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="fix all click functions" />
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="add more tags" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,20 +67,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00174" summary="add check_input function to register form, add match, and update forms">
-      <created>1620597187983</created>
-      <option name="number" value="00174" />
-      <option name="presentableId" value="LOCAL-00174" />
-      <option name="project" value="LOCAL" />
-      <updated>1620597187983</updated>
-    </task>
-    <task id="LOCAL-00175" summary="test html required attribute">
-      <created>1620598000214</created>
-      <option name="number" value="00175" />
-      <option name="presentableId" value="LOCAL-00175" />
-      <option name="project" value="LOCAL" />
-      <updated>1620598000214</updated>
     </task>
     <task id="LOCAL-00176" summary="add login redirect after registration, add more required fields">
       <created>1620598216776</created>
@@ -411,7 +397,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620748772111</updated>
     </task>
-    <option name="localTasksCounter" value="223" />
+    <task id="LOCAL-00223" summary="add tbody tag to table">
+      <created>1620748916319</created>
+      <option name="number" value="00223" />
+      <option name="presentableId" value="LOCAL-00223" />
+      <option name="project" value="LOCAL" />
+      <updated>1620748916319</updated>
+    </task>
+    <task id="LOCAL-00224" summary="add more tags">
+      <created>1620749064572</created>
+      <option name="number" value="00224" />
+      <option name="presentableId" value="LOCAL-00224" />
+      <option name="project" value="LOCAL" />
+      <updated>1620749064572</updated>
+    </task>
+    <option name="localTasksCounter" value="225" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -439,8 +439,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="change query again" />
-    <MESSAGE value="added home link to add and edit match pages, edit html tags on home" />
     <MESSAGE value="test new script on home page" />
     <MESSAGE value="added space in between home and logout links, test real_escape_string() on add match" />
     <MESSAGE value="revert real escape string changes" />
@@ -464,6 +462,8 @@
     <MESSAGE value="add in script to html table" />
     <MESSAGE value="revert" />
     <MESSAGE value="fix all click functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix all click functions" />
+    <MESSAGE value="add tbody tag to table" />
+    <MESSAGE value="add more tags" />
+    <option name="LAST_COMMIT_MESSAGE" value="add more tags" />
   </component>
 </project>

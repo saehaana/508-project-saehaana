@@ -60,26 +60,12 @@ $result = mysqli_query($conn,"select MatchID,Game_Status,Game_Type,Date,MapName,
 <tbody>
 <tr>
 <td><?php echo $row['MatchID'];?></td>
-</tr>
-<tr>
 <td><?php echo $row['Game_Status'];?></td>
-</tr>
-<tr>
 <td><?php echo $row['Game_Type'];?></td>
-</tr>
-<tr>
 <td><?php echo $row['Date'];?></td>
-</tr>
-<tr>
 <td><?php echo $row['MapName'];?></td>
-</tr>
-<tr>
 <td><?php echo $row['AgentName'];?></td>
-</tr>
-<tr>
 <td><?php echo $row['WeaponName'];?></td>
-</tr>
-<tr>
 <td><?php echo $row['RatingNumber'];?></td>
 </tr>
 <?php endwhile;?>
@@ -90,7 +76,7 @@ $result = mysqli_query($conn,"select MatchID,Game_Status,Game_Type,Date,MapName,
 //  f : 1 ascending order, -1 descending order
 //  n : n-th child(<td>) of <tr>
 function sortTable(f,n){
-    var rows = $('#myTable tbody  tr').get();
+    var rows = $('#myTable').get();
 
     rows.sort(function(a, b) {
 
