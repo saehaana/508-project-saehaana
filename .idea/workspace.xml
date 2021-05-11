@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="remove tbody tag">
-      <change beforePath="$PROJECT_DIR$/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/home.php" afterDir="false" />
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="remove sort stuff">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,27 +71,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00180" summary="test indexOf search implementation">
-      <created>1620695515488</created>
-      <option name="number" value="00180" />
-      <option name="presentableId" value="LOCAL-00180" />
-      <option name="project" value="LOCAL" />
-      <updated>1620695515488</updated>
-    </task>
-    <task id="LOCAL-00181" summary="test indexOf search implementation">
-      <created>1620695694100</created>
-      <option name="number" value="00181" />
-      <option name="presentableId" value="LOCAL-00181" />
-      <option name="project" value="LOCAL" />
-      <updated>1620695694100</updated>
-    </task>
-    <task id="LOCAL-00182" summary="test indexOf search implementation">
-      <created>1620696047041</created>
-      <option name="number" value="00182" />
-      <option name="presentableId" value="LOCAL-00182" />
-      <option name="project" value="LOCAL" />
-      <updated>1620696047041</updated>
     </task>
     <task id="LOCAL-00183" summary="test indexOf search implementation">
       <created>1620696078346</created>
@@ -413,7 +394,28 @@
       <option name="project" value="LOCAL" />
       <updated>1620749979106</updated>
     </task>
-    <option name="localTasksCounter" value="229" />
+    <task id="LOCAL-00229" summary="try other function">
+      <created>1620750099257</created>
+      <option name="number" value="00229" />
+      <option name="presentableId" value="LOCAL-00229" />
+      <option name="project" value="LOCAL" />
+      <updated>1620750099257</updated>
+    </task>
+    <task id="LOCAL-00230" summary="try other function">
+      <created>1620750147937</created>
+      <option name="number" value="00230" />
+      <option name="presentableId" value="LOCAL-00230" />
+      <option name="project" value="LOCAL" />
+      <updated>1620750147937</updated>
+    </task>
+    <task id="LOCAL-00231" summary="remove sort stuff">
+      <created>1620750176252</created>
+      <option name="number" value="00231" />
+      <option name="presentableId" value="LOCAL-00231" />
+      <option name="project" value="LOCAL" />
+      <updated>1620750176252</updated>
+    </task>
+    <option name="localTasksCounter" value="232" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -441,8 +443,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="change query" />
-    <MESSAGE value="revert query" />
     <MESSAGE value="retry search bar filter" />
     <MESSAGE value="display full match history above search bar filter table;clean up home.php indentation and code, search bar filter works!" />
     <MESSAGE value="reworded search filter use suggestion" />
@@ -466,6 +466,8 @@
     <MESSAGE value="test new script" />
     <MESSAGE value="add attribute to th" />
     <MESSAGE value="remove tbody tag" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove tbody tag" />
+    <MESSAGE value="try other function" />
+    <MESSAGE value="remove sort stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove sort stuff" />
   </component>
 </project>

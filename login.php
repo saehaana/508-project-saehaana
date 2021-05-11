@@ -11,13 +11,13 @@ if(!$conn){die('Could not connect:'.mysqli_error());}
 //trim() : strips unwanted characters (extra space, tab, newline) from the beginning and end of the data
 //stripslashes() : strips any quotes escaped with slashes
 //htmlspecialchars() : replace HTML chars  like < and > to their HTML version &lt; and &gt;
-        //prevents possible attackers from exploiting our code by injecting HTML or Javascript code
+        //prevents possible attackers from exploiting code by injecting HTML or Javascript code
 function check_input($data, $problem='')
 {
     $data = trim($data);
     $data = stripslashes($data);
     $data = htmlspecialchars($data);
-    if ($problem && strlen($data) == 0)
+    if ($problem && strlen($data) == 0) //if empty display problem
     {
         die($problem);
     }
@@ -33,8 +33,11 @@ $hash = password_hash($password,PASSWORD_DEFAULT);
 
 //login the user and redirect to home.php
 $query = "SELECT * FROM Player WHERE Email = '$email' AND Username = '$username' AND Password = '$password'";
+echo check_input($query);
 $results = mysqli_query($conn,$query);
+echo check_input($results);
 $num = mysqli_num_rows($results);
+echo check_input($num);
 if(empty($username)){
     echo "Username field is empty. Please enter a username.";
     header('location:index.php');

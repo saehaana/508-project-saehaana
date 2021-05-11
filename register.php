@@ -7,13 +7,13 @@ $conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
 //trim() : strips unwanted characters (extra space, tab, newline) from the beginning and end of the data
 //stripslashes() : strips any quotes escaped with slashes
 //htmlspecialchars() : replace HTML chars  like < and > to their HTML version &lt; and &gt;
-        //prevents possible attackers from exploiting our code by injecting HTML or Javascript code
+        //prevents possible attackers from exploiting code by injecting HTML or Javascript code
 function check_input($data, $problem='')
 {
     $data = trim($data);
     $data = stripslashes($data);
     $data = htmlspecialchars($data);
-    if ($problem && strlen($data) == 0)
+    if ($problem && strlen($data) == 0) //if empty display problem
     {
         die($problem);
     }
