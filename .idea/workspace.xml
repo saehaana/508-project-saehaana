@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="remove search table from home">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compareMatch.php" beforeDir="false" afterPath="$PROJECT_DIR$/compareMatch.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/editMatch.php" beforeDir="false" afterPath="$PROJECT_DIR$/editMatch.php" afterDir="false" />
-    </list>
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="changed home echo table to regular html table; added th ids to header filter" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,41 +67,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00162" summary="remove match id field">
-      <created>1620583850426</created>
-      <option name="number" value="00162" />
-      <option name="presentableId" value="LOCAL-00162" />
-      <option name="project" value="LOCAL" />
-      <updated>1620583850426</updated>
-    </task>
-    <task id="LOCAL-00163" summary="if emailUpdate field empty do nothing;   readd match id field to add match, test other ifempty fields">
-      <created>1620591323861</created>
-      <option name="number" value="00163" />
-      <option name="presentableId" value="LOCAL-00163" />
-      <option name="project" value="LOCAL" />
-      <updated>1620591323861</updated>
-    </task>
-    <task id="LOCAL-00164" summary="update update email query with if statements">
-      <created>1620591721083</created>
-      <option name="number" value="00164" />
-      <option name="presentableId" value="LOCAL-00164" />
-      <option name="project" value="LOCAL" />
-      <updated>1620591721083</updated>
-    </task>
-    <task id="LOCAL-00165" summary="update update email query with if statements">
-      <created>1620591885207</created>
-      <option name="number" value="00165" />
-      <option name="presentableId" value="LOCAL-00165" />
-      <option name="project" value="LOCAL" />
-      <updated>1620591885207</updated>
-    </task>
-    <task id="LOCAL-00166" summary="put all update queries within if statements to fix if empty">
-      <created>1620592419815</created>
-      <option name="number" value="00166" />
-      <option name="presentableId" value="LOCAL-00166" />
-      <option name="project" value="LOCAL" />
-      <updated>1620592419815</updated>
     </task>
     <task id="LOCAL-00167" summary="fixed fields being tied to post">
       <created>1620593062435</created>
@@ -415,7 +376,42 @@
       <option name="project" value="LOCAL" />
       <updated>1620746866103</updated>
     </task>
-    <option name="localTasksCounter" value="211" />
+    <task id="LOCAL-00211" summary="added placeholders to search bar, added match history view to editMatch.php">
+      <created>1620747431622</created>
+      <option name="number" value="00211" />
+      <option name="presentableId" value="LOCAL-00211" />
+      <option name="project" value="LOCAL" />
+      <updated>1620747431622</updated>
+    </task>
+    <task id="LOCAL-00212" summary="added db connection to editMatch.php">
+      <created>1620747485535</created>
+      <option name="number" value="00212" />
+      <option name="presentableId" value="LOCAL-00212" />
+      <option name="project" value="LOCAL" />
+      <updated>1620747485535</updated>
+    </task>
+    <task id="LOCAL-00213" summary="added style to editMatch boxes">
+      <created>1620747529241</created>
+      <option name="number" value="00213" />
+      <option name="presentableId" value="LOCAL-00213" />
+      <option name="project" value="LOCAL" />
+      <updated>1620747529241</updated>
+    </task>
+    <task id="LOCAL-00214" summary="test sort table by header implementation">
+      <created>1620747741916</created>
+      <option name="number" value="00214" />
+      <option name="presentableId" value="LOCAL-00214" />
+      <option name="project" value="LOCAL" />
+      <updated>1620747741916</updated>
+    </task>
+    <task id="LOCAL-00215" summary="changed home echo table to regular html table; added th ids to header filter">
+      <created>1620748137385</created>
+      <option name="number" value="00215" />
+      <option name="presentableId" value="LOCAL-00215" />
+      <option name="project" value="LOCAL" />
+      <updated>1620748137385</updated>
+    </task>
+    <option name="localTasksCounter" value="216" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -443,11 +439,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add check_input function to register form, add match, and update forms" />
-    <MESSAGE value="test html required attribute" />
-    <MESSAGE value="add login redirect after registration, add more required fields" />
-    <MESSAGE value="added game type field to match history" />
-    <MESSAGE value="added game type to query, fixed joins" />
     <MESSAGE value="test indexOf search implementation" />
     <MESSAGE value="remove indexOf search implementation, test get agent filter: added getAgent.php, agent select form below match history" />
     <MESSAGE value="change query to get agents in getAgent.php" />
@@ -468,6 +459,11 @@
     <MESSAGE value="move second table and search bar lower; add style to table,th,td" />
     <MESSAGE value="add more space between tables; label tables for other end-users; add third table" />
     <MESSAGE value="remove search table from home" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove search table from home" />
+    <MESSAGE value="added placeholders to search bar, added match history view to editMatch.php" />
+    <MESSAGE value="added db connection to editMatch.php" />
+    <MESSAGE value="added style to editMatch boxes" />
+    <MESSAGE value="test sort table by header implementation" />
+    <MESSAGE value="changed home echo table to regular html table; added th ids to header filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed home echo table to regular html table; added th ids to header filter" />
   </component>
 </project>
