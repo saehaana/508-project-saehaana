@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="changed home echo table to regular html table; added th ids to header filter" />
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="add in script to html table" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,34 +67,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00167" summary="fixed fields being tied to post">
-      <created>1620593062435</created>
-      <option name="number" value="00167" />
-      <option name="presentableId" value="LOCAL-00167" />
-      <option name="project" value="LOCAL" />
-      <updated>1620593062435</updated>
-    </task>
-    <task id="LOCAL-00168" summary="initialize variables before if statements">
-      <created>1620593298808</created>
-      <option name="number" value="00168" />
-      <option name="presentableId" value="LOCAL-00168" />
-      <option name="project" value="LOCAL" />
-      <updated>1620593298808</updated>
-    </task>
-    <task id="LOCAL-00169" summary="revert if statement changes">
-      <created>1620595464173</created>
-      <option name="number" value="00169" />
-      <option name="presentableId" value="LOCAL-00169" />
-      <option name="project" value="LOCAL" />
-      <updated>1620595464173</updated>
-    </task>
-    <task id="LOCAL-00170" summary="added redirect links&#10;after update form">
-      <created>1620595548032</created>
-      <option name="number" value="00170" />
-      <option name="presentableId" value="LOCAL-00170" />
-      <option name="project" value="LOCAL" />
-      <updated>1620595548032</updated>
     </task>
     <task id="LOCAL-00171" summary="test if empty for login">
       <created>1620596411693</created>
@@ -411,7 +383,35 @@
       <option name="project" value="LOCAL" />
       <updated>1620748137385</updated>
     </task>
-    <option name="localTasksCounter" value="216" />
+    <task id="LOCAL-00216" summary="test just html table">
+      <created>1620748212092</created>
+      <option name="number" value="00216" />
+      <option name="presentableId" value="LOCAL-00216" />
+      <option name="project" value="LOCAL" />
+      <updated>1620748212092</updated>
+    </task>
+    <task id="LOCAL-00217" summary="test just html table">
+      <created>1620748283439</created>
+      <option name="number" value="00217" />
+      <option name="presentableId" value="LOCAL-00217" />
+      <option name="project" value="LOCAL" />
+      <updated>1620748283439</updated>
+    </task>
+    <task id="LOCAL-00218" summary="test just html table">
+      <created>1620748369560</created>
+      <option name="number" value="00218" />
+      <option name="presentableId" value="LOCAL-00218" />
+      <option name="project" value="LOCAL" />
+      <updated>1620748369560</updated>
+    </task>
+    <task id="LOCAL-00219" summary="add in script to html table">
+      <created>1620748403211</created>
+      <option name="number" value="00219" />
+      <option name="presentableId" value="LOCAL-00219" />
+      <option name="project" value="LOCAL" />
+      <updated>1620748403211</updated>
+    </task>
+    <option name="localTasksCounter" value="220" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -439,8 +439,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test indexOf search implementation" />
-    <MESSAGE value="remove indexOf search implementation, test get agent filter: added getAgent.php, agent select form below match history" />
     <MESSAGE value="change query to get agents in getAgent.php" />
     <MESSAGE value="test option value for agent filter" />
     <MESSAGE value="change query again" />
@@ -464,6 +462,8 @@
     <MESSAGE value="added style to editMatch boxes" />
     <MESSAGE value="test sort table by header implementation" />
     <MESSAGE value="changed home echo table to regular html table; added th ids to header filter" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed home echo table to regular html table; added th ids to header filter" />
+    <MESSAGE value="test just html table" />
+    <MESSAGE value="add in script to html table" />
+    <option name="LAST_COMMIT_MESSAGE" value="add in script to html table" />
   </component>
 </project>

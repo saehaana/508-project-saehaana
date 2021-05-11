@@ -69,7 +69,7 @@ $result = mysqli_query($conn,"select MatchID,Game_Status,Game_Type,Date,MapName,
 </tr>
 <?php endwhile;?>
 </table>
-<script>
+<?php
 //  sortTable(f,n)
 //  f : 1 ascending order, -1 descending order
 //  n : n-th child(<td>) of <tr>
@@ -155,7 +155,7 @@ $("#cs").click(function(){
     var n = $(this).prevAll().length;
     sortTable(f_nm,n);
 });
-</script>
+?>
 
 </body>
 </html>
