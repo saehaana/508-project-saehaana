@@ -39,9 +39,8 @@ $WeaponType;
 if($Weapon == 'Phantom' || $Weapon == 'Vandal'){$WeaponType = 'Rifle';}
 
 //submit form to db
-$queryInsert1 = sprintf("insert into Match_History (Email,MatchID,Game_Status,Date) values ('%s','%s','%s','%s')",
-$mysqli->real_escape_string($email,$Match_ID,$Game_Status,$date));
-$query1result = $mysqli->query($queryInsert1);
+$queryInsert1 = "insert into Match_History (Email,MatchID,Game_Status,Date) values ('$email','$Match_ID','$Game_Status','$date')";
+mysqli_query($conn,$queryInsert1);
 
 $queryInsert2 = "insert into Game_Type (MatchID,Game_Type) values ('$Match_ID','$Game_Type')";
 mysqli_query($conn,$queryInsert2);
