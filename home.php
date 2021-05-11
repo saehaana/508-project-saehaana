@@ -69,7 +69,34 @@ echo "</tr>";
 echo "</table>";
 ?>
 <p> Or maybe try some of our filters</p>
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
-
+<input type="text" id="agentFilter" placeholder="Search for agents..">
+<?php
+$agentFilter = mysqli_query($conn,"select MatchID,Game_Status,Game_Type,Date,MapName,AgentName,WeaponName,RatingNumber from Match_History join Game_Type using(MatchID) join Map using(MatchID) join Agent using(MatchID) join Weapon using(MatchID) join Combat_Rating using(MatchID) where AgentName = '$Agent'");
+while($row = mysqli_fetch_array($agentFilter)){
+echo"
+<table>
+<tr>
+<th>Match ID</th>
+<th>Game Status</th>
+<th>Game Mode</th>
+<th>Date</th>
+<th>Map</th>
+<th>Agent</th>
+<th>Weapon</th>
+<th>Combat Score</th>
+</tr>";
+echo "<tr>";
+echo "<td>" . $row['MatchID'] . "</td>";
+echo "<td>" . $row['Game_Status'] . "</td>";
+echo "<td>" . $row['Game_Type'] . "</td>";
+echo "<td>" . $row['Date'] . "</td>";
+echo "<td>" . $row['MapName'] . "</td>";
+echo "<td>" . $row['AgentName'] . "</td>";
+echo "<td>" . $row['WeaponName'] . "</td>";
+echo "<td>" . $row['RatingNumber'] . "</td>";
+echo "</tr>";
+echo "</table>";
+}
+?>
 </body>
 </html>
