@@ -1,3 +1,16 @@
+<?php
+session_start();
+ini_set("display_errors", 1);
+ERROR_REPORTING(E_ALL);
+$conn = mysqli_connect('localhost','saehaana','V00797462','project_saehaana');
+
+//if user not logged in, redirect to index.php
+if(!isset($_SESSION['username'])) {
+    $_SESSION['msg'] = "You must log in first";
+  	header('location: index.php');
+}
+
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
