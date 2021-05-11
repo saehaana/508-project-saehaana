@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="remove sort stuff">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
-    </list>
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="use check_input() more" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,13 +67,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00183" summary="test indexOf search implementation">
-      <created>1620696078346</created>
-      <option name="number" value="00183" />
-      <option name="presentableId" value="LOCAL-00183" />
-      <option name="project" value="LOCAL" />
-      <updated>1620696078346</updated>
     </task>
     <task id="LOCAL-00184" summary="test indexOf search implementation">
       <created>1620696199691</created>
@@ -415,7 +404,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620750176252</updated>
     </task>
-    <option name="localTasksCounter" value="232" />
+    <task id="LOCAL-00232" summary="use check_input() more">
+      <created>1620751512915</created>
+      <option name="number" value="00232" />
+      <option name="presentableId" value="LOCAL-00232" />
+      <option name="project" value="LOCAL" />
+      <updated>1620751512915</updated>
+    </task>
+    <option name="localTasksCounter" value="233" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -443,7 +439,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="retry search bar filter" />
     <MESSAGE value="display full match history above search bar filter table;clean up home.php indentation and code, search bar filter works!" />
     <MESSAGE value="reworded search filter use suggestion" />
     <MESSAGE value="create compareMatch.php to use search filter implementation there" />
@@ -468,6 +463,7 @@
     <MESSAGE value="remove tbody tag" />
     <MESSAGE value="try other function" />
     <MESSAGE value="remove sort stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove sort stuff" />
+    <MESSAGE value="use check_input() more" />
+    <option name="LAST_COMMIT_MESSAGE" value="use check_input() more" />
   </component>
 </project>
