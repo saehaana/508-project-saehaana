@@ -29,6 +29,11 @@ if(!isset($_SESSION['username'])) {
     <a href="home.php"> Home </a>
     <br>
     <a href="logout.php"> Logout </a>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+        }
+        </style>
 <h1> Compare Matches</h1>
 <input id='myInput' onkeyup='searchTable()' type='text'>
     <table id='myTable'>
