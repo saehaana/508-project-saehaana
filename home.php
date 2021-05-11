@@ -42,40 +42,41 @@ if(!isset($_SESSION['username'])) {
 
     <h2>Match History</h2>
     <?php
-    $email = $_SESSION['email'];
-    $result = mysqli_query($conn,"select MatchID,Game_Status,Game_Type,Date,MapName,AgentName,WeaponName,RatingNumber from Match_History join Game_Type using(MatchID) join Map using(MatchID) join Agent using(MatchID) join Weapon using(MatchID) join Combat_Rating using(MatchID) where Email = '$email'");
-    echo"
-    <table>
+    <table id='myTable'>
     <tr>
-    <th>Match ID</th>
-    <th>Game Status</th>
-    <th>Game Mode</th>
-    <th>Date</th>
-    <th>Map</th>
-    <th>Agent</th>
-    <th>Weapon</th>
-    <th>Combat Score</th>
-    </tr>";
-    while($row = mysqli_fetch_array($result)){
-    echo "<tr>";
-    echo "<td>" . $row['MatchID'] . "</td>";
-    echo "<td>" . $row['Game_Status'] . "</td>";
-    echo "<td>" . $row['Game_Type'] . "</td>";
-    echo "<td>" . $row['Date'] . "</td>";
-    echo "<td>" . $row['MapName'] . "</td>";
-    echo "<td>" . $row['AgentName'] . "</td>";
-    echo "<td>" . $row['WeaponName'] . "</td>";
-    echo "<td>" . $row['RatingNumber'] . "</td>";
-    echo "</tr>";
-    }
-    echo "</table>";
-    ?>
+    <th id ="mID">Match ID</th>
+    <th id ="gs">Game Status</th>
+    <th id="gm">Game Mode</th>
+    <th id="d">Date</th>
+    <th id="m">Map</th>
+    <th id="a">Agent</th>
+    <th id="w">Weapon</th>
+    <th id="cs">Combat Score</th>
+    </tr>
+<?php
+$email = $_SESSION['email'];
+$result = mysqli_query($conn,"select MatchID,Game_Status,Game_Type,Date,MapName,AgentName,WeaponName,RatingNumber from Match_History join Game_Type using(MatchID) join Map using(MatchID) join Agent using(MatchID) join Weapon using(MatchID) join Combat_Rating using(MatchID) where Email = '$email'");
+?>
+<?php while($row = mysqli_fetch_array($result)):?>
+<tr>
+<td><?php echo $row['MatchID'];?></td>
+<td><?php echo $row['Game_Status'];?></td>
+<td><?php echo $row['Game_Type'];?></td>
+<td><?php echo $row['Date'];?></td>
+<td><?php echo $row['MapName'];?></td>
+<td><?php echo $row['AgentName'];?></td>
+<td><?php echo $row['WeaponName'];?></td>
+<td><?php echo $row['RatingNumber'];?></td>
+</tr>
+<?php endwhile;?>
+</table>
+
 <script>
 //  sortTable(f,n)
 //  f : 1 ascending order, -1 descending order
 //  n : n-th child(<td>) of <tr>
 function sortTable(f,n){
-    var rows = $('#mytable tbody  tr').get();
+    var rows = $('#myTable tbody  tr').get();
 
     rows.sort(function(a, b) {
 
@@ -100,17 +101,58 @@ function sortTable(f,n){
     }
 
     $.each(rows, function(index, row) {
-        $('#mytable').children('tbody').append(row);
+        $('#myTable').children('tbody').append(row);
     });
 }
-var f_sl = 1; // flag to toggle the sorting order
-var f_nm = 1; // flag to toggle the sorting order
-$("#sl").click(function(){
-    f_sl *= -1; // toggle the sorting order
+var f_mID = 1; // flag to toggle the sorting order
+var f_gs = 1; // flag to toggle the sorting order
+var f_gm = 1; // flag to toggle the sorting order
+var f_d = 1; // flag to toggle the sorting order
+var f_m = 1; // flag to toggle the sorting order
+var f_a = 1; // flag to toggle the sorting order
+var f_w = 1; // flag to toggle the sorting order
+var f_cs = 1; // flag to toggle the sorting order
+$("#mID").click(function(){
+    f_nm *= -1; // toggle the sorting order
     var n = $(this).prevAll().length;
-    sortTable(f_sl,n);
+    sortTable(f_nm,n);
 });
-$("#nm").click(function(){
+$("#gs").click(function(){
+    f_nm *= -1; // toggle the sorting order
+    var n = $(this).prevAll().length;
+    sortTable(f_nm,n);
+});
+$("#gm").click(function(){
+    f_nm *= -1; // toggle the sorting order
+    var n = $(this).prevAll().length;
+    sortTable(f_nm,n);
+});
+$("#d").click(function(){
+    f_nm *= -1; // toggle the sorting order
+    var n = $(this).prevAll().length;
+    sortTable(f_nm,n);
+});
+$("#m").click(function(){
+    f_nm *= -1; // toggle the sorting order
+    var n = $(this).prevAll().length;
+    sortTable(f_nm,n);
+});
+$("#m").click(function(){
+    f_nm *= -1; // toggle the sorting order
+    var n = $(this).prevAll().length;
+    sortTable(f_nm,n);
+});
+$("#a").click(function(){
+    f_nm *= -1; // toggle the sorting order
+    var n = $(this).prevAll().length;
+    sortTable(f_nm,n);
+});
+$("#w").click(function(){
+    f_nm *= -1; // toggle the sorting order
+    var n = $(this).prevAll().length;
+    sortTable(f_nm,n);
+});
+$("#cs").click(function(){
     f_nm *= -1; // toggle the sorting order
     var n = $(this).prevAll().length;
     sortTable(f_nm,n);
