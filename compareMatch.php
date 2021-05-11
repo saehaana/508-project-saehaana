@@ -35,6 +35,8 @@ if(!isset($_SESSION['username'])) {
         }
         </style>
 <h1> Compare Matches</h1>
+<p>Filter through your matches to find patterns in your games</p>
+<h2>Table 1</h2>
 <input id='myInput' onkeyup='searchTable()' type='text'>
     <table id='myTable'>
     <tr>
@@ -88,6 +90,9 @@ function searchTable() {
 }
 </script>
 
+
+<br><br>
+<h3>Table 2</h3>
 <input id='myInput2' onkeyup='searchTable2()' type='text'>
     <table id='myTable2'>
     <tr>
@@ -140,5 +145,61 @@ function searchTable2() {
     }
 }
 </script>
+
+<br><br>
+<h4>Table 3</h4>
+<input id='myInput3' onkeyup='searchTable3()' type='text'>
+    <table id='myTable3'>
+    <tr>
+    <th>Match ID</th>
+    <th>Game Status</th>
+    <th>Game Mode</th>
+    <th>Date</th>
+    <th>Map</th>
+    <th>Agent</th>
+    <th>Weapon</th>
+    <th>Combat Score</th>
+    </tr>
+<?php
+$email = $_SESSION['email'];
+$result3 = mysqli_query($conn,"select MatchID,Game_Status,Game_Type,Date,MapName,AgentName,WeaponName,RatingNumber from Match_History join Game_Type using(MatchID) join Map using(MatchID) join Agent using(MatchID) join Weapon using(MatchID) join Combat_Rating using(MatchID) where Email = '$email'");
+?>
+<?php while($row = mysqli_fetch_array($result3)):?>
+<tr>
+<td><?php echo $row['MatchID'];?></td>
+<td><?php echo $row['Game_Status'];?></td>
+<td><?php echo $row['Game_Type'];?></td>
+<td><?php echo $row['Date'];?></td>
+<td><?php echo $row['MapName'];?></td>
+<td><?php echo $row['AgentName'];?></td>
+<td><?php echo $row['WeaponName'];?></td>
+<td><?php echo $row['RatingNumber'];?></td>
+</tr>
+<?php endwhile;?>
+</table>
+<script>
+function searchTable3() {
+    var input, filter, found, table, tr, td, i, j;
+    input = document.getElementById("myInput3");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable3");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td");
+        for (j = 0; j < td.length; j++) {
+            if (td[j].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                found = true;
+            }
+        }
+        if (found) {
+            tr[i].style.display = "";
+            found = false;
+        } else {
+            tr[i].style.display = "none";
+        }
+    }
+}
+</script>
+
 </body>
 </html>
