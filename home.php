@@ -48,7 +48,7 @@ if(!isset($_SESSION['username'])) {
     }
 
     tr:nth-child(even) {
-      background-color: #dddddd;
+      background-color:Gray;
     }
     </style>
 
