@@ -43,12 +43,13 @@ if(!isset($_SESSION['username'])) {
 
     td, th {
       border: 1px solid #dddddd;
+      background-color:Gray;
       text-align: left;
       padding: 8px;
     }
 
     tr:nth-child(even) {
-      background-color:Gray;
+      background-color: #dddddd;
     }
     </style>
 
