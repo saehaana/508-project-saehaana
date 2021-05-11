@@ -26,6 +26,7 @@ if(!isset($_SESSION['username'])) {
         background-size: cover;
         }
     </style>
+    <a href="home.php"> Logout </a>
     <a href="logout.php"> Logout </a>
     <div id="addMatch">
         <h1>Add Match</h1>

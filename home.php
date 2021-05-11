@@ -39,7 +39,7 @@ if(!isset($_SESSION['username'])) {
     }
     </style>
     <h2>Match History</h2>
-    <input type="text" id="search" placeholder="type to search" />
+    <input type="text" id="search" placeholder="agent name" />
 <?php
 $email = $_SESSION['email'];
 $result = mysqli_query($conn,"select MatchID,Game_Status,Game_Type,Date,MapName,AgentName,WeaponName,RatingNumber from Match_History join Game_Type using(MatchID) join Map using(MatchID) join Agent using(MatchID) join Weapon using(MatchID) join Combat_Rating using(MatchID) where Email = '$email'");
@@ -87,27 +87,24 @@ function showAgent(str) {
   }
 }
 </script>
-</head>
-<body>
-
 <form>
 <select name="agents" onchange="getAgent(this.value)">
 <option value="">Select a person:</option>
-<option value="Astra">Astra</option>
-            <option value="Breach">Breach</option>
-            <option value="Brimstone">Brimstone</option>
-            <option value="Cypher">Cypher</option>
-            <option value="Jett">Jett</option>
-            <option value="Killjoy">Killjoy</option>
-            <option value="Omen">Omen</option>
-            <option value="Phoenix">Phoenix</option>
-            <option value="Raze">Raze</option>
-            <option value="Reyna">Reyna</option>
-            <option value="Sage">Sage</option>
-            <option value="Skye">Skye</option>
-            <option value="Sova">Sova</option>
-            <option value="Viper">Viper</option>
-            <option value="Yoru">Yoru</option>
+<option value="1">Astra</option>
+            <option value="2">Breach</option>
+            <option value="3">Brimstone</option>
+            <option value="4">Cypher</option>
+            <option value="5">Jett</option>
+            <option value="6">Killjoy</option>
+            <option value="7">Omen</option>
+            <option value="8">Phoenix</option>
+            <option value="9">Raze</option>
+            <option value="10">Reyna</option>
+            <option value="11">Sage</option>
+            <option value="12">Skye</option>
+            <option value="13">Sova</option>
+            <option value="14">Viper</option>
+            <option value="15">Yoru</option>
   </select>
 </form>
 <br>
