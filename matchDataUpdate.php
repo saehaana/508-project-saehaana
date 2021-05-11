@@ -88,7 +88,7 @@ echo "No match found for Match ID: $Match_ID";
 <a href="home.php">Home</a>
 </p>
 <p>
-<a href="editMatch.php">Add another match</a>
+<a href="editMatch.php">Edit another match</a>
 </p>
 </body>
 </html>

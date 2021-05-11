@@ -43,12 +43,14 @@ if(!isset($_SESSION['username'])) {
         </p>
         <label for="Game_Status">Game Status:</label>
         <select id="Game_Status" name="Game_Status" required>
+            <option selected disabled hidden style='display: none' value=''></option>
             <option value="Win">Win</option>
             <option value="Loss">Loss</option>
             <option value="Draw">Draw</option>
         </select>
         <label for="Game_Type">Game Type:</label>
         <select id="Game_Type" name="Game_Type" required>
+            <option selected disabled hidden style='display: none' value=''></option>
             <option value="Ranked">Ranked</option>
             <option value="Unranked">Unranked</option>
         </select>
@@ -58,6 +60,7 @@ if(!isset($_SESSION['username'])) {
         </p>
         <label for="Agent">Agent:</label>
         <select id = "Agent" name="Agent" required>
+            <option selected disabled hidden style='display: none' value=''></option>
             <option value="Astra">Astra</option>
             <option value="Breach">Breach</option>
             <option value="Brimstone">Brimstone</option>
@@ -76,6 +79,7 @@ if(!isset($_SESSION['username'])) {
         </select>
         <label for="Map">Map:</label>
         <select id="Map" name="Map" required>
+            <option selected disabled hidden style='display: none' value=''></option>
             <option value="Ascent">Ascent</option>
             <option value="Bind">Bind</option>
             <option value="Breeze">Breeze</option>
@@ -85,6 +89,7 @@ if(!isset($_SESSION['username'])) {
         </select>
         <label for="Weapon">Weapon:</label>
         <select id="Weapon" name="Weapon" required>
+            <option selected disabled hidden style='display: none' value=''></option>
             <option value="Phantom">Phantom</option>
             <option value="Vandal">Vandal</option>
         </select>
