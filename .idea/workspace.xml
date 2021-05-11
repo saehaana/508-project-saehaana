@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="test">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="remove tbody tag">
       <change beforePath="$PROJECT_DIR$/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/home.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,27 +69,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00177" summary="added game type field to match history">
-      <created>1620599601070</created>
-      <option name="number" value="00177" />
-      <option name="presentableId" value="LOCAL-00177" />
-      <option name="project" value="LOCAL" />
-      <updated>1620599601070</updated>
-    </task>
-    <task id="LOCAL-00178" summary="added game type to query, fixed joins">
-      <created>1620600998156</created>
-      <option name="number" value="00178" />
-      <option name="presentableId" value="LOCAL-00178" />
-      <option name="project" value="LOCAL" />
-      <updated>1620600998156</updated>
-    </task>
-    <task id="LOCAL-00179" summary="test indexOf search implementation">
-      <created>1620695325781</created>
-      <option name="number" value="00179" />
-      <option name="presentableId" value="LOCAL-00179" />
-      <option name="project" value="LOCAL" />
-      <updated>1620695325781</updated>
     </task>
     <task id="LOCAL-00180" summary="test indexOf search implementation">
       <created>1620695515488</created>
@@ -414,7 +392,28 @@
       <option name="project" value="LOCAL" />
       <updated>1620749362540</updated>
     </task>
-    <option name="localTasksCounter" value="226" />
+    <task id="LOCAL-00226" summary="test new script">
+      <created>1620749791673</created>
+      <option name="number" value="00226" />
+      <option name="presentableId" value="LOCAL-00226" />
+      <option name="project" value="LOCAL" />
+      <updated>1620749791673</updated>
+    </task>
+    <task id="LOCAL-00227" summary="add attribute to th">
+      <created>1620749855239</created>
+      <option name="number" value="00227" />
+      <option name="presentableId" value="LOCAL-00227" />
+      <option name="project" value="LOCAL" />
+      <updated>1620749855239</updated>
+    </task>
+    <task id="LOCAL-00228" summary="remove tbody tag">
+      <created>1620749979106</created>
+      <option name="number" value="00228" />
+      <option name="presentableId" value="LOCAL-00228" />
+      <option name="project" value="LOCAL" />
+      <updated>1620749979106</updated>
+    </task>
+    <option name="localTasksCounter" value="229" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -442,9 +441,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added space in between home and logout links, test real_escape_string() on add match" />
-    <MESSAGE value="revert real escape string changes" />
-    <MESSAGE value="test home table creation without echo" />
     <MESSAGE value="change query" />
     <MESSAGE value="revert query" />
     <MESSAGE value="retry search bar filter" />
@@ -467,6 +463,9 @@
     <MESSAGE value="add tbody tag to table" />
     <MESSAGE value="add more tags" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="test new script" />
+    <MESSAGE value="add attribute to th" />
+    <MESSAGE value="remove tbody tag" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove tbody tag" />
   </component>
 </project>
