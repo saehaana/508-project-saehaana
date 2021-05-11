@@ -30,6 +30,11 @@ if(!isset($_SESSION['username'])) {
     <a href="home.php"> Home </a>
     <br>
     <a href="logout.php"> Logout </a>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+        }
+        </style>
     <div id="editMatch">
         <h1>Edit Match</h1>
         <form action="matchDataUpdate.php" method="POST">
