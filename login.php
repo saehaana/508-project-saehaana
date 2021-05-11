@@ -32,7 +32,7 @@ $password = check_input($_POST['password'],"Password required");
 $hash = password_hash($password,PASSWORD_DEFAULT);
 
 //login the user and redirect to home.php
-$query = "SELECT * FROM Player WHERE Email = '$email' AND Username = '$username' AND Password = '$password'";
+$query = "SELECT * FROM Player WHERE Email = '". mysqli_real_escape_string($_POST['email']) ."'";
 $results = mysqli_query($conn,$query);
 $num = mysqli_num_rows($results);
 if(empty($username)){
