@@ -27,7 +27,7 @@ ERROR_REPORTING(E_ALL);
             <form action="login.php" method="POST">
                 <p>
                 <label>Email:</label>
-                <input type="text" name="email" required>
+                <input type="email" name="email" required>
                 </p>
                 <p>
                 <label>Username:</label>

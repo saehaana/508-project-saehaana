@@ -33,11 +33,8 @@ $hash = password_hash($password,PASSWORD_DEFAULT);
 
 //login the user and redirect to home.php
 $query = "SELECT * FROM Player WHERE Email = '$email' AND Username = '$username' AND Password = '$password'";
-echo check_input($query);
 $results = mysqli_query($conn,$query);
-echo check_input($results);
 $num = mysqli_num_rows($results);
-echo check_input($num);
 if(empty($username)){
     echo "Username field is empty. Please enter a username.";
     header('location:index.php');
