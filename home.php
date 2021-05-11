@@ -9,28 +9,7 @@ if(!isset($_SESSION['username'])) {
     $_SESSION['msg'] = "You must log in first";
   	header('location: index.php');
 }
-function myFunction() {
-  var input, filter, table, tr, td, cell, i, j;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTable");
-  tr = table.getElementsByTagName("tr");
-  for (i = 1; i < tr.length; i++) {
-    // Hide the row initially.
-    tr[i].style.display = "none";
 
-    td = tr[i].getElementsByTagName("td");
-    for (var j = 0; j < td.length; j++) {
-      cell = tr[i].getElementsByTagName("td")[j];
-      if (cell) {
-        if (cell.innerHTML.toUpperCase().indexOf(filter) > -1) {
-          tr[i].style.display = "";
-          break;
-        }
-      }
-    }
-  }
-}
 ?>
 
 <!DOCTYPE HTML>
@@ -61,8 +40,8 @@ function myFunction() {
     </style>
     <h2>Match History</h2>
 <p> Or maybe try some of our filters</p>
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-    <table id="myTable">
+<input id='myInput' onkeyup='searchTable()' type='text'>
+    <table id='myTable'>
     <tr>
     <th>Match ID</th>
     <th>Game Status</th>
@@ -90,7 +69,29 @@ $result = mysqli_query($conn,"select MatchID,Game_Status,Game_Type,Date,MapName,
 </tr>
 <?php endwhile;?>
 </table>
-
+<script>
+function searchTable() {
+    var input, filter, found, table, tr, td, i, j;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td");
+        for (j = 0; j < td.length; j++) {
+            if (td[j].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                found = true;
+            }
+        }
+        if (found) {
+            tr[i].style.display = "";
+            found = false;
+        } else {
+            tr[i].style.display = "none";
+        }
+    }
+}
+</script>
 
 
 </body>
