@@ -29,8 +29,6 @@ $email = check_input($_POST['email'],"Email required");
 $username = check_input($_POST['username'],"Username required");
 $password = check_input($_POST['password'],"Password required");
 
-$hash = password_hash($password,PASSWORD_DEFAULT);
-
 //login the user and redirect to home.php
 $query = "SELECT * FROM Player WHERE Email = '$email' AND Username = '$username' AND Password = '$password'";
 $results = mysqli_query($conn,$query);
