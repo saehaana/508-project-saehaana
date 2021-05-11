@@ -72,12 +72,6 @@ $result = mysqli_query($conn,"select MatchID,Game_Status,Game_Type,Date,MapName,
 </tr>
 <?php endwhile;?>
 </table>
-<?php
-$(function(){
-    // pass the id and the <td> place you want to sort by (td counts from 0)
-    sortTable('myTable', 3);
-});
-?>
 <script>
 function sortTable(table_id, sortColumn){
     var tableData = document.getElementById(table_id).getElementsByTagName('tbody').item(0);
@@ -91,6 +85,11 @@ function sortTable(table_id, sortColumn){
     }
 }
 </script>
-
+<?php
+$(function(){
+    // pass the id and the <td> place you want to sort by (td counts from 0)
+    sortTable('myTable', 3);
+});
+?>
 </body>
 </html>
