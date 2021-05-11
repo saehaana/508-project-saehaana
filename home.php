@@ -60,12 +60,26 @@ $result = mysqli_query($conn,"select MatchID,Game_Status,Game_Type,Date,MapName,
 <tbody>
 <tr>
 <td><?php echo $row['MatchID'];?></td>
+</tr>
+<tr>
 <td><?php echo $row['Game_Status'];?></td>
+</tr>
+<tr>
 <td><?php echo $row['Game_Type'];?></td>
+</tr>
+<tr>
 <td><?php echo $row['Date'];?></td>
+</tr>
+<tr>
 <td><?php echo $row['MapName'];?></td>
+</tr>
+<tr>
 <td><?php echo $row['AgentName'];?></td>
+</tr>
+<tr>
 <td><?php echo $row['WeaponName'];?></td>
+</tr>
+<tr>
 <td><?php echo $row['RatingNumber'];?></td>
 </tr>
 <?php endwhile;?>
