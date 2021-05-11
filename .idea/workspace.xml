@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="add blank option value for add match fields">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matchDataUpdate.php" beforeDir="false" afterPath="$PROJECT_DIR$/matchDataUpdate.php" afterDir="false" />
-    </list>
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="revert if" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,20 +67,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00193" summary="test new script on home page">
-      <created>1620700155747</created>
-      <option name="number" value="00193" />
-      <option name="presentableId" value="LOCAL-00193" />
-      <option name="project" value="LOCAL" />
-      <updated>1620700155747</updated>
-    </task>
-    <task id="LOCAL-00194" summary="test new script on home page">
-      <created>1620700278567</created>
-      <option name="number" value="00194" />
-      <option name="presentableId" value="LOCAL-00194" />
-      <option name="project" value="LOCAL" />
-      <updated>1620700278567</updated>
     </task>
     <task id="LOCAL-00195" summary="added space in between home and logout links, test real_escape_string() on add match">
       <created>1620701864253</created>
@@ -414,7 +397,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620754511035</updated>
     </task>
-    <option name="localTasksCounter" value="242" />
+    <task id="LOCAL-00242" summary="test if statements">
+      <created>1620756690003</created>
+      <option name="number" value="00242" />
+      <option name="presentableId" value="LOCAL-00242" />
+      <option name="project" value="LOCAL" />
+      <updated>1620756690003</updated>
+    </task>
+    <task id="LOCAL-00243" summary="revert if">
+      <created>1620756893923</created>
+      <option name="number" value="00243" />
+      <option name="presentableId" value="LOCAL-00243" />
+      <option name="project" value="LOCAL" />
+      <updated>1620756893923</updated>
+    </task>
+    <option name="localTasksCounter" value="244" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -442,8 +439,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="remove search table from home" />
-    <MESSAGE value="added placeholders to search bar, added match history view to editMatch.php" />
     <MESSAGE value="added db connection to editMatch.php" />
     <MESSAGE value="added style to editMatch boxes" />
     <MESSAGE value="test sort table by header implementation" />
@@ -467,6 +462,8 @@
     <MESSAGE value="fix redirect link for editing another match; test real_escape_string() on login query" />
     <MESSAGE value="revert escape string changes" />
     <MESSAGE value="add blank option value for add match fields" />
-    <option name="LAST_COMMIT_MESSAGE" value="add blank option value for add match fields" />
+    <MESSAGE value="test if statements" />
+    <MESSAGE value="revert if" />
+    <option name="LAST_COMMIT_MESSAGE" value="revert if" />
   </component>
 </project>
