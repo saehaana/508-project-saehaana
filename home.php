@@ -111,49 +111,44 @@ var f_a = 1; // flag to toggle the sorting order
 var f_w = 1; // flag to toggle the sorting order
 var f_cs = 1; // flag to toggle the sorting order
 $("#mID").click(function(){
-    f_nm *= -1; // toggle the sorting order
+    f_mID *= -1; // toggle the sorting order
     var n = $(this).prevAll().length;
-    sortTable(f_nm,n);
+    sortTable(f_mID,n);
 });
 $("#gs").click(function(){
-    f_nm *= -1; // toggle the sorting order
+    f_gs *= -1; // toggle the sorting order
     var n = $(this).prevAll().length;
-    sortTable(f_nm,n);
+    sortTable(f_gs,n);
 });
 $("#gm").click(function(){
-    f_nm *= -1; // toggle the sorting order
+    f_gm *= -1; // toggle the sorting order
     var n = $(this).prevAll().length;
-    sortTable(f_nm,n);
+    sortTable(f_gm,n);
 });
 $("#d").click(function(){
-    f_nm *= -1; // toggle the sorting order
+    f_d *= -1; // toggle the sorting order
     var n = $(this).prevAll().length;
-    sortTable(f_nm,n);
+    sortTable(f_d,n);
 });
 $("#m").click(function(){
-    f_nm *= -1; // toggle the sorting order
+    f_m *= -1; // toggle the sorting order
     var n = $(this).prevAll().length;
-    sortTable(f_nm,n);
-});
-$("#m").click(function(){
-    f_nm *= -1; // toggle the sorting order
-    var n = $(this).prevAll().length;
-    sortTable(f_nm,n);
+    sortTable(f_m,n);
 });
 $("#a").click(function(){
-    f_nm *= -1; // toggle the sorting order
+    f_a *= -1; // toggle the sorting order
     var n = $(this).prevAll().length;
-    sortTable(f_nm,n);
+    sortTable(f_a,n);
 });
 $("#w").click(function(){
-    f_nm *= -1; // toggle the sorting order
+    f_w *= -1; // toggle the sorting order
     var n = $(this).prevAll().length;
-    sortTable(f_nm,n);
+    sortTable(f_w,n);
 });
 $("#cs").click(function(){
-    f_nm *= -1; // toggle the sorting order
+    f_cs *= -1; // toggle the sorting order
     var n = $(this).prevAll().length;
-    sortTable(f_nm,n);
+    sortTable(f_cs,n);
 });
 </script>
 
