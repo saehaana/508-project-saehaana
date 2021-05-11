@@ -42,7 +42,7 @@ if(!isset($_SESSION['username'])) {
         <label>Which Match are you updating for?:</label>
         <input type="text" placeholder="Enter Match ID" name="Match_ID">
         </p>
-<h1>Match History</h1>
+<p>Match History</p>
 <input type="text" input id='myInput2' onkeyup='searchTable2()' placeholder="Search">
     <table id='myTable2'>
     <tr>
