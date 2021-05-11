@@ -39,12 +39,11 @@ if(!isset($_SESSION['username'])) {
     }
     </style>
     <h2>Match History</h2>
-    <input type="text" id="search" placeholder="agent name" />
 <?php
 $email = $_SESSION['email'];
 $result = mysqli_query($conn,"select MatchID,Game_Status,Game_Type,Date,MapName,AgentName,WeaponName,RatingNumber from Match_History join Game_Type using(MatchID) join Map using(MatchID) join Agent using(MatchID) join Weapon using(MatchID) join Combat_Rating using(MatchID) where Email = '$email'");
 echo"
-<table>
+<table id = "myTable">
 <tr>
 <th>Match ID</th>
 <th>Game Status</th>
@@ -70,44 +69,29 @@ echo "</tr>";
 echo "</table>";
 ?>
 <p> Or maybe try some of our filters</p>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
 <script>
-function showAgent(str) {
-  if (str == "") {
-    document.getElementById("txtHint").innerHTML = "";
-    return;
-  } else {
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        document.getElementById("txtHint").innerHTML = this.responseText;
+function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
       }
-    };
-    xmlhttp.open("GET","getAgent.php?q="+str,true);
-    xmlhttp.send();
+    }
   }
 }
 </script>
-<form>
-<select name="agents" onchange="getAgent(this.value)">
-<option value="">Select a person:</option>
-<option value="1">Astra</option>
-            <option value="2">Breach</option>
-            <option value="3">Brimstone</option>
-            <option value="4">Cypher</option>
-            <option value="5">Jett</option>
-            <option value="6">Killjoy</option>
-            <option value="7">Omen</option>
-            <option value="8">Phoenix</option>
-            <option value="9">Raze</option>
-            <option value="10">Reyna</option>
-            <option value="11">Sage</option>
-            <option value="12">Skye</option>
-            <option value="13">Sova</option>
-            <option value="14">Viper</option>
-            <option value="15">Yoru</option>
-  </select>
-</form>
-<br>
-<div id="txtHint"><b>Matches with selected agent will be listed here...</b></div>
 </body>
 </html>

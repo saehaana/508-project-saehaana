@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="change query again">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="added home link to add and edit match pages, edit html tags on home">
       <change beforePath="$PROJECT_DIR$/addMatch.php" beforeDir="false" afterPath="$PROJECT_DIR$/addMatch.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/editMatch.php" beforeDir="false" afterPath="$PROJECT_DIR$/editMatch.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getAgent.php" beforeDir="false" afterPath="$PROJECT_DIR$/getAgent.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/home.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,13 +71,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00143" summary="test password hash, fix db update error">
-      <created>1620529701598</created>
-      <option name="number" value="00143" />
-      <option name="presentableId" value="LOCAL-00143" />
-      <option name="project" value="LOCAL" />
-      <updated>1620529701598</updated>
     </task>
     <task id="LOCAL-00144" summary="test password hash, fix db update error">
       <created>1620529763261</created>
@@ -417,7 +408,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620699093093</updated>
     </task>
-    <option name="localTasksCounter" value="192" />
+    <task id="LOCAL-00192" summary="added home link to add and edit match pages, edit html tags on home">
+      <created>1620699696498</created>
+      <option name="number" value="00192" />
+      <option name="presentableId" value="LOCAL-00192" />
+      <option name="project" value="LOCAL" />
+      <updated>1620699696498</updated>
+    </task>
+    <option name="localTasksCounter" value="193" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -445,7 +443,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="edit data insert query columns to match updated db" />
     <MESSAGE value="added more echos to home to reveal columns" />
     <MESSAGE value="test no match id field for add match; add email match requirement when validating login" />
     <MESSAGE value="test form field if empty, remove email field from addmatch(use session email instead);add home redirect button and addmatch link" />
@@ -470,6 +467,7 @@
     <MESSAGE value="change query to get agents in getAgent.php" />
     <MESSAGE value="test option value for agent filter" />
     <MESSAGE value="change query again" />
-    <option name="LAST_COMMIT_MESSAGE" value="change query again" />
+    <MESSAGE value="added home link to add and edit match pages, edit html tags on home" />
+    <option name="LAST_COMMIT_MESSAGE" value="added home link to add and edit match pages, edit html tags on home" />
   </component>
 </project>
