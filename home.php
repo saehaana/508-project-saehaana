@@ -51,6 +51,7 @@ if(!isset($_SESSION['username'])) {
     <th>Weapon</th>
     <th>Combat Score</th>
     </tr>
+    </table>
 <?php
 $email = $_SESSION['email'];
 $result = mysqli_query($conn,"select MatchID,Game_Status,Game_Type,Date,MapName,AgentName,WeaponName,RatingNumber from Match_History join Game_Type using(MatchID) join Map using(MatchID) join Agent using(MatchID) join Weapon using(MatchID) join Combat_Rating using(MatchID) where Email = '$email'");
@@ -66,6 +67,6 @@ echo "<td>" . $row['WeaponName'] . "</td>";
 echo "<td>" . $row['RatingNumber'] . "</td>";
 echo "</tr>";
 }
-echo "</table>";
+?>
 </body>
 </html>
