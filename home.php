@@ -70,7 +70,7 @@ if(!isset($_SESSION['username'])) {
     echo "</table>";
     ?>
 
-<p> Or maybe try some of our filters</p>
+<p> Or maybe try the search filter to compare your games with the above</p>
 <input id='myInput' onkeyup='searchTable()' type='text'>
     <table id='myTable'>
     <tr>
