@@ -39,7 +39,6 @@ if(!isset($_SESSION['username'])) {
     }
     </style>
     <h2>Match History</h2>
-
     <input type="text" id="search" placeholder="type to search" />
 <?php
 $email = $_SESSION['email'];
@@ -71,19 +70,45 @@ echo "</tr>";
 echo "</table>";
 ?>
 <script>
-    var $rows = $('#table tr');
-    $('#search').keyup(function() {
-      var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase().split(' ');
+function showAgent(str) {
+  if (str == "") {
+    document.getElementById("txtHint").innerHTML = "";
+    return;
+  } else {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("txtHint").innerHTML = this.responseText;
+      }
+    };
+    xmlhttp.open("GET","getAgent.php?q="+str,true);
+    xmlhttp.send();
+  }
+}
+</script>
+</head>
+<body>
 
-      $rows.hide().filter(function() {
-        var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
-        var matchesSearch = true;
-        $(val).each(function(index, value) {
-          matchesSearch = (!matchesSearch) ? false : ~text.indexOf(value);
-        });
-        return matchesSearch;
-      }).show();
-    });
-    </script>
+<form>
+<select name="agents" onchange="getAgent(this.value)">
+            <option value="1">Astra</option>
+            <option value="2">Breach</option>
+            <option value="3">Brimstone</option>
+            <option value="4">Cypher</option>
+            <option value="5">Jett</option>
+            <option value="6">Killjoy</option>
+            <option value="7">Omen</option>
+            <option value="8">Phoenix</option>
+            <option value="9">Raze</option>
+            <option value="10">Reyna</option>
+            <option value="11">Sage</option>
+            <option value="12">Skye</option>
+            <option value="13">Sova</option>
+            <option value="14">Viper</option>
+            <option value="15">Yoru</option>
+  </select>
+</form>
+<br>
+<div id="txtHint"><b>Matches with selected agent will be listed here...</b></div>
 </body>
 </html>
