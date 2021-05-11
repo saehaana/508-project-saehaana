@@ -27,6 +27,7 @@ if(!isset($_SESSION['username'])) {
         }
     </style>
     <a href="home.php"> Home </a>
+    <br>
     <a href="logout.php"> Logout </a>
     <div id="editMatch">
         <h1>Edit Match</h1>
