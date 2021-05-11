@@ -96,7 +96,7 @@ function searchTable2() {
 }
 </script>
 
-        <p>Please fill out field(s) you want to update</p>
+        <p>Please refill fields of the match you want to update</p>
         <p>Filling out a field indicates you are going to change your current value to the value you typed in</p>
         <p>e.g. 'Email: email@example.com' changes your current email to the email inputted</p>
         <p>

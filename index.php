@@ -19,8 +19,8 @@ ERROR_REPORTING(E_ALL);
         background-size: cover;
         }
     </style>
-    <h1>Valorant Stat Tracker</h1>
-    <br>Welcome to Valorant Stat Tracker! Login or register below to view or add your matches.
+    <h1>Valorant Match Tracker</h1>
+    <br>Welcome to Valorant Match Tracker! Login or register below to view or add your matches.
     <br><div id="Login">
             <h2>Login Here</h2>
             <p>Please enter email, username and password</p>
