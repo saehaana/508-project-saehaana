@@ -60,7 +60,6 @@ $email = $_SESSION['email'];
 $result = mysqli_query($conn,"select MatchID,Game_Status,Game_Type,Date,MapName,AgentName,WeaponName,RatingNumber from Match_History join Game_Type using(MatchID) join Map using(MatchID) join Agent using(MatchID) join Weapon using(MatchID) join Combat_Rating using(MatchID) where Email = '$email'");
 ?>
 <?php while($row = mysqli_fetch_array($result)):?>
-<tbody>
 <tr>
 <td><?php echo $row['MatchID'];?></td>
 <td><?php echo $row['Game_Status'];?></td>
@@ -72,7 +71,6 @@ $result = mysqli_query($conn,"select MatchID,Game_Status,Game_Type,Date,MapName,
 <td><?php echo $row['RatingNumber'];?></td>
 </tr>
 <?php endwhile;?>
-</tbody>
 </table>
 <script>
 const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
