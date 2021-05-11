@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="use check_input() more" />
+    <list default="true" id="023649ef-f177-4fe2-8264-92bababb8f88" name="Default Changelist" comment="revert check input and email type change">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,20 +69,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620013746968</updated>
-    </task>
-    <task id="LOCAL-00184" summary="test indexOf search implementation">
-      <created>1620696199691</created>
-      <option name="number" value="00184" />
-      <option name="presentableId" value="LOCAL-00184" />
-      <option name="project" value="LOCAL" />
-      <updated>1620696199691</updated>
-    </task>
-    <task id="LOCAL-00185" summary="test indexOf search implementation">
-      <created>1620696263571</created>
-      <option name="number" value="00185" />
-      <option name="presentableId" value="LOCAL-00185" />
-      <option name="project" value="LOCAL" />
-      <updated>1620696263571</updated>
     </task>
     <task id="LOCAL-00186" summary="remove indexOf search implementation, test get agent filter: added getAgent.php, agent select form below match history">
       <created>1620697376351</created>
@@ -411,7 +399,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620751512915</updated>
     </task>
-    <option name="localTasksCounter" value="233" />
+    <task id="LOCAL-00233" summary="change email type to string">
+      <created>1620751627029</created>
+      <option name="number" value="00233" />
+      <option name="presentableId" value="LOCAL-00233" />
+      <option name="project" value="LOCAL" />
+      <updated>1620751627029</updated>
+    </task>
+    <task id="LOCAL-00234" summary="revert check input and email type change">
+      <created>1620751681830</created>
+      <option name="number" value="00234" />
+      <option name="presentableId" value="LOCAL-00234" />
+      <option name="project" value="LOCAL" />
+      <updated>1620751681830</updated>
+    </task>
+    <option name="localTasksCounter" value="235" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -439,8 +441,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="display full match history above search bar filter table;clean up home.php indentation and code, search bar filter works!" />
-    <MESSAGE value="reworded search filter use suggestion" />
     <MESSAGE value="create compareMatch.php to use search filter implementation there" />
     <MESSAGE value="connect compareMatch.php to db" />
     <MESSAGE value="move second table and search bar lower; add style to table,th,td" />
@@ -464,6 +464,8 @@
     <MESSAGE value="try other function" />
     <MESSAGE value="remove sort stuff" />
     <MESSAGE value="use check_input() more" />
-    <option name="LAST_COMMIT_MESSAGE" value="use check_input() more" />
+    <MESSAGE value="change email type to string" />
+    <MESSAGE value="revert check input and email type change" />
+    <option name="LAST_COMMIT_MESSAGE" value="revert check input and email type change" />
   </component>
 </project>

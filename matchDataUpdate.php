@@ -41,9 +41,10 @@ if($WeaponUpdate == 'Phantom' || $WeaponUpdate == 'Vandal'){$WeaponTypeUpdate = 
 
 //submit form to db
 if($Match_ID == 1){
+if(!empty($emailUpdate)){
 $queryUpdate1 = "UPDATE Player SET Email = '$emailUpdate' where Email = '$email'";
 mysqli_query($conn,$queryUpdate1);
-
+}
 $queryUpdate2a = "UPDATE Match_History SET Email = '$emailUpdate' where Email = '$email'";
 mysqli_query($conn,$queryUpdate2a);
 
