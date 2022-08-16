@@ -1,6 +1,6 @@
 # Valorant Stat Tracker
 
-***** Not currently usable ; project was hosted on AWS and paid for by professor *****
+***** Not currently usable ; project was deployed to and paid for by the professor, plans to redeploy unknown *****
 
 Purpose:
 To keep track of certain statistics within the game Valorant. 
