@@ -1,6 +1,6 @@
 # Valorant Stat Tracker
 
-***** Not currently usable ; project was deployed to and paid for by the professor, plans to redeploy unknown *****
+Not currently usable ; project was deployed to and paid for by the professor, plans to redeploy unknown
 
 ## **Summary**
 
